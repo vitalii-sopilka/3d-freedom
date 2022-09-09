@@ -1,2 +1,32 @@
+//--utils--
+
+// fonts
+@import './utils/fonts';
+
+// modern-normalize
+@import './utils/nullstile';
+
+// базовые настройки
 @import './utils/common';
-@import './components/example';
+
+// vars
+@import './utils/vars';
+
+//--Стили компонентов--
+
+// header
+@import './components/header';
+// main page
+@import './components/main.scss';
+// modeling
+@import './components/modeling.scss';
+// scaning
+@import './components/scanning.scss';
+// creating
+@import './components/creating.scss';
+// order
+@import './components/order.scss';
+// contacts
+@import './components/contacts.scss';
+// footer
+@import './components/footer';
