@@ -1,1 +1,87 @@
+<<<<<<< Updated upstream
 @import '~node_modules/modern-normalize/modern-normalize.css';
+=======
+// @import '~node_modules/modern-normalize/modern-normalize.css';
+
+/* Сброс марджинов для абзацев и заголовков */
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* Доп. класс для снятия дефолтных подчеркиваний со ссылок */
+.link {
+  text-decoration: none
+}
+
+/* Доп. класс для удаления точек, марджинов и паддингов у элементов списка */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+a, button, input, textarea {
+  outline: none;
+}
+
+// body {
+// }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    max-width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    padding: 0 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+
+@mixin titleFonts($fs) {
+  font-weight: 700;
+  font-size: $fs;
+  line-height: 1.25;
+  color: $main-font-color;
+  text-transform: uppercase;
+}
+
+.title {
+  @include titleFonts(24px);
+  @media screen and (min-width: $tablet) {
+    font-size: 36px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 48px;
+  }
+}
+
+.sub-title {
+  @include titleFonts(18px);
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+  }
+}
+>>>>>>> Stashed changes
