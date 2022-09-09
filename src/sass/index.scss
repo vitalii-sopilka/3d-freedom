@@ -3,14 +3,14 @@
 // fonts
 @import './utils/fonts';
 
+// vars
+@import './utils/vars';
+
 // modern-normalize
-@import './utils/nullstile';
+@import './utils/nullstyle';
 
 // базовые настройки
 @import './utils/common';
-
-// vars
-@import './utils/vars';
 
 //--Стили компонентов--
 
