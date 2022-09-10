@@ -1,0 +1,78 @@
+p, ul, h1, h2, h3{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    }
+    
+    img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
+    
+    .link{
+    list-style: none;
+    text-decoration: none;
+    }
+  
+  .services__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    margin-bottom: 55px;
+  }
+
+  .services__overlay{
+background-image: url(/src/images/pic/print/png-print.png);}
+
+  .services__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+  .services__picture{
+    display: block;
+    margin-bottom: 23px;
+  }
+  
+  .services__options{
+    font-weight: 700;
+    color: $main-font-color;
+  }
+    
+  
+  .services__text{
+  margin-bottom: 16px;
+  font-family: $fontCeraPro;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: $second-font-color;
+  }
+  
+  .services__text__end{
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: $second-font-color;
+  }
+  
+  
+  .button{
+  cursor: pointer;
+  background: $footer-bg-color;
+  box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #FFFFFF;
+  border-radius: 30.5px;
+  padding: 16px 32px;
+  font-weight: 700;
+  font-family: $fontCeraPro;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  color: $main-font-color;
+  width: 280px;
+  }
