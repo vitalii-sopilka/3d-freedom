@@ -1,12 +1,10 @@
 .header {
-  display: flex;
-  position: relative;
-  width: 1440px;
   height: 144px;
-  padding: 0 32px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #fff;
+  &__box {
+    display: flex;
+    position: relative;
+  }
   &__logo {
     margin-top: 40px;
     margin-right: 258px;
