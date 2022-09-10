@@ -4,34 +4,34 @@
   margin-left: auto;
   margin-right: auto;
 
-  //   &__figure-one {
-  //     display: none;
+  &__figure-one {
+    display: none;
 
-  //     @media screen and (min-width: 768px) {
-  //     }
+    @media screen and (min-width: 768px) {
+    }
 
-  //     @media screen and (min-width: 1440px) {
-  //       display: block;
-  //       position: absolute;
-  //       box-shadow: $box-shadow-color;
-  //       @include bd-figure(82, 78, -114, 0);
-  //       border-radius: 0px 0px 72px 0px;
-  //     }
-  //   }
+    @media screen and (min-width: 1440px) {
+      display: block;
+      position: absolute;
+      box-shadow: $box-shadow-color;
+      @include bd-figure(82, 78, -114, 0);
+      border-radius: 0px 0px 72px 0px;
+    }
+  }
 
-  //   &__figure-two {
-  //     display: none;
-  //     @media screen and (min-width: 768px) {
-  //     }
+  &__figure-two {
+    display: none;
+    @media screen and (min-width: 768px) {
+    }
 
-  //     @media screen and (min-width: 1440px) {
-  //       display: block;
-  //       position: absolute;
-  //       box-shadow: $box-shadow-color;
-  //       @include bd-figure(82, 78, -114, 0);
-  //       border-radius: 0px 0px 72px 0px;
-  //     }
-  //   }
+    @media screen and (min-width: 1440px) {
+      display: block;
+      position: absolute;
+      box-shadow: $box-shadow-color;
+      @include bd-figure(137, 83, 1122, -42);
+      border-radius: 0px 0px 0px 72px;
+    }
+  }
 
   &__title {
     margin-bottom: 16px;
