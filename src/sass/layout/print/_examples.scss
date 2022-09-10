@@ -1,6 +1,7 @@
-// .print {
-//      position: relative;
-// }
+.print {
+    position: relative;
+     margin-bottom: 35px;
+}
 
 .print__title {
     display: flex;
@@ -8,7 +9,7 @@
     align-items: center;
     margin-bottom: 16px;
     color: #487996;
-    font-family: 'Cera Pro';
+    // font-family: 'Cera Pro';
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
@@ -16,9 +17,13 @@
 }
 
 .print__item {
-    // display: flex;
+    // display: grid;
+    // gap: 20px;
+    // grid-template-columns: ;
+    display: flex;
+    justify-content: center;
     // content: "";
-    // width: 100%;
+    width: 130px;
     // height: 100%;
     // margin-bottom: 20px;
 padding: 27px 23px 56px 17px;
@@ -33,8 +38,32 @@ background-color: #FFFFFF;
 //     background-image: url(//src/images/svg/examples.svg);
 // }
 
-.img {
-    width: 90px;
-    height: 74px;  
+// .img {
+//     width: 90px;
+//     height: 74px;  
        
+// }
+.produkt {
+    position: absolute;
+    width: 100%;
+    margin-bottom: 27px;
+}
+
+
+.produkt__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+// font-family: 'Cera Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+text-align: center;
+
+color: #487996;
+
+text-align: center;
+text-transform: uppercase;
 }
