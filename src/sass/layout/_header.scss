@@ -1,0 +1,165 @@
+.header {
+  height: 144px;
+  background-color: #fff;
+  &__box {
+    display: flex;
+    position: relative;
+  }
+  &__logo {
+    margin-top: 40px;
+    margin-right: 258px;
+  }
+  &__element-left {
+    position: absolute;
+    width: 144px;
+    height: 144px;
+    left: 291px;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 72px 72px 0px;
+    /*  transform: rotate(180deg); */
+  }
+  &__nav {
+    margin-right: auto;
+  }
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+  }
+
+  &__nav-link {
+    display: block;
+    padding-top: 56px;
+    padding-bottom: 67px;
+    font-family: 'Caviar Dreams';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $second-font-color;
+  }
+  &__drop-menu {
+    position: relative;
+    margin-top: 56px;
+    margin-bottom: 67px;
+  }
+  &__nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 21px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  &__drop-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 4px;
+    padding-bottom: 12px;
+    position: absolute;
+    top: -12px;
+    left: -50%;
+    width: 144px;
+    height: 114px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 72px 72px;
+    background-color: #fff;
+    transform: translatey(-100%);
+    @include trans();
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    &:hover,
+    &:focus {
+      transform: translateY(0);
+      opacity: 100%;
+      visibility: visible;
+      pointer-events: all;
+    }
+  }
+  &__nav-btn:focus + .header__drop-container {
+    transform: translateY(0);
+    opacity: 100%;
+    visibility: visible;
+    pointer-events: all;
+  }
+  &__drop-link {
+    text-align: center;
+    display: block;
+    font-family: 'Caviar Dreams';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.01em;
+    color: $second-font-color;
+  }
+  &__drop-icon {
+    width: 10;
+    height: 4px;
+    margin-left: 4px;
+  }
+  &__nav-btn:focus .header__drop-icon {
+    transform: rotate(180deg);
+  }
+  &__element-right {
+    position: absolute;
+    width: 144px;
+    height: 144px;
+    right: 267px;
+    top: 0;
+
+    background: #fff;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px 0px 0px 72px;
+
+    &-link {
+      display: block;
+      font-family: 'Caviar Dreams';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.28;
+      letter-spacing: 0.01em;
+      padding: 57px 54px 69px 59px;
+      color: #bdbdbd;
+      border-radius: 72px 0px 0px 72px;
+    }
+  }
+
+  &__contact-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &-top {
+      padding: 40px 0 5px;
+    }
+    &-bottom {
+      padding: 5px 0 54px;
+    }
+  }
+  &__contact-icon {
+    width: 14px;
+    height: 14px;
+  }
+  &__contact-text {
+    font-family: 'Caviar Dreams';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: $second-font-color;
+  }
+}

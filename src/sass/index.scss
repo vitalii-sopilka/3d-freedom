@@ -12,21 +12,24 @@
 // базовые настройки
 @import './utils/common';
 
+// mixins
+@import './utils/mixins';
+
 //--Стили компонентов--
 
 // header
-@import './components/header';
+@import './layout/header';
 // main page
-@import './components/main.scss';
+@import './layout/main.scss';
 // modeling
-@import './components/modeling.scss';
+@import './layout/modeling.scss';
 // scaning
-@import './components/scanning.scss';
+@import './layout/scanning.scss';
 // creating
-@import './components/creating.scss';
+@import './layout/print.scss';
 // order
-@import './components/order.scss';
+@import './layout/order.scss';
 // contacts
-@import './components/contacts.scss';
+@import './layout/contacts.scss';
 // footer
-@import './components/footer';
+@import './layout/footer';
