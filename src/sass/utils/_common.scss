@@ -58,25 +58,13 @@ img {
   }
 }
 
-// эти миксины нужно удалить -------------
+// этот миксины нужно удалить из всех мест где он применяется---
 @mixin titleFonts($fs) {
   font-weight: 700;
   font-size: $fs;
   line-height: 1.25;
   color: $main-font-color;
   text-transform: uppercase;
-}
-@mixin bd-figure($w, $h, $l, $t) {
-  width: $w + px;
-  height: $h + px;
-  left: $l + px;
-  top: $t + px;
-}
-@mixin font($ff, $fw, $fs, $lh, ) {
-  font-family: $ff;
-  font-weight: $fw;
-  font-size: $fs + px;
-  line-height: $lh;
 }
 // -----------------------------------
 
