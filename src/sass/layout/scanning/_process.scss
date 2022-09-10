@@ -1,7 +1,31 @@
 .scanning-process {
+  padding: 40px 0;
+  &__container {
+    @media screen and (max-width: 767px) {
+      max-width: 480px;
+    }
+    @media screen and (min-width: 480px) {
+      max-width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+    @media screen and (min-width: 1440px) {
+      max-width: 1440px;
+    }
+  }
   &__title {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+    @media screen and (min-width: 480px) {
+      margin-bottom: 16px;
+    }
   }
   &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
   &__item {
     width: 130px;
@@ -16,7 +40,6 @@
       background-size: 70px;
       background-repeat: no-repeat;
       background-position: center;
-      background-color: #f5f4fa;
     }
     &:nth-child(2)::before {
       background-image: url(/src/images/pic/scanning/process/scan_process1-mobile-1x-min.jpg);
