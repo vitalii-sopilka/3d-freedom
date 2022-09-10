@@ -4,11 +4,13 @@ $second-font-color: #2B2B2B;
 $main-bg-color: #E5E5E5;
 $footer-bg-color: #F5F5FA;
 $effects-bg-color: #FFFFFF;
-$box-shadow-color: 20px 20px 80px rgba(0, 0, 0, 0.1);
+$svg-color: #008CFF;
 
 // shadows
 $box-shadow-color: 20px 20px 80px rgba(0, 0, 0, 0.1);
 $scanning-creating-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #ffffff;
+$drop-shadow-color: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+$img-drop-shadow-color: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
 
 // cubic-bezier
 $cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
