@@ -56,36 +56,38 @@ margin-right: 8px;
     background-repeat: no-repeat;
     height: 164px;
     text-align: center;
+    background-size: contain;
     background-position: center;
     background-image: url(/src/images/pic/modeling/mobile-bg.png);
-    // @media (min-device-pixel-ratio: 2),
-    // (min-resolution: 192dpi),
-    // (min-resolution: 2dppx) {
-    //   & { background-image: 
-    //   url(/src/images/mobile-bg2x.png);
-    // } }  
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+       background-image: 
+      url(/src/images/pic/modeling/mobile-bg2x.png);
+    }   
 
     @media screen and (min-width: 768px) {   
         background-image: url(/src/images/pic/modeling/tab-bg.png);
-    //     @media (min-device-pixel-ratio: 2),
-    // (min-resolution: 192dpi),
-    // (min-resolution: 2dppx) {
-    //   & { background-image: 
-    //   url(/src/images/tab-bg2x.png);
-    // } }
+        @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+       background-image: 
+      url(/src/images/pic/modeling/tab-bg2x.png);
+    } 
         position: absolute; 
         width: 246;
         height: 144px;
         top: -20px;
-        right: 0px;}
+        right: 0px;
+        background-size: contain;}
     @media screen and (min-width: 1440px) {
         background-image: url(/src/images/pic/modeling/dekstop-bg.png);
-        //     @media (min-device-pixel-ratio: 2),
-        // (min-resolution: 192dpi),
-        // (min-resolution: 2dppx) {
-        //   & { background-image: 
-        //   url(/src/images/dekstop-bg2x.png);
-        // } }
+            @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: 
+          url(/src/images/pic/modeling/dekstop-bg2x.png);
+        } 
         width: 555px;
         height: 301px;
         background-size: contain;
