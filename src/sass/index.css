@@ -1,0 +1,567 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Cera Pro";
+  src: local("Cera Pro"), url("../fonts/CeraPro-Light.woff2") format("woff2"), url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Medium.woff2") format("woff2"), url("../fonts/CeraPro-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Caviar Dreams";
+  src: local("Caviar Dreams"), url("../fonts/CaviarDreams-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Bold.woff2") format("woff2");
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size (opinionated).
+*/
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+}
+
+/*
+Sections
+========
+*/
+/**
+1. Remove the margin in all browsers.
+2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  margin: 0; /* 1 */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+/* Сброс марджинов для абзацев и заголовков */
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* Доп. класс для снятия дефолтных подчеркиваний со ссылок */
+/* Доп. класс для удаления точек, марджинов и паддингов у элементов списка */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a, button, input, textarea {
+  outline: none;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #487996;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 48px;
+  }
+}
+
+.sub-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.25;
+  color: #487996;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .sub-title {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .sub-title {
+    font-size: 36px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  height: 144px;
+  background-color: #fff;
+}
+.header__box {
+  display: flex;
+  position: relative;
+}
+.header__logo {
+  margin-top: 40px;
+  margin-right: 258px;
+}
+.header__element-left {
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  left: 291px;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 72px 72px 0px;
+  /*  transform: rotate(180deg); */
+}
+.header__nav {
+  margin-right: auto;
+}
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+}
+.header__nav-link {
+  display: block;
+  padding-top: 56px;
+  padding-bottom: 67px;
+  font-family: "Caviar Dreams";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #2B2B2B;
+}
+.header__drop-menu {
+  position: relative;
+  margin-top: 56px;
+  margin-bottom: 67px;
+}
+.header__nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  width: 80px;
+  height: 21px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0);
+}
+.header__drop-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 4px;
+  padding-bottom: 12px;
+  position: absolute;
+  top: -12px;
+  left: -50%;
+  width: 144px;
+  height: 114px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 72px 72px;
+  background-color: #fff;
+  transform: translatey(-100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.header__drop-container:hover, .header__drop-container:focus {
+  transform: translateY(0);
+  opacity: 100%;
+  visibility: visible;
+  pointer-events: all;
+}
+.header__nav-btn:focus + .header__drop-container {
+  transform: translateY(0);
+  opacity: 100%;
+  visibility: visible;
+  pointer-events: all;
+}
+.header__drop-link {
+  text-align: center;
+  display: block;
+  font-family: "Caviar Dreams";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.01em;
+  color: #2B2B2B;
+}
+.header__drop-icon {
+  width: 10;
+  height: 4px;
+  margin-left: 4px;
+}
+.header__nav-btn:focus .header__drop-icon {
+  transform: rotate(180deg);
+}
+.header__element-right {
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  right: 267px;
+  top: 0;
+  background: #fff;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 72px 0px 0px 72px;
+}
+.header__element-right-link {
+  display: block;
+  font-family: "Caviar Dreams";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.01em;
+  padding: 57px 54px 69px 59px;
+  color: #bdbdbd;
+  border-radius: 72px 0px 0px 72px;
+}
+.header__contact-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header__contact-link-top {
+  padding: 40px 0 5px;
+}
+.header__contact-link-bottom {
+  padding: 5px 0 54px;
+}
+.header__contact-icon {
+  width: 14px;
+  height: 14px;
+}
+.header__contact-text {
+  font-family: "Caviar Dreams";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #2B2B2B;
+}
+
+p, ul, h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  list-style: none;
+  text-decoration: none;
+}
+
+.services__container {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  margin-bottom: 55px;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__picture {
+  display: block;
+  margin-bottom: 23px;
+}
+
+.services__options {
+  font-weight: 700;
+  color: #487996;
+}
+
+.services__text {
+  margin-bottom: 16px;
+  font-family: "Cera Pro";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2B2B2B;
+}
+
+.services__text__end {
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2B2B2B;
+}
+
+.button {
+  cursor: pointer;
+  background: #F5F5FA;
+  box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #FFFFFF;
+  border-radius: 30.5px;
+  padding: 16px 32px;
+  font-weight: 700;
+  font-family: "Cera Pro";
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  color: #487996;
+  width: 280px;
+}/*# sourceMappingURL=index.css.map */
