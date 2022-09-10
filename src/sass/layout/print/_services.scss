@@ -1,42 +1,48 @@
 p, ul, h1, h2, h3{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    }
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
     
-    img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-    }
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
     
-    .link{
-    list-style: none;
-    text-decoration: none;
-    }
+  .link{
+  list-style: none;
+  text-decoration: none;
+}
   
   .services__container {
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
-    margin-bottom: 55px;
-  }
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  margin-bottom: 55px;  
+}
+
+  .services__title{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
 
   .services__item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
   
   .services__picture{
-    display: block;
-    margin-bottom: 23px;
-  }
+  display: block;
+  margin-bottom: 23px;
+}
   
   .services__options{
-    font-weight: 700;
-    color: $main-font-color;
-  }
+  font-weight: 700;
+  color: $main-font-color;
+}
     
   
   .services__text{
@@ -46,7 +52,7 @@ p, ul, h1, h2, h3{
   font-size: 16px;
   line-height: 20px;
   color: $second-font-color;
-  }
+}
   
   .services__text__end{
   margin-bottom: 24px;
@@ -55,7 +61,7 @@ p, ul, h1, h2, h3{
   font-size: 16px;
   line-height: 20px;
   color: $second-font-color;
-  }
+}
   
   
   .button{
@@ -72,4 +78,4 @@ p, ul, h1, h2, h3{
   border: none;
   color: $main-font-color;
   width: 280px;
-  }
+}
