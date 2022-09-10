@@ -28,9 +28,9 @@ a, button, input, textarea {
   text-decoration: none;
 }
 
-// body {
-
-// }
+body {
+font-style: normal;
+}
 
 img {
   display: block;
@@ -64,6 +64,20 @@ img {
   line-height: 1.25;
   color: $main-font-color;
   text-transform: uppercase;
+}
+
+@mixin bd-figure($w, $h, $l, $t) {
+  width: $w + px;
+  height: $h + px;
+  left: $l + px;
+  top: $t + px;
+}
+
+@mixin font($ff, $fw, $fs, $lh, ) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs + px;
+  line-height: $lh;
 }
 
 .title {
