@@ -1,40 +1,197 @@
 .footer {
+    margin-left: auto;
+    margin-right: auto;
+    // align-items: center;
     background-color: $footer-bg-color;
-    padding: 40px 0;
+    text-align: center;
+    padding: 32px 0;
+    display: flex;
+  @media screen and (min-width:768px) {
+  padding: 32px 0;
+}
+ @media screen and (min-width: 1440px) {
+  padding: 40px 0;
+ }
 }
 
-.footer__container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
-    // @include mobile {
-    //     max-width: 480px;
-    // }
-    //      @include tablet {
-    //          max-width: 768px;
-    //      }
-    //               @include desktop {
-    //                   max-width: 1440px;
-    //               }
-}
+.footer__container { 
+        align-items: center;
+        display: flex;
+          flex-direction: column;
+          // justify-content: space-between;
+          margin: 0 auto;
+          padding-left: 20px;
+          padding-right: 20px;
+          width: 100%;
+            @media screen and (min-width:768px) {
+                width: 100%;
+                display: flex;
+          }
+                     @media screen and (min-width: 1440px) {
+                          display: flex;
+                          flex-direction: row;
+                     }
+ }
+
+ .footer__basic {
+    //  display: flex;
+    //  flex-direction: column;
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: row;
+    }
+         @media screen and (min-width: 1440px) {
+
+         }
+ }
 
 .footer__post {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 24px;
+    @media screen and (min-width:768px) {
+        align-items: flex-end;
+    }
+    @media screen and (min-width: 1440px) {
     margin-bottom: 16px;
+    align-items: flex-start;
+}
 }
 
-.footer__logo {
-    margin-right: 277px;
+.footer__mobile {
+  @media screen and (min-width:768px) {
+      align-items: flex-end;
+    }
+  
+    @media screen and (min-width: 1440px) {
+    }
+}
+.footer__logo { 
+      display: flex;
+      align-items: center;
+      margin-bottom: 19px;
+  
+    @media screen and (min-width:768px) {
+      display: flex;
+      align-items: center;
+      }
+             @media screen and (min-width: 1440px) {
+                 margin-right: 277px;
+             }
 }
 
 .footer__list-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-family: 'Cera Pro';
+      font-style: normal;
+      // @include font (400, 16, 1.25 0.01)
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.01em;
+    @media screen and (min-width:768px) {
+    align-items: flex-start;
+    margin-right: 52px;
+    }
+         @media screen and (min-width: 1440px) {
     margin-right: 103px;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    // @include font (400, 16, 1.25 0.01)
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+}
 }
 
 .footer__social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 24px;
+      color: $second-font-color;
+      font-family: 'Cera Pro';
+      font-style: normal;
+      // @include font (400, 16, 1.25 0.01)
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+    @media screen and (min-width:768px) {
+     align-items: flex-start;
+     justify-content: flex-start;
+        margin-right: 199px;
+    }
+    @media screen and (min-width: 1440px) {
     margin-right: 163px;
+    color: $second-font-color;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    // @include font (400, 16, 1.25 0.01)
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    }
 }
+
 .footer__address {
+    font-style: normal;
+    }
+
+.footer__list-cont {
+  align-items: center;
+  @media screen and (min-width:768px) {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    @media screen and (min-width: 1440px) {
+      align-items: flex-start;
+    }
 }
+
+.footer__item-numb {
+  @media screen and (min-width: 1440px) {
+      text-align: left;
+    }
+}
+
+.footer__address a {
+    color: $main-font-color;
+    font-family: 'Cera Pro';
+    font-style: normal;
+   // @include font (400, 16, 1.25 0.01);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    @media screen and (min-width:768px) {
+        align-items: flex-end;
+      }
+    
+      @media screen and (min-width: 1440px) {
+        align-items: flex-start;
+}
+}
+.footer__address p {
+    color: $second-font-color;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    // @include font (400, 16, 1.25 0.01);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+        @media screen and (min-width:768px) {
+          text-align: right;;
+          }
+        
+          @media screen and (min-width: 1440px) {
+            margin-right: 277px;
+            text-align: left;
+          }
+  }
