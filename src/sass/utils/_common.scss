@@ -29,7 +29,7 @@ a, button, input, textarea {
 }
 
 body {
-font-style: normal;
+  font-style: normal;
 }
 
 img {
@@ -57,6 +57,16 @@ img {
     width: $desktop;
   }
 }
+
+// этот миксины нужно удалить из всех мест где он применяется---
+@mixin titleFonts($fs) {
+  font-weight: 700;
+  font-size: $fs;
+  line-height: 1.25;
+  color: $main-font-color;
+  text-transform: uppercase;
+}
+// -----------------------------------
 
 .title {
   @include titleFonts(24px);
