@@ -3,12 +3,16 @@
   width: 100%;
   height: auto;
   grid-gap: 24px;
-  grid-template-columns: 1fr;
+}
+@media screen and (min-width: $mobile) {
+  .gellery__grid {
+    grid-template-columns: 480px;
+  }
 }
 @media screen and (min-width: $tablet) {
   .gellery__grid {
     grid-gap: 32px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 336px);
     grid-template-areas:
       gallery__grid-item-1 gallery__grid-item-2
       gallery__grid-item-3 gallery__grid-item-4;
@@ -16,8 +20,9 @@
 }
 @media screen and (min-width: $desktop) {
   .gellery__grid {
+    max-width: 1440px;
     grid-gap: 40px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 555px);
     grid-template-areas:
       gallery__grid-item-1 gallery__grid-item-2
       gallery__grid-item-3 gallery__grid-item-4;
