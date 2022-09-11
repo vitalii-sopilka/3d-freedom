@@ -155,4 +155,18 @@
       background-color: rgb(0, 254, 131);
     }
   }
+  &__figure-for {
+    display: none;
+    @media screen and (min-width: $desktop) {
+      display: block;
+      position: absolute;
+      @include bd-figure(144, 144, 1324, 1614);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 72px;
+    }
+  }
+}
+.gellery__tank-mini{
+  border-radius: 72px;
 }
