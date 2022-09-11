@@ -16,7 +16,7 @@
         margin-bottom: 16px;
         }
 
-    @media screen and (min-width: 768px) and (max-width: 1439px) {
+    @media screen and (min-width: $tablet) and (max-width: 1439px) {
         font-family:$fontCeraPro;
         font-size: 24px;
         line-height: 1.25;
@@ -26,7 +26,7 @@
         margin-bottom: 24px;
         }
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: $desktop) {
         margin-bottom: 40px;
         }
     }
@@ -36,11 +36,11 @@
         margin-bottom: 40px;
         }
 
-    @media screen and (min-width: 768px) and (max-width: 1439px) {
+    @media screen and (min-width: $tablet) and (max-width: 1439px) {
         margin-bottom: 60px;
         }
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: $desktop) {
         margin-bottom: 80px;
         }
     }
@@ -65,13 +65,13 @@
         grid-template-columns: repeat(2, auto);
         }
 
-    @media screen and (min-width: 768px) and (max-width: 1439px) {
+    @media screen and (min-width: $tablet) and (max-width: 1439px) {
         display: grid;
         gap: 32px;
         grid-template-columns: repeat(4, 152px);
         }
 
-        @media screen and (min-width: 1440px) {
+        @media screen and (min-width: $desktop) {
             display: grid;
             gap: 32px;
             grid-template-columns: repeat(4, 320px);
@@ -104,10 +104,10 @@
     border-top-right-radius: 25px;
     position: absolute;
     right: -4%;
-    background-color: #FFFFFF;
+    background-color: $effects-bg-color;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         display: none;
         }
 }
@@ -120,10 +120,10 @@
     right: 83%;
     bottom: 72%;
     z-index: -3;
-    background-color: #FFFFFF;
+    background-color: $effects-bg-color;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         display: none;
         }
 }
@@ -137,10 +137,10 @@
     bottom: 5%;
     right: 1%;
     z-index: -3;
-    background-color: #FFFFFF;
+    background-color: $effects-bg-color;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         display: none;
         }
 }
