@@ -375,15 +375,19 @@
     }
   }
 }
-/* ------MOB Menu------ */
-/* .current {
+
+
+
+
+//* ------MOB Menu------ */
+.current {
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #487996;
+  -webkit-text-stroke: 1px $main-font-color;
 }
 
 .menu {
   position: fixed;
-  top: 112px;
+  top: 52px;
   z-index: 3;
   width: 100vw;
   height: 100vh;
@@ -391,32 +395,48 @@
   visibility: visible;
   pointer-events: all;
   @include trans();
-  background-color: white;
+  background-color: $effects-bg-color;
+
+  @media screen and (min-width: $tablet) {
+    // width: 380px;
+    // left: 50%;
+    // transform: translateX(-50%);
+  }
+
   @media screen and (min-width: $desktop) {
     display: none;
   }
+
   &.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
   }
+
   &__close-button {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 32px;
     height: 32px;
+    padding: 0;
     position: absolute;
-    top: -92px;
-    @media (min-width: $tablet) {
-      top: -80px;
+    // top: -92px;
+    top: -32px;
+
+    @media (min-width: 768px) {
+      top: -30px;
     }
+
     left: 50%;
     transform: translateX(-50%);
+    border: none;
     background-color: #fff;
+    cursor: pointer;
   }
+
   &__container {
-    width: 100%;
+    width: 320px;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -427,13 +447,19 @@
     overflow: auto;
 
     @media screen and (min-width: $mobile) {
-      max-width: $mobile;
+      max-width: 480px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: 380px;
+      padding-top: 55px;
     }
   }
 
   &__item:not(:last-child) {
     margin-bottom: 24px;
   }
+
   &__link {
     font-family: 'Cera Pro';
     font-style: normal;
@@ -441,13 +467,13 @@
     font-size: 24px;
     line-height: 30px;
     text-align: center;
-    color: #487996;
+    color: $main-font-color;
   }
 
   &__link:hover,
   &__link:focus {
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #487996;
+    -webkit-text-stroke: 1px $main-font-color;
   }
 
   &__subitem {
@@ -462,7 +488,7 @@
     width: 7px;
     height: 7px;
     border-radius: 3px 0px;
-    background-color: #487996;
+    background-color: $main-font-color;
     align-items: center;
     margin-right: 18px;
   }
@@ -474,12 +500,12 @@
     line-height: 30px;
     text-align: center;
 
-    color: #487996;
+    color: $main-font-color;
   }
 
   &__sublink:hover,
   &__sublink:focus {
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #487996;
+    -webkit-text-stroke: 1px $main-font-color;
   }
-} */
+}
