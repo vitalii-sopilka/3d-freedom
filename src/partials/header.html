@@ -1,72 +1,148 @@
-<header class="header">
-  <div class="header__box container">
-    <a class="header__logo logo-link" href="./index.html">
-      <img
-        srcset="
-          ./images/header/3d-freedom-1x.png 1x,
-          ./images/header/3d-freedom-2x.png 2x
-        "
-        src="./images/header/3d-freedom-1x.png"
-        alt="3DFREEDOM"
-      />
-    </a>
-    <div class="header__element-left"></div>
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-item">
-          <a class="header__nav-link" href="./index.html">Головна</a>
-        </li>
-        <li class="header__nav-item header__drop-menu">
-          <button type="button" class="header__nav-link header__nav-btn">
-            Послуги
-            <svg class="header__drop-icon" width="10" height="4">
-              <use href="./images/header/symbol-defs.svg#icon-polygon"></use>
+<body class="page scroll no-scroll">
+  <header class="header">
+    <div class="header__box container">
+      <a class="header__logo logo-link" href="./index.html">
+        <img
+          srcset="
+            ./images/header/3d-freedom-1x.png 1x,
+            ./images/header/3d-freedom-2x.png 2x
+          "
+          src="./images/header/3d-freedom-1x.png"
+          alt="3DFREEDOM"
+        />
+      </a>
+      <button
+        class="header__mob-menu-open-button js-open-menu"
+        type="button"
+        name="open"
+      >
+        <svg class="header__mob-menu-open-icon" width="32" height="18">
+          <use href="./images/header/symbol-defs.svg#icon-burger"></use>
+        </svg>
+      </button>
+
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="./index.html">Головна</a>
+          </li>
+          <li class="header__nav-item header__drop-menu">
+            <button type="button" class="header__nav-btn">
+              Послуги
+              <svg class="header__drop-icon" width="10" height="4">
+                <use href="./images/header/symbol-defs.svg#icon-polygon"></use>
+              </svg>
+            </button>
+            <div class="header__drop-container">
+              <a class="header__drop-link" href="./modeling.html"
+                >3D Моделювання</a
+              >
+              <a class="header__drop-link" href="./scanning.html"
+                >3D Сканування</a
+              >
+              <a class="header__drop-link" href="./print.html">3D Друк</a>
+            </div>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="./order.html">Замовити</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="./contacts.html">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="header__contact-list">
+        <li class="header__contact-item">
+          <a
+            class="header__contact-link header__contact-link-top"
+            href="tel:+380936432288"
+          >
+            <svg class="header__contact-icon" width="14" height="14">
+              <use href="./images/header/symbol-defs.svg#icon-call"></use>
             </svg>
-          </button>
-          <div class="header__drop-container">
-            <a class="header__drop-link" href="./modeling.html"
-              >3D Моделювання</a
-            >
-            <a class="header__drop-link" href="./scanning.html"
-              >3D Сканування</a
-            >
-            <a class="header__drop-link" href="./print.html">3D Друк</a>
-          </div>
+            <span class="header__contact-text">+38 (093) 643 22 88</span></a
+          >
         </li>
-        <li class="header__nav-item">
-          <a class="header__nav-link" href="./order.html">Замовити</a>
-        </li>
-        <li class="header__nav-item">
-          <a class="header__nav-link" href="./contacts.html">Контакти</a>
+        <li class="header__contact-item">
+          <a
+            class="header__contact-link header__contact-link-bottom"
+            href="tel:+380503454423"
+          >
+            <svg class="header__contact-icon" width="14" height="14">
+              <use href="./images/header/symbol-defs.svg#icon-call"></use>
+            </svg>
+            <span class="header__contact-text">+38 (050) 345 44 23</span></a
+          >
         </li>
       </ul>
-    </nav>
-    <div class="header__element-right">
-      <a class="header__element-right-link" href="#">ENG</a>
+      <div class="header__mob-link-container">
+        <button
+          class="header__mob-contact-open-button"
+          type="button"
+          name="contacts"
+        >
+          <svg class="header__mob-contact-open-icon" width="18" height="18">
+            <use href="./images/header/symbol-defs.svg#icon-call"></use>
+          </svg>
+        </button>
+        <p class="header__speech">
+          <a class="header__speech-first-tel" href="tel:+380936432288"
+            >+38 (093) 643 22 88</a
+          >
+          <a class="header__speech-second-tel" href="tel:+380503454423"
+            >+38 (050) 345 44 23</a
+          >
+        </p>
+        <a class="header__lang-link" href="#">ENG</a>
+      </div>
+      <div class="header__element-first"></div>
+      <div class="header__element-left"></div>
+      <div class="header__element-right">
+        <a class="header__desktop-lang-link" href="#">ENG</a>
+      </div>
     </div>
-    <ul class="header__contact-list">
-      <li class="header__contact-item">
-        <a
-          class="header__contact-link header__contact-link-top"
-          href="tel:+380936432288"
-        >
-          <svg class="header__contact-icon" width="14" height="14">
-            <use href="./images/header/symbol-defs.svg#icon-call"></use>
-          </svg>
-          <span class="header__contact-text">+38 (093) 643 22 88</span></a
-        >
-      </li>
-      <li class="header__contact-item">
-        <a
-          class="header__contact-link header__contact-link-bottom"
-          href="tel:+380503454423"
-        >
-          <svg class="header__contact-icon" width="14" height="14">
-            <use href="./images/header/symbol-defs.svg#icon-call"></use>
-          </svg>
-          <span class="header__contact-text">+38 (050) 345 44 23</span></a
-        >
-      </li>
-    </ul>
-  </div>
-</header>
+
+    <!-- MOB Menu -->
+    <!-- <div class="menu is-hidden js-menu-container">
+      <button
+        class="menu__close-button js-close-menu"
+        type="button"
+        name="close"
+      >
+        <svg class="menu__close-icon" width="24" height="24">
+          <use href="./images/header/symbol-defs.svg#icon-x"></use>
+        </svg>
+      </button>
+      
+      <div class="menu__container">
+        <nav class="menu__nav">
+          <ul class="menu__list list">
+            <li class="menu__item">
+              <a href="" class="menu__link current">ГОЛОВНА</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">ПОСЛУГИ</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="" class="menu__sublink">3D Моделювання</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="" class="menu__sublink">3D Сканування</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="" class="menu__sublink">3D Друк</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">ЗАМОВИТИ</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">КОНТАКТИ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div> -->
+  </header>
+  <script src="./js/mobile-menu.js"></script>
+</body>
