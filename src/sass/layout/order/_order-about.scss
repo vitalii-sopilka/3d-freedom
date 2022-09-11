@@ -15,6 +15,7 @@
   }
 
   &__container {
+    margin-bottom: 40px;
     @media screen and (min-width: 768px) {
       max-width: $tablet;
       margin-bottom: 40px;
@@ -65,6 +66,25 @@
     }
   }
 
+  &__figure-three {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      position: absolute;
+      box-shadow: $box-shadow-color;
+      @include bd-figure(72, 64, 736, -42);
+      border-radius: 0px 0px 0px 72px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      display: block;
+      position: absolute;
+      box-shadow: $box-shadow-color;
+      @include bd-figure(137, 144, -22, 818);
+      border-radius: 72px 72px 72px 72px;
+    }
+  }
+
   &__title {
     text-align: center;
     margin-bottom: 16px;
@@ -95,8 +115,8 @@
     max-height: 171px;
     border-radius: 15px;
     @media screen and (min-width: 768px) {
-      max-width: 336px;
-      max-height: 158px;
+      min-width: 336px;
+      min-height: 158px;
     }
     @media screen and (min-width: 1440px) {
       min-width: 555px;
@@ -109,7 +129,6 @@
 
   &__text {
     color: $second-font-color;
-
     @include font($fontCeraPro, 400, 16, 1.25);
     @media screen and (min-width: 768px) {
     }
@@ -131,27 +150,33 @@
         margin-bottom: 0;
       }
       @media screen and (min-width: 1440px) {
-        margin-bottom: 60px;
+        margin-bottom: 0;
       }
     }
   }
   &__img {
-    position: absolute;
-    left: 587px;
-    top: 247px;
-    width: 672px;
-    height: 203px;
-    &-first {
-      border-radius: 0px 72px 72px 0px;
-      filter: $img-drop-shadow-color;
+    @media screen and (min-width: 768px) {
+      display: none;
     }
-    &-second {
-      border-radius: 72px 0px;
-      filter: $img-drop-shadow-color;
-    }
-    &-three {
-      border-radius: 0px 0px 72px 0px;
-      filter: $img-drop-shadow-color;
+    @media screen and (min-width: 1440px) {
+      display: block;
+      position: absolute;
+      left: 587px;
+      top: 247px;
+      width: 672px;
+      height: 203px;
+      &-first {
+        border-radius: 0px 72px 72px 0px;
+        filter: $img-drop-shadow-color;
+      }
+      &-second {
+        border-radius: 72px 0px;
+        filter: $img-drop-shadow-color;
+      }
+      &-three {
+        border-radius: 0px 0px 72px 0px;
+        filter: $img-drop-shadow-color;
+      }
     }
   }
   &__list {

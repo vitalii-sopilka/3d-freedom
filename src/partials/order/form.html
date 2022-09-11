@@ -1,5 +1,5 @@
-<div class="cont-order">
-  <section class="contact">
+<div class="cont-order container">
+  <section class="contact section">
     <form class="feedback">
       <h2 class="feedback__title sub-title">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
       <div class="feedback__field">
@@ -28,9 +28,6 @@
         />
       </div>
       <div class="feedback__field">
-        <!-- <label class="feedback__label" for="plastic-label">
-          Види пластика</label
-        > -->
         <select class="feedback__input" id="plastic-types" name="type">
           <option value="0">Види пластика</option>
 
@@ -42,7 +39,6 @@
         </select>
       </div>
       <div class="feedback__field">
-        <!-- <label class="feedback__label" for="plastic-size">Якість друку</label> -->
         <select class="feedback__input" id="plastic-size" name="size">
           <option value="0">Якість друку</option>
           <option value="300">300 мікрон</option>
@@ -52,7 +48,6 @@
         </select>
       </div>
       <div class="feedback__field">
-        <!-- <label class="feedback__label" for="plastic-color">Колір</label> -->
         <select class="feedback__input" id="plastic-color" name="color">
           <option value="red">Колір</option>
           <option value="red">Червоний</option>
@@ -87,7 +82,7 @@
     </form>
   </section>
 
-  <section class="contacts section">
+  <section class="contacts">
     <div class="contacts__container">
       <ul class="contacts__list">
         <li class="contacts__item list">
@@ -112,14 +107,17 @@
             >3dfreedom.info@gmail.com
           </a>
         </li>
-        <li class="contacts__item list">
-          <h2 class="sub-title">Робочий час</h2>
-          <ul class="contacts__item-list">
-            <li class="list">Пн-пт: з 8:00 до 19:00</li>
-            <li class="list">Сб, Нд: з 10:00 до 17:00</li>
-          </ul>
-        </li>
       </ul>
+      <div class="contacts__time list">
+        <h2 class="sub-title">Робочий час</h2>
+        <ul class="contacts__time-list">
+          <li class="time-item list">Пн-пт:</li>
+          <li class="time-item list">з 8:00 до 19:00</li>
+          <li class="time-item list">Сб, Нд:</li>
+          <li class="time-item list">з 10:00 до 17:00</li>
+        </ul>
+      </div>
+
       <div class="mosaics">
         <picture>
           <source
@@ -135,26 +133,6 @@
             class="img"
           />
         </picture>
-        <!-- </picture>
-    <picture class="mosaics__img">
-      <source
-        srcset="
-          ./images/pic/order/goup33.png 1x,
-          ./images/pic/order/goup33.png 2x
-        "
-        media="(min-width: 1200px)"
-      />
-      <img src="./images/pic/order/goup33.png" alt="" class="img" />
-    </picture> -->
-
-        <!-- <ul class="mosaics__list">
-        <li class="mosaics__item list">1</li>
-        <li class="mosaics__item list">2</li>
-        <li class="mosaics__item list">3</li>
-        <li class="mosaics__item list">4</li>
-        <li class="mosaics__item list">5</li>
-        <li class="mosaics__item list">6</li>
-      </ul> -->
       </div>
     </div>
   </section>

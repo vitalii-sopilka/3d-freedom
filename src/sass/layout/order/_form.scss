@@ -2,23 +2,24 @@
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    align-items: center;
     max-width: $tablet;
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
   }
 
   @media screen and (min-width: 1440px) {
     max-width: 1142px;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     gap: 149px;
     padding-left: 0px;
     padding-right: 0px;
@@ -28,10 +29,12 @@
 
 .contact {
   width: 280px;
-  align-items: center;
-
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: 768px) {
-    width: 410px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and (min-width: 1440px) {
     width: 555px;
@@ -39,12 +42,13 @@
 }
 
 .feedback {
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     display: block;
-    align-items: center;
-    margin-bottom: 60px;
+    // align-items: center;
   }
   @media screen and (min-width: 1440px) {
+    width: 555px;
   }
   &__title {
     margin-bottom: 44px;
@@ -52,10 +56,12 @@
 
   &__field {
     width: 100%;
+
     &:not(:last-child) {
       margin-bottom: 44px;
     }
-    &:last-child {
+    &:nth-child(7) {
+      position: relative;
       margin-bottom: 24px;
     }
   }
@@ -79,6 +85,10 @@
     // @include font(400, 18, 1.12, null);
     // color: var(--modal-input-color-);
     // transition: var(--transition-border-color);
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1440px) {
+    }
     &:hover,
     &:focus {
       outline: transparent;
@@ -107,6 +117,7 @@
     }
     @media screen and (min-width: 1440px) {
       @include font($fontCeraPro, 400, 18, 1.25);
+      height: 199px;
     }
     &:focus,
     &:hover {
@@ -147,102 +158,11 @@
 
 input[type='file'] {
   display: none;
+  position: relative;
 }
 .icon-paper-clip {
+  position: absolute;
+  top: 185px;
+  right: 23px;
   fill: #cdcdcd;
-}
-
-.contacts {
-  @media screen and (min-width: 768px) {
-    min-width: 100%;
-  }
-
-  @media screen and (min-width: 1440px) {
-  }
-  &__container {
-    @media screen and (min-width: 768px) {
-      display: flex;
-
-      min-width: 100%;
-    }
-
-    @media screen and (min-width: 1440px) {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-    }
-  }
-  &__list {
-    display: flex;
-
-    @media screen and (min-width: 768px) {
-      flex-direction: row;
-      row-gap: 0;
-      min-width: 100%;
-    }
-
-    @media screen and (min-width: 1440px) {
-      flex-direction: column;
-      align-items: flex-end;
-      margin-bottom: 68px;
-      gap: 30px;
-    }
-  }
-  &__item {
-    display: flex;
-    text-decoration: none;
-    color: $second-font-color;
-
-    @media screen and (min-width: 768px) {
-      flex-direction: column;
-    }
-
-    @media screen and (min-width: 1440px) {
-      flex-direction: column;
-      align-items: flex-end;
-    }
-  }
-  &__item-list > li {
-    @include font($fontCeraPro, 400, 16, 1.25);
-    color: $second-font-color;
-    text-decoration: none;
-    text-align: end;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    @media screen and (min-width: 768px) {
-    }
-
-    @media screen and (min-width: 1440px) {
-      @include font($fontCeraPro, 400, 18, 1.25);
-    }
-  }
-
-  &__item-list > li:not(:last-child) {
-    margin-bottom: 18px;
-  }
-}
-
-.sub-title {
-  margin-bottom: 18px;
-}
-
-.mosaics {
-  display: none;
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1440px) {
-    display: block;
-  }
-}
-
-.mosaics__list {
-}
-
-.mosaics__item {
-}
-
-.mosaics__img {
-  opacity: 1;
 }

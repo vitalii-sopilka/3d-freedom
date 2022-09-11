@@ -1,21 +1,27 @@
 // @import '~node_modules/modern-normalize/modern-normalize.css';
 
 /* Сброс марджинов для абзацев и заголовков */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
 /* Доп. класс для снятия дефолтных подчеркиваний со ссылок */
-// .link {
-//   text-decoration: none
-// }
+.link {
+  text-decoration: none;
+}
 
 /* Доп. класс для удаления точек, марджинов и паддингов у элементов списка */
-// .list {
-//   list-style: none;
-//   padding: 0;
-//   margin: 0;
-// }
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 ul {
   list-style: none;
@@ -23,7 +29,10 @@ ul {
   margin: 0;
 }
 
-a, button, input, textarea {
+a,
+button,
+input,
+textarea {
   outline: none;
   text-decoration: none;
 }
@@ -91,4 +100,3 @@ img {
 a {
   text-decoration: none;
 }
-
