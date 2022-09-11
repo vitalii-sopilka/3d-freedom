@@ -116,3 +116,15 @@ top: -145px;
 right: 140px;
 }
 }
+.modeling__element-bottom-right {
+@media screen and (min-width: 1440px) {
+position: absolute;
+width: 137px;
+height: 144px;
+left: 1124px;
+top: 65px;
+background-color: #fff;
+box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+border-radius: 72px 0px;
+}
+}

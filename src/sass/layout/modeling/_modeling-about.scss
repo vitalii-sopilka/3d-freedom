@@ -11,6 +11,7 @@ max-width: 1440px;
 }
 
 .modeling__about {
+position: relative;
 padding-top: 18px;
 @media screen and (min-width: 768px) {
 padding-top: 30px;
@@ -24,7 +25,17 @@ padding-left: 149px;
 background: #FFFFFF;
 
 }
-
+.modeling__element-top-left {
+@media screen and (min-width: 1440px) {
+position: absolute;
+width: 82px;
+height: 78px;
+left: 35px;
+top: 45px;
+background-color: #fff;
+box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+border-radius: 0px 0px 72px 0px;}
+}
 .modeling__title {
 margin-bottom: 16px;
 font-family: 'Cera Pro';
@@ -78,5 +89,16 @@ margin-bottom: 0px;
 width: 515px;
 }
 }
-
+.modeling__element-top-right {
+@media screen and (min-width: 1440px) {
+position: absolute;
+width: 144px;
+height: 137px;
+left: 1272px;
+top: 10px;
+background-color: #fff;
+box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+border-radius: 0px 0px 72px 0px;
+transform: rotate(90deg);} 
+}
 
