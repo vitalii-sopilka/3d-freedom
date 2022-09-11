@@ -1,52 +1,67 @@
-.gallery {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #FFFFFF;
+.gellery__grid {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-gap: 24px;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: $tablet) {
+  .gellery__grid {
+    grid-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      gallery__grid-item-1 gallery__grid-item-2
+      gallery__grid-item-3 gallery__grid-item-4;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .gellery__grid {
+    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      gallery__grid-item-1 gallery__grid-item-2
+      gallery__grid-item-3 gallery__grid-item-4;
+  }
 }
 
+.gallery__grid-item-1 {
+  grid-template-areas: gallery__grid-item-1;
+}
+.gallery__grid-item-2 {
+  grid-template-areas: gallery__grid-item-2;
+}
+.gallery__grid-item-3 {
+  grid-template-areas: gallery__grid-item-3;
+}
+.gallery__grid-item-4 {
+  grid-template-areas: gallery__grid-item-4;
+}
 .gallery__title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    color: #487996;
+  font-family: 'Cera Pro';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #487996;
+  @media screen and (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 48px;
+    line-height: 60px;
+  }
 }
 
 .gallery__foto-title {
-    max-width: 280px;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 20px;
-    color: #487996;
-}
-
-.gallery__foto {
-    margin-bottom: 8px;
-    width: 100%;
-}
-
-.gallery__item:not(:last-child) {
-    margin: 0 0 24px;
-}
-
-.gallery__list {
-    @include tablet {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 32px;
-        justify-content: center;
-    }
-
-    @include desktop {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 32px;
-    }
-}
-
-li.gallery__item {
-    width: 100%;
-
-    @include tablet {
-        width: calc((100% - 32px)/2);
-    }
+  font-family: 'Cera Pro';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #487996;
+  max-width: 280px;
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 23px;
+    max-width: 500px;
+  }
 }
