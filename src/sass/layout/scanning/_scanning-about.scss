@@ -1,0 +1,178 @@
+.scan-section {
+  justify-content: center;
+  // background-color: $main-bg-color;
+}
+
+.scan-container {
+  display: flex;
+  // background-color: $main-bg-color;
+  position: relative;
+  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    max-width: $mobile;
+  }
+  @media screen and (min-width: 768px) {
+    align-items: normal;
+    max-width: 768px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+    padding-right: 269px;
+    padding-left: 149px;
+  }
+}
+
+.scanning {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @media screen and (max-width: 767px) {
+    max-width: $mobile;
+  }
+  @media screen and (min-width: 767px) {
+    max-width: 514px;
+    position: relative;
+  }
+  @media screen and (min-width: $desktop) {
+    // margin-left: 149px;
+    // gap: 24px;
+  }
+  &__wrapper {
+    @media screen and (min-width: $desktop) {
+      width: 490px;
+    }
+  }
+  &__wrapper--position {
+    @media screen and (min-width: $desktop) {
+      position: absolute;
+      transform: translateX(108%);
+      text-align: left;
+      margin-left: 72px;
+    }
+  }
+  &__content {
+    font-weight: 300;
+    @media screen and (min-width: $desktop) {
+      font-size: 18px;
+    }
+  }
+}
+
+.scan-picture {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  height: 199px;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  background-image: url(/src/images/pic/scanning/about/scanning-mobile@1x.jpg);
+  background-size: 280px 199px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url(/src/images/pic/scanning/about/scanning-mobile@2x.jpg);
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    width: 237px;
+    height: 165px;
+    margin-top: 0;
+    // margin-right: 6px;
+    right: 6px;
+    top: 50%;
+    background-image: url(/src/images/pic/scanning/about/scanning-tablet@1x.jpg);
+    background-size: 237px 165px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(/src/images/pic/scanning/about/scanning-tablet@2x.jpg);
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    width: 435px;
+    height: 268px;
+    right: 269px;
+    background-image: url(/src/images/pic/scanning/about/scanning-desktop@1x.jpg);
+    background-size: 435px 268px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/pic/scanning/about/scanning-desktop@1x.jpg);
+    }
+  }
+}
+
+.bg-element1 {
+  display: none;
+  position: absolute;
+  //   right: 32px;
+  width: 71px;
+  height: 74px;
+  background-color: $main-bg-color;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
+  right: 32px;
+  top: 100%;
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 136px;
+    height: 144px;
+  }
+}
+
+.bg-element2 {
+  display: none;
+  position: absolute;
+  width: 71px;
+  height: 63px;
+  right: 32px;
+  top: 0;
+  background-color: $main-bg-color;
+  box-shadow: -17px -20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 35px 0px 0px;
+  transform: rotate(180deg);
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 136px;
+    height: 144px;
+  }
+}
+
+.bg-element3 {
+  display: none;
+  position: absolute;
+  width: 82px;
+  height: 78px;
+  left: 35px;
+  top: 60px;
+  background-color: $main-bg-color;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 72px 0px;
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.bg-element4 {
+  display: none;
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 72px;
+  right: -10px;
+  top: 360px;
+  background-color: $main-bg-color;
+  @media screen and (min-width: $mobile) {
+    display: block;
+  }
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}

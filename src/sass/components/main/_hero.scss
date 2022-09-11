@@ -1,0 +1,353 @@
+.hero {
+    position: relative;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 60px
+    }
+
+    @media screen and (min-width: 1440px) {
+        padding-bottom: 120px
+    }
+
+    &__title {
+        margin: 0 auto 32px auto;
+        max-width: 280px;
+        text-align: center;
+        @include font($fontCaviarDreams, 400, 18, 1.17);
+        color: $second-font-color;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 60px;
+            max-width: 336px;
+            font-size: 24px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            max-width: 630px;
+            font-size: 48px;
+        }
+    }
+
+    &__image-list {
+        display: grid;
+        grid-auto-flow: column;
+        margin-bottom: 32px;
+        justify-content: center;
+        gap: 15px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 60px;
+            gap: 29px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            gap: 32px;
+        }
+    }
+
+    &__image-one {
+        border-radius: 0 35px 0 0;
+        filter: $img-drop-shadow-color;
+    }
+
+    &__image-two {
+        border-radius: 100px;
+        filter: $img-drop-shadow-color;
+    }
+
+    &__image-three {
+        border-radius: 0 25px;
+        filter: $img-drop-shadow-color;
+    }
+
+    &__slogan {
+        display: block;
+        padding-bottom: 40px;
+        @include font($fontCaviarDreams, 400, 16, 1.19);
+        text-align: center;
+        color: $second-font-color;
+
+        @media screen and (min-width: 768px) {
+            padding-bottom: 60px;
+            font-size: 18px;
+            line-height: 1.17;
+        }
+
+        @media screen and (min-width: 1440px) {
+            padding-bottom: 120px;
+            font-size: 36px;
+        }
+    }
+
+    &__figure-one {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            position: absolute;
+            @include bd-figure(74, 74, 32, 0);
+            box-shadow: $box-shadow-color;
+            border-radius: 0 0 35px 0;
+        }
+
+        @media screen and (min-width: 1440px) {
+            @include bd-figure(144, 144, 30, -1);
+            border-radius: 0 0 72px 0;
+        }
+    }
+
+    &__figure-flowers {
+        display: none;
+        border-radius: 72px;
+        filter: $drop-shadow-color;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            position: absolute;
+            @include bd-figure(74, 74, 106, -2);
+        }
+
+        @media screen and (min-width: 1440px) {
+            @include bd-figure(144, 144, 174, -4);
+        }
+    }
+
+    &__figure-three {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            position: absolute;
+            @include bd-figure(74, 74, 589, 4);
+            box-shadow: $box-shadow-color;
+        }
+
+        @media screen and (min-width: 1440px) {
+            @include bd-figure(144, 144, 1120, 1);
+        }
+    }
+
+    &__figure-production {
+        display: none;
+        filter: $drop-shadow-color;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            position: absolute;
+            @include bd-figure(74, 74, 662, 4);
+            border-radius: 0 0 35px 0;
+        }
+
+        @media screen and (min-width: 1440px) {
+            @include bd-figure(144, 144, 1264, 1);
+            border-radius: 0 0 72 0;
+        }
+    }
+
+    &__figure-five {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            position: absolute;
+            @include bd-figure(74, 74, 106, 74);
+            box-shadow: $box-shadow-color;
+            border-radius: 0 35px 0 0;
+
+            @media screen and (min-width: 1440px) {
+                @include bd-figure(144, 144, 174, 146);
+                border-radius: 0 72px 0 0;
+            }
+        }
+    }
+
+    &__figure-six {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            position: absolute;
+            @include bd-figure(74, 74, 589, 78);
+            box-shadow: $box-shadow-color;
+            border-radius: 72px;
+
+            @media screen and (min-width: 1440px) {
+                @include bd-figure(144, 144, 1120, 146);
+            }
+        }
+    }
+
+    &__figure-seven {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            position: absolute;
+            @include bd-figure(74, 74, 32, 148);
+            box-shadow: $box-shadow-color;
+            border-radius: 0 0 0 35px;
+
+            @media screen and (min-width: 1440px) {
+                @include bd-figure(144, 144, 30, 290);
+                border-radius: 0 0 0 72px;
+            }
+        }
+    }
+
+    &__figure-eight {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            position: absolute;
+            @include bd-figure(74, 74, 662, 148);
+            box-shadow: $box-shadow-color;
+            border-radius: 25px 0;
+
+            @media screen and (min-width: 1440px) {
+                @include bd-figure(144, 144, 1264, 290);
+                border-radius: 72px 0;
+            }
+        }
+    }
+
+    &__figure-nine {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            position: absolute;
+            @include bd-figure(74, 74, 106, 222);
+            box-shadow: $box-shadow-color;
+            border-radius: 0 0 35px 0;
+
+            @media screen and (min-width: 1440px) {
+                @include bd-figure(144, 144, 174, 434);
+                border-radius: 0 0 72px 0;
+            }
+        }
+    }
+
+    &__link-tablet {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            width: 74px;
+            height: 74px;
+            align-items: center;
+            justify-content: center;
+            fill: 2B2B2B;
+            transition: fill 250ms $cubic-bezier;
+        }
+
+        @media screen and (min-width: 1440px) {
+            display: none;
+        }
+    }
+
+    &__link-desktop {
+        display: none;
+
+        @media screen and (min-width: 1440px) {
+            display: flex;
+            width: 144px;
+            height: 144px;
+            align-items: center;
+            justify-content: center;
+            fill: $second-font-color;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    &__link-tablet:hover,
+    &__link-tablet:focus,
+    &__link-desktop:hover,
+    &__link-desktop:focus {
+        fill: $svg-color;
+    }
+
+    &__figure-ten {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            position: absolute;
+            @include bd-figure(74, 74, 589, 222);
+            box-shadow: $box-shadow-color;
+            border-radius: 0 0 0 35px;
+
+            @media screen and (min-width: 1440px) {
+                @include bd-figure(144, 144, 1120, 434);
+                border-radius: 0 0 72px 0;
+            }
+        }
+    }
+
+    &__figure-lam {
+        display: none;
+        border-radius: 72px 72px 0 0;
+        filter: $drop-shadow-color;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            position: absolute;
+            @include bd-figure(74, 74, 662, 222);
+        }
+
+        @media screen and (min-width: 1440px) {
+            @include bd-figure(144, 144, 1264, 434);
+        }
+    }
+
+    &__figure-print {
+        display: none;
+        border-radius: 72px;
+        filter: $drop-shadow-color;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            position: absolute;
+            @include bd-figure(74, 74, 32, 284);
+        }
+
+        @media screen and (min-width: 1440px) {
+            @include bd-figure(144, 144, 30, 555);
+        }
+    }
+
+    &__figure-thirteen {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            position: absolute;
+            @include bd-figure(74, 64, 663, 294);
+            transform: rotate(180deg);
+            box-shadow: $box-shadow-color;
+            border-radius: 0 35px 0 0;
+
+            @media screen and (min-width: 1440px) {
+                @include bd-figure(144, 124, 1264, 578);
+                border-radius: 0 72px 0 0;
+            }
+        }
+    }
+
+    &__figure-fourteen {
+        position: absolute;
+        @include bd-figure(74, 74, -29, 221);
+        box-shadow: $box-shadow-color;
+        border-radius: 0 0 35px 0;
+
+        @media screen and (min-width: 768px) {
+            @include bd-figure(74, 74, 32, 358);
+        }
+
+        @media screen and (min-width: 1440px) {
+            @include bd-figure(110, 144, 30, 700);
+            border-radius: 0 0 72px 0;
+        }
+    }
+}

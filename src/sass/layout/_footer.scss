@@ -1,0 +1,40 @@
+.footer {
+    background-color: $footer-bg-color;
+    padding: 40px 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    // @include mobile {
+    //     max-width: 480px;
+    // }
+    //      @include tablet {
+    //          max-width: 768px;
+    //      }
+    //               @include desktop {
+    //                   max-width: 1440px;
+    //               }
+}
+
+.footer__post {
+    margin-bottom: 16px;
+}
+
+.footer__logo {
+    margin-right: 277px;
+}
+
+.footer__list-nav {
+    margin-right: 103px;
+}
+
+.footer__social {
+    margin-right: 163px;
+}
+.footer__address {
+}
