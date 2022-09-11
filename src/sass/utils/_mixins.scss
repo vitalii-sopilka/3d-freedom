@@ -42,10 +42,3 @@
   font-size: $fs + px;
   line-height: $lh;
 }
-
-@mixin bd-figure($w, $h, $l, $t) {
-  width: $w + px;
-  height: $h + px;
-  left: $l + px;
-  top: $t + px;
-}
