@@ -68,15 +68,14 @@
   &__picture {
     max-width: 280px;
     max-height: 171px;
+    border-radius: 15px;
     @media screen and (min-width: 768px) {
       max-width: 336px;
       max-height: 158px;
-      border-radius: 15px;
     }
     @media screen and (min-width: 1440px) {
       min-width: 555px;
       min-height: 400px;
-      border-radius: 15px;
     }
   }
   &__box {
@@ -97,14 +96,13 @@
     }
 
     & :first-child {
+      margin-bottom: 16px;
       @media screen and (min-width: 768px) {
         margin-bottom: 0;
       }
-      @media screen and (min-width: 1440px) {
-        margin-bottom: 16px;
-      }
     }
     & :nth-child(2) {
+      margin-bottom: 40px;
       @media screen and (min-width: 768px) {
         margin-bottom: 0;
       }
