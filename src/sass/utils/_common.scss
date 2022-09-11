@@ -43,6 +43,10 @@ img {
   overflow: hidden;
 }
 
+.scroll {
+  overflow: scroll;
+}
+
 .container {
   width: 100%;
   padding: 0 20px;
@@ -59,7 +63,7 @@ img {
   }
 }
 
-// этот миксины нужно удалить из всех мест где он применяется---
+// этот миксин нужно удалить из всех мест где он применяется---
 @mixin titleFonts($fs) {
   font-weight: 700;
   font-size: $fs;
@@ -93,3 +97,18 @@ a {
   text-decoration: none;
 }
 
+/* Шрифт по умолчанию */
+.page {
+  font-family: 'Caviar Dreams';
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: $second-font-color;
+}
+
+/* Сброс стилей кнопок */
+button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
