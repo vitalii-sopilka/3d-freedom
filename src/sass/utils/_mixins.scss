@@ -36,7 +36,7 @@
   top: $t + px;
 }
 
-@mixin font($ff, $fw, $fs, $lh, ) {
+@mixin font($ff, $fw, $fs, $lh) {
   font-family: $ff;
   font-weight: $fw;
   font-size: $fs + px;
@@ -48,11 +48,4 @@
   height: $h + px;
   left: $l + px;
   top: $t + px;
-}
-
-@mixin font($ff, $fw, $fs, $lh, ) {
-  font-family: $ff;
-  font-weight: $fw;
-  font-size: $fs + px;
-  line-height: $lh;
 }
