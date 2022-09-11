@@ -1,0 +1,74 @@
+.gellery__grid {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-gap: 24px;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: $tablet) {
+  .gellery__grid {
+    grid-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      gallery__grid-item-1 gallery__grid-item-2
+      gallery__grid-item-3 gallery__grid-item-4;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .gellery__grid {
+    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      gallery__grid-item-1 gallery__grid-item-2
+      gallery__grid-item-3 gallery__grid-item-4;
+  }
+}
+
+.gallery__grid-item-1 {
+  grid-template-areas: gallery__grid-item-1;
+}
+.gallery__grid-item-2 {
+  grid-template-areas: gallery__grid-item-2;
+}
+.gallery__grid-item-3 {
+  grid-template-areas: gallery__grid-item-3;
+}
+.gallery__grid-item-4 {
+  grid-template-areas: gallery__grid-item-4;
+}
+
+.gellery__pic {
+  @include desktop {
+    max-width: 555px;
+    height: auto;
+  }
+}
+.gallery__title {
+  font-family: 'Cera Pro';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #487996;
+  @media screen and (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+
+.gallery__foto-title {
+  font-family: 'Cera Pro';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #487996;
+  max-width: 280px;
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 23px;
+    max-width: 500px;
+  }
+}
