@@ -36,6 +36,13 @@
 .gallery__grid-item-4 {
   grid-template-areas: gallery__grid-item-4;
 }
+
+.gellery__pic {
+  @include desktop {
+    max-width: 555px;
+    height: auto;
+  }
+}
 .gallery__title {
   font-family: 'Cera Pro';
   font-weight: 700;

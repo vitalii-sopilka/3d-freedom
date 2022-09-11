@@ -1,8 +1,8 @@
 /* MY CSS */
 /*  */
 
-.more-photos {
-}
+// .more-photos {
+// }
 
 .grid-cards {
   width: 100%;
@@ -12,11 +12,11 @@
   grid-template-columns: repeat(5, 200px);
   /* grid-template-rows: repeat(4, 200px); */
   grid-auto-rows: min-content;
-  grid-template-areas: 
-    "item1 item1 item2 item2 item3"
-    "item4 item5 item5 item6 item6"
-    "item7 item7 item8 item8 item9"
-    "item10 item11 item11 item12 item12";
+  grid-template-areas:
+    'item1 item1 item2 item2 item3'
+    'item4 item5 item5 item6 item6'
+    'item7 item7 item8 item8 item9'
+    'item10 item11 item11 item12 item12';
 }
 
 .item1 {
