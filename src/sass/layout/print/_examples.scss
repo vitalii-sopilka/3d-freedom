@@ -1,0 +1,170 @@
+.print {
+    // position: relative;
+     margin-bottom: 35px;
+}
+
+.print__list {
+    // flex-basis: calc((100% - 20px) / 2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @media screen and (max-width: 767px) {
+        width: 280px;
+      }
+}
+
+.print__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    color: #487996;
+    // font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.25;
+
+        @media screen and (min-width: $tablet) {
+                font-size: 14px;
+                    line-height: 1.28;
+                    justify-content: left;
+
+                        font-size: 36px;
+                        line-height: 1.25;
+            }
+
+        @media screen and (min-width: $desktop) {
+                font-size: 18px;
+                   line-height: 1.27;
+                   justify-content: left;
+                   margin-left: 149px;
+
+                font-size: 48px;
+                    line-height: 1.25;
+            }        
+}
+
+.print__item {
+    width: 130px;
+    // height: 100%;
+    // margin-bottom: 20px;
+background-color: #FFFFFF;
+    background-size: 90px 74px;
+    opacity: 0.8;
+    box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
+    border-radius: 50px 0px;
+
+    @media screen and (min-width: $tablet) {
+           width: 152px;
+        }
+            //  @media screen and (min-width: $desktop) {
+            //         width: 320px;
+            //     }
+        
+}
+
+.icon-pic {
+    padding: 27px 23px 27px 17px;
+
+    @media screen and (min-width: $tablet) {
+            padding: 31px 27px 32px 20px;
+        }
+
+                 @media screen and (min-width: $desktop) {
+                    padding: 63px 40px 51px 40px;
+                 }
+}
+
+.icon-maket {
+    padding: 38px 12px 27px 17px;
+
+    @media screen and (min-width: $tablet) {
+            padding: 44px 14px 31px 20px;
+        }
+
+                 @media screen and (min-width: $desktop) {
+                     padding: 84px 40px 52px 40px;
+                 }
+}
+
+.icon-dekor {
+    padding: 31px 43px 27px 44px;
+
+    @media screen and (min-width: $tablet) {
+            padding: 36px 50px 32px 50px;
+        }
+
+                 @media screen and (min-width: $desktop) {
+                     padding: 40px 85px 52px 85px;
+                 }
+}
+
+.icon-3D-coub {
+    padding: 24px 23px 10px 23px;
+
+    @media screen and (min-width: $tablet) {
+            padding: 27px 27px 18px 27px;
+        }
+
+                 @media screen and (min-width: $desktop) {
+                     padding: 40px 40px 23px 40px;
+                 }
+}
+
+.img {
+    margin-bottom: 17px;
+    // width: 90px;
+    // height: 74px;    
+    @media screen and (min-width: $tablet) {
+            margin-bottom: 19px;
+        }
+}
+
+.img-3D {
+    margin-bottom: 9px;
+    @media screen and (min-width: $tablet) {
+            margin-bottom: 10px;
+        }
+
+                 @media screen and (min-width: $desktop) {
+                    margin-bottom: 20px;
+                 }
+}
+
+// .produkt {
+//     position: absolute;
+//     width: 100%;
+//     margin-bottom: 27px;
+// }
+
+.produkt__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 180px;
+// font-family: 'Cera Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+text-align: center;
+
+color: #487996;
+
+text-align: center;
+text-transform: uppercase;
+}
+
+//  @media screen and (max-width: 767px) {
+//      max-width: $mobile;
+//  }
+
+//  @media screen and (min-width: $tablet) {
+//      width: $tablet;
+//      padding: 0 32px;
+//  }
+
+//  @media screen and (min-width: $desktop) {
+//      width: $desktop;
+//  }

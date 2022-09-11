@@ -3,13 +3,13 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@mixin titleFonts($fs) {
-  font-weight: 700;
-  font-size: $fs;
-  line-height: 1.25;
-  color: $main-font-color;
-  text-transform: uppercase;
-}
+// @mixin titleFonts($fs) {
+//   font-weight: 700;
+//   font-size: $fs;
+//   line-height: 1.25;
+//   color: $main-font-color;
+//   text-transform: uppercase;
+// }
 
 @mixin mobile {
   @media screen and (min-width:480) {
@@ -36,21 +36,7 @@
   top: $t + px;
 }
 
-@mixin font($ff, $fw, $fs, $lh, ) {
-  font-family: $ff;
-  font-weight: $fw;
-  font-size: $fs + px;
-  line-height: $lh;
-}
-
-@mixin bd-figure($w, $h, $l, $t) {
-  width: $w + px;
-  height: $h + px;
-  left: $l + px;
-  top: $t + px;
-}
-
-@mixin font($ff, $fw, $fs, $lh, ) {
+@mixin font($ff, $fw, $fs, $lh) {
   font-family: $ff;
   font-weight: $fw;
   font-size: $fs + px;

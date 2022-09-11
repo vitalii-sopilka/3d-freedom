@@ -1,23 +1,18 @@
 <section class="services">
+    <div class="container services__box">
+        <div class="services__rectangle__primary"></div>
+        <div class="services__rectangle__secondary"></div>
+        <div class="services__rectangle__third"></div>
+        <div class="services__rectangle__fourth"></div>
+    <h2 class="services__title visually-hidden">3D-ДРУК</h2>
     <ul class="services__list">
         <div class="services__container">
         <li class="services__item">
-            <!-- <div class="services__overlay"></div> -->
-            <picture>
-                <source
-                srcset="/src/images/pic/print/print-desktop-1x.jpg,
-                /src/images/pic/print/print-desktop-2x.jpg 2x"
-                media="(min-width 1200px)">
-                <source
-                srcset="/src/images/pic/print/print-tablet-1x.jpg 1x,
-                /src/images/pic/print/print-tablet-2x.jpg 2x"
-                media="(min-width 768px)">
-                <source
-                srcset="/src/images/pic/print/print-mob-1x.jpg 1x,
-                /src/images/pic/print/print-mob-2x.jpg 2x"
-                media="(max-width 767px)">
-                <img src="/src/images/pic/print/print-desktop-1x.jpg" alt="print">
-            </picture>
+        <img class="services__print"
+          srcset="/src/images/pic/print/print-desktop-1x.jpg,
+          /src/images/pic/print/print-desktop-2x.jpg 2x"
+          src="/src/images/pic/print/print-desktop-1x.jpg" alt="print" width="280px"
+        />
     <p class="services__text">
     <span class="services__options">3D-ДРУК</span>
     - ми використовуємо FDM технологію друку. Вона представляє собою пошарове формування об'єкта за допомогою 3D принтера.
@@ -33,21 +28,11 @@
         </div>
         <div class="services__container">
         <li class="services__item">
-            <picture>
-                <source
-                srcset="/src/images/pic/print/modeling-desktop-1x.jpg 1x,
-                /src/images/pic/print/modeling-desktop-2x.jpg 2x"
-                media="(min-width 1200px)">
-                <source
-                srcset="/src/images/pic/print/modeling-tablet-1x.jpg 1x,
-                /src/images/pic/print/modeling-tablet-2x.jpg 2x"
-                media="(min-width 768px)">
-                <source
-                srcset="/src/images/pic/print/modeling-mob-1x.jpg 1x,
-                /src/images/pic/print/modeling-mob-2x.jpg 2x"
-                media="(max-width 767px)">
-                <img src="/src/images/pic/print/modeling-desktop-1x.jpg" alt="modeling">
-            </picture>
+            <img class="services__modeling"
+          srcset="/src/images/pic/print/modeling-desktop-1x.jpg,
+          /src/images/pic/print/modeling-desktop-2x.jpg 2x"
+          src="/src/images/pic/print/modeling-desktop-1x.jpg" alt="modeling" width="280px"
+        />
     <p class="services__text">
     <span class="services__options">3D-МОДЕЛЮВАННЯ</span>
     - це процес розробки математичного уявлення будь-якої поверхні об'єкта в трьох вимірах за допомогою
@@ -64,11 +49,17 @@
         </div>
         <div class="services__container">
         <li class="services__item">
-            <picture>
+            <img class="services__scaning"
+          srcset="/src/images/pic/print/scaning-desktop-1x.jpg,
+          /src/images/pic/print/scaning-desktop-2x.jpg 2x"
+          src="/src/images/pic/print/scaning-desktop-1x.jpg" alt="scaning" width="280px"
+        />
+            <!-----------------------------PICTURE-TEST------------------------------------------->
+            <!-- <picture class="services__picture">
                 <source
                 srcset="/src/images/pic/print/scaning-desktop-1x.jpg 1x,
                 /src/images/pic/print/scaning-desktop-2x.jpg 2x"
-                media="(min-width 1200px)">
+                media="(min-width 1440px)">
                 <source
                 srcset="/src/images/pic/print/scaning-tablet-1x.jpg 1x,
                 /src/images/pic/print/scaning-tablet-2x.jpg 2x"
@@ -77,8 +68,8 @@
                 srcset="/src/images/pic/print/scaning-mob-1x.jpg 1x,
                 /src/images/pic/print/scaning-mob-2x.jpg 2x"
                 media="(max-width 767px)">
-                <img src="/src/images/pic/print/scaning-desktop-1x.jpg" alt="scaning">
-            </picture>
+                <img src="/src/images/pic/print/scaning-desktop-1x.jpg" alt="scaning" width="280px">
+            </picture> -->
     <p class="services__text">
     <span class="services__options">3D-СКАНУВАННЯ</span>
     - зняття даних, шляхом аналізу форми предмета і на основі отриманих даних створення її 3D-моделі.
@@ -90,4 +81,5 @@
         </li>
     </div>
     </ul>
+</div>
     </section>

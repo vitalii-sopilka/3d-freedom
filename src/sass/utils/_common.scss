@@ -39,6 +39,7 @@ textarea {
 
 body {
   font-style: normal;
+  background-color: #DCE1F0;
 }
 
 img {
@@ -49,6 +50,10 @@ img {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.scroll {
+  overflow: scroll;
 }
 
 .container {
@@ -67,7 +72,7 @@ img {
   }
 }
 
-// этот миксины нужно удалить из всех мест где он применяется---
+// этот миксин нужно удалить из всех мест где он применяется---
 @mixin titleFonts($fs) {
   font-weight: 700;
   font-size: $fs;
@@ -99,4 +104,33 @@ img {
 
 a {
   text-decoration: none;
+}
+
+/* Шрифт по умолчанию */
+.page {
+  font-family: 'Caviar Dreams';
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: $second-font-color;
+}
+
+/* Сброс стилей кнопок */
+button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
