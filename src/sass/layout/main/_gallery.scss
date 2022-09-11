@@ -1,46 +1,48 @@
-.gellery__grid {
+.gallery {
+  padding-bottom: 40px;
+}
+.gallery__grid {
   display: grid;
   width: 100%;
   height: auto;
   grid-gap: 24px;
-  grid-template-columns: 1fr;
+  position: relative;
+  z-index: 99;
+}
+@media screen and (min-width: $mobile) {
+  .gallery__grid {
+    grid-template-columns: 1fr;
+  }
 }
 @media screen and (min-width: $tablet) {
-  .gellery__grid {
+  .gallery__grid {
     grid-gap: 32px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 336px);
     grid-template-areas:
       gallery__grid-item-1 gallery__grid-item-2
       gallery__grid-item-3 gallery__grid-item-4;
   }
 }
 @media screen and (min-width: $desktop) {
-  .gellery__grid {
+  .gallery__grid {
+    max-width: 1440px;
     grid-gap: 40px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      gallery__grid-item-1 gallery__grid-item-2
-      gallery__grid-item-3 gallery__grid-item-4;
+    grid-template-columns: repeat(2, 555px);
   }
 }
 
-.gallery__grid-item-1 {
-  grid-template-areas: gallery__grid-item-1;
-}
-.gallery__grid-item-2 {
-  grid-template-areas: gallery__grid-item-2;
-}
-.gallery__grid-item-3 {
-  grid-template-areas: gallery__grid-item-3;
-}
-.gallery__grid-item-4 {
-  grid-template-areas: gallery__grid-item-4;
-}
+.gallery__foto {
+  max-width: 320px;
 
-.gellery__pic {
-  @include desktop {
-    max-width: 555px;
+  @media screen and (min-width: $mobile) {
+    max-width: 480px;
     height: auto;
+  }
+  @media screen and (min-width: $tablet) {
+    max-width: 100%;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 100%;
   }
 }
 .gallery__title {
@@ -54,6 +56,8 @@
     line-height: 45px;
   }
   @media screen and (min-width: $desktop) {
+    margin-top: 20px;
+    margin-bottom: 60px;
     font-size: 48px;
     line-height: 60px;
   }
@@ -71,4 +75,108 @@
     line-height: 23px;
     max-width: 500px;
   }
+}
+
+.gallery {
+  &__figure-one {
+    display: none;
+    @media screen and (min-width: $mobile) {
+      display: block;
+      position: absolute;
+      @include bd-figure(74, 74, 124, 910);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 25px 0px;
+      background-color: #487996;
+    }
+    @media screen and (min-width: 768px) {
+      display: block;
+      position: absolute;
+      @include bd-figure(74, 74, 60, 720);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 25px 0px;
+    }
+    @media screen and (min-width: $desktop) {
+      display: block;
+      position: absolute;
+      @include bd-figure(141, 161, 88, 1244);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 72px 0px;
+      // background-color: black;
+    }
+  }
+  &__figure-two {
+    display: none;
+    @media screen and (min-width: $mobile) {
+      display: block;
+      position: absolute;
+      @include bd-figure(74, 74, 124, 910);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 72px;
+      background-color: #3604ff;
+    }
+    @media screen and (min-width: 768px) {
+      display: block;
+      position: absolute;
+      @include bd-figure(74, 74, 691, 578);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 035px 0px 35px 0px;
+    }
+    @media screen and (min-width: $desktop) {
+      display: block;
+      position: absolute;
+      @include bd-figure(143, 144, 1340, 1036);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 72px 0px 0px 0px;
+      // background-color: rgb(255, 12, 12);
+    }
+  }
+  &__figure-three {
+    display: none;
+    @media screen and (min-width: $mobile) {
+      display: block;
+      position: absolute;
+      @include bd-figure(74, 74, 124, 910);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 0px 25px 0px 25px;
+      background-color: #ffcd04;
+    }
+    @media screen and (min-width: 768px) {
+      display: block;
+      position: absolute;
+      @include bd-figure(74, 74, 740, 657);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 72px;
+    }
+    @media screen and (min-width: $desktop) {
+      display: block;
+      position: absolute;
+      @include bd-figure(143, 144, 1440, 1178);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 72px;
+      // background-color: rgb(0, 254, 131);
+    }
+  }
+  &__figure-for {
+    display: none;
+    @media screen and (min-width: $desktop) {
+      display: block;
+      position: absolute;
+      @include bd-figure(144, 144, 1324, 1614);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 72px;
+    }
+  }
+}
+.gallery__tank-mini {
+  border-radius: 72px;
 }
