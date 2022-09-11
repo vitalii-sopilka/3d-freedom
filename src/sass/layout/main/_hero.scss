@@ -1,5 +1,4 @@
 .hero {
-    position: relative;
     padding-bottom: 40px;
 
     @media screen and (min-width: 768px) {
@@ -9,6 +8,11 @@
     @media screen and (min-width: 1440px) {
         padding-bottom: 120px
     }
+
+&__container{
+    position: relative;
+
+}
 
     &__title {
         margin: 0 auto 32px auto;
