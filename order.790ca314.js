@@ -1,0 +1,2 @@
+!function(){var e={openMenuBtn:document.querySelector(".js-open-menu"),closeMenuBtn:document.querySelector(".js-close-menu"),menu:document.querySelector(".menu"),body:document.querySelector("body"),menuList:document.querySelector(".menu__list")};function n(){e.menu.classList.toggle("is-hidden"),e.body.classList.toggle("scroll"),e.body.classList.toggle("scroll")}e.openMenuBtn.addEventListener("click",n),e.closeMenuBtn.addEventListener("click",n),e.menuList.addEventListener("click",(function(){e.menu.classList.add("is-hidden")}))}();
+//# sourceMappingURL=order.790ca314.js.map
