@@ -10,44 +10,51 @@ img{
   height: auto;
 }
     
-  .link{
+.link{
   list-style: none;
   text-decoration: none;
 }
 
-.services{
-position: relative;}
-  
-  .services__container {
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
+.services__box{
+  position: relative;}  
+
+.services__container {
   margin-bottom: 55px;  
 }
 
-  .services__title{
+.services__title{
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
-  .services__item{
+.services__item{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
   
-  .services__picture{
-  display: block;
+.services__print{
   margin-bottom: 23px;
+  border-radius: 55px 0;
 }
-  
-  .services__options{
+
+.services__modeling{
+  margin-bottom: 23px;
+  border-radius: 60px 0;
+}
+
+.services__scaning{
+  margin-bottom: 23px;
+  border-radius: 58px 0;
+}
+
+.services__options{
   font-weight: 700;
   color: $main-font-color;
 }
     
-  .services__text{
+.services__text{
   margin-bottom: 16px;
   font-family: $fontCeraPro;
   font-weight: 300;
@@ -56,7 +63,7 @@ position: relative;}
   color: $second-font-color;
 }
   
-  .services__text__end{
+.services__text__end{
   margin-bottom: 24px;
   font-style: normal;
   font-weight: 300;
@@ -66,7 +73,7 @@ position: relative;}
 }
   
   
-  .button{
+.button{
   cursor: pointer;
   background: $footer-bg-color;
   box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #FFFFFF;
@@ -83,45 +90,45 @@ position: relative;}
 }
 
 .services__rectangle__primary{
-position: absolute;
-left: 270px;
-top: 548px;
-width: 73px;
-height: 73px;
-color: $effects-bg-color;
-border-radius: 0 25;
-box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  right: -25px;
+  top: 548px;
+  width: 73px;
+  height: 73px;
+  color: $effects-bg-color;
+  border-radius: 0 25;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
 }
 
 .services__rectangle__secondary{
-position: absolute;
-top: 585px;
-left: -20px;
-width: 73px;
-height: 73px;
-color: $effects-bg-color;
-box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-border-radius: 0px 0px 0px 35px;
+  position: absolute;
+  top: 585px;
+  left: -20px;
+  width: 73px;
+  height: 73px;
+  color: $effects-bg-color;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 0px 35px;
 }
 
 .services__rectangle__third{
-position: absolute;
-top: 105px;
-left: 265px;
-width: 73px;
-height: 73px;
-color: $effects-bg-color;
-box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-border-radius: 72px;
+  position: absolute;
+  top: 105px;
+  right: -20px;
+  width: 73px;
+  height: 73px;
+  color: $effects-bg-color;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 72px;
 }
 
 .services__rectangle__fourth{
-position: absolute;
-top: 163px;
-left: -20px;
-width: 73px;
-height: 73px;
-color: $effects-bg-color;
-box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-border-radius: 25px 0px;
-  }
+  position: absolute;
+  top: 163px;
+  left: -20px;
+  width: 73px;
+  height: 73px;
+  color: $effects-bg-color;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
+}
