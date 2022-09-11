@@ -28,28 +28,14 @@
     max-width: 1440px;
     grid-gap: 40px;
     grid-template-columns: repeat(2, 555px);
-    grid-template-areas:
-      gellery__grid-item-1 gellery__grid-item-2
-      gellery__grid-item-3 gellery__grid-item-4;
   }
 }
 
-.gellery__grid-item-1 {
-  grid-template-areas: gellery__grid-item-1;
-}
-.gellery__grid-item-2 {
-  grid-template-areas: gellery__grid-item-2;
-}
-.gellery__grid-item-3 {
-  grid-template-areas: gellery__grid-item-3;
-}
-.gellery__grid-item-4 {
-  grid-template-areas: gellery__grid-item-4;
-}
-
 .gellery__foto {
+  max-width: 320px;
+
   @media screen and (min-width: $mobile) {
-    max-width: 100vw;
+    max-width: 480px;
     height: auto;
   }
   @media screen and (min-width: $tablet) {
@@ -94,7 +80,15 @@
 .gellery {
   &__figure-one {
     display: none;
-
+    @media screen and (min-width: $mobile) {
+      display: block;
+      position: absolute;
+      @include bd-figure(74, 74, 124, 910);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 25px 0px;
+      background-color: #487996;
+    }
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
@@ -110,12 +104,20 @@
       box-shadow: $box-shadow-color;
       z-index: 1;
       border-radius: 72px 0px;
-      background-color: black;
+      // background-color: black;
     }
   }
   &__figure-two {
     display: none;
-
+    @media screen and (min-width: $mobile) {
+      display: block;
+      position: absolute;
+      @include bd-figure(74, 74, 124, 910);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 72px;
+      background-color: #3604ff;
+    }
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
@@ -131,12 +133,20 @@
       box-shadow: $box-shadow-color;
       z-index: 1;
       border-radius: 72px 0px 0px 0px;
-      background-color: rgb(255, 12, 12);
+      // background-color: rgb(255, 12, 12);
     }
   }
   &__figure-three {
     display: none;
-
+    @media screen and (min-width: $mobile) {
+      display: block;
+      position: absolute;
+      @include bd-figure(74, 74, 124, 910);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 0px 25px 0px 25px;
+      background-color: #ffcd04;
+    }
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
@@ -152,7 +162,7 @@
       box-shadow: $box-shadow-color;
       z-index: 1;
       border-radius: 72px;
-      background-color: rgb(0, 254, 131);
+      // background-color: rgb(0, 254, 131);
     }
   }
   &__figure-for {
@@ -167,6 +177,6 @@
     }
   }
 }
-.gellery__tank-mini{
+.gellery__tank-mini {
   border-radius: 72px;
 }
