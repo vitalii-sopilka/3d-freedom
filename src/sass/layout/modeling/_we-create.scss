@@ -1,0 +1,150 @@
+.modeling__create-title {
+  font-family:$fontCeraPro;
+  color: $main-font-color;
+  font-size: 36px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+      font-family:$fontCeraPro;
+      font-size: 16px;
+      line-height: 1.25;
+      font-weight: 700;
+      max-width: 280px;
+      text-align: left;
+      margin-bottom: 16px;
+      }
+
+  @media screen and (min-width: $tablet) and (max-width: 1439px) {
+      font-family:$fontCeraPro;
+      font-size: 24px;
+      line-height: 1.25;
+      font-weight: 700;
+      max-width: 648px;
+      text-align: left;
+      margin-bottom: 24px;
+      }
+
+  @media screen and (min-width: $desktop) {
+      margin-bottom: 40px;
+      }
+  }
+
+.modeling__create-list {
+  @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
+      }
+
+  @media screen and (min-width: $tablet) and (max-width: 1439px) {
+      margin-bottom: 60px;
+      }
+
+  @media screen and (min-width: $desktop) {
+      margin-bottom: 80px;
+      }
+  }
+  
+.modeling__imeges__pic {
+  border-bottom-left-radius: 50px;
+  }
+  
+.modeling__pic {
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  }
+
+.modeling__container-grid {
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+      display: grid;
+      column-gap: 20px;
+      row-gap: 16px;
+      justify-content: center;
+      grid-template-columns: repeat(2, auto);
+      }
+
+  @media screen and (min-width: $tablet) and (max-width: 1439px) {
+      display: grid;
+      gap: 32px;
+      grid-template-columns: repeat(4, 152px);
+      }
+
+      @media screen and (min-width: $desktop) {
+          display: grid;
+          gap: 32px;
+          grid-template-columns: repeat(4, 320px);
+      }
+  } 
+      
+.modeling__create-btn {
+  display: block;
+  width: 280px;
+  border-radius: 31px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  color: $main-font-color;
+  background-color: #E5E5E5;
+  &:hover,
+  &:focus {
+      box-shadow: -5px -5px 10px rgba(255, 255, 255, 1), 5px 5px 10px rgba(72, 121, 150, 0.25),
+      10px 10px 20px rgba(72, 121, 150, 0.1), -10px -10px 20px rgba(255, 255, 255, 1); 
+      }
+  }
+
+.modeling__create-dekor {
+  width: 74px;
+  height: 74px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: absolute;
+  right: -4%;
+  background-color: $effects-bg-color;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+
+  @media screen and (min-width: $tablet) {
+      display: none;
+      }
+}
+
+.modeling__create-dekor--second {
+  width: 74px;
+  height: 74px;
+  border-bottom-left-radius: 25px;
+  position: absolute;
+  right: 83%;
+  bottom: 72%;
+  z-index: -3;
+  background-color: $effects-bg-color;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+
+  @media screen and (min-width: $tablet) {
+      display: none;
+      }
+}
+
+.modeling__create-dekor--third {
+  width: 74px;
+  height: 74px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: absolute;
+  bottom: 5%;
+  right: 1%;
+  z-index: -3;
+  background-color: $effects-bg-color;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+
+  @media screen and (min-width: $tablet) {
+      display: none;
+      }
+}
+
+.conteiner__relative {
+  position: relative;
+}
