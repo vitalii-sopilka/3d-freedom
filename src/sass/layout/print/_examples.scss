@@ -1,6 +1,7 @@
 .print {
     // position: relative;
-     margin-bottom: 35px;
+    margin-top: 32px;
+    margin-bottom: 35px;
 }
 
 .print__list {
@@ -58,10 +59,9 @@ background-color: #FFFFFF;
     @media screen and (min-width: $tablet) {
            width: 152px;
         }
-            //  @media screen and (min-width: $desktop) {
-            //         width: 320px;
-            //     }
-        
+             @media screen and (min-width: $desktop) {
+                    width: 320px;
+                }        
 }
 
 .icon-pic {
@@ -119,6 +119,14 @@ background-color: #FFFFFF;
     @media screen and (min-width: $tablet) {
             margin-bottom: 19px;
         }
+
+                @media screen and (min-width: $tablet) {
+                    width: 100%;
+                }
+        
+                @media screen and (min-width: $desktop) {
+                    width: 100%;
+                }
 }
 
 .img-3D {
@@ -131,31 +139,28 @@ background-color: #FFFFFF;
                     margin-bottom: 20px;
                  }
 }
-
 // .produkt {
 //     position: absolute;
 //     width: 100%;
 //     margin-bottom: 27px;
 // }
-
 .produkt__title {
     display: flex;
     justify-content: center;
     align-items: center;
     // height: 180px;
 // font-family: 'Cera Pro';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 18px;
-text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
 
-color: #487996;
+    color: #487996;
 
-text-align: center;
-text-transform: uppercase;
+    text-align: center;
+    text-transform: uppercase;
 }
-
 //  @media screen and (max-width: 767px) {
 //      max-width: $mobile;
 //  }
