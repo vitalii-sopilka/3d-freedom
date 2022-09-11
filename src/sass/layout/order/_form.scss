@@ -110,10 +110,10 @@
     outline: transparent;
     padding: 22px 20px;
     color: rgba(117, 117, 117);
-    height: 120px;
 
     @media screen and (min-width: 768px) {
       @include font($fontCeraPro, 400, 16, 1.25);
+      height: 199px;
     }
     @media screen and (min-width: 1440px) {
       @include font($fontCeraPro, 400, 18, 1.25);
