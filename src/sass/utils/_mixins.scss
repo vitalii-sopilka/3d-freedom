@@ -3,13 +3,13 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@mixin titleFonts($fs) {
-  font-weight: 700;
-  font-size: $fs;
-  line-height: 1.25;
-  color: $main-font-color;
-  text-transform: uppercase;
-}
+// @mixin titleFonts($fs) {
+//   font-weight: 700;
+//   font-size: $fs;
+//   line-height: 1.25;
+//   color: $main-font-color;
+//   text-transform: uppercase;
+// }
 
 @mixin mobile {
   @media screen and (min-width:480) {
