@@ -1,3 +1,6 @@
+.gellery {
+  padding-bottom: 40px;
+}
 .gellery__grid {
   display: grid;
   width: 100%;
@@ -6,7 +9,7 @@
 }
 @media screen and (min-width: $mobile) {
   .gellery__grid {
-    grid-template-columns: 480px;
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (min-width: $tablet) {
@@ -14,8 +17,8 @@
     grid-gap: 32px;
     grid-template-columns: repeat(2, 336px);
     grid-template-areas:
-      gallery__grid-item-1 gallery__grid-item-2
-      gallery__grid-item-3 gallery__grid-item-4;
+      gellery__grid-item-1 gellery__grid-item-2
+      gellery__grid-item-3 gellery__grid-item-4;
   }
 }
 @media screen and (min-width: $desktop) {
@@ -24,31 +27,37 @@
     grid-gap: 40px;
     grid-template-columns: repeat(2, 555px);
     grid-template-areas:
-      gallery__grid-item-1 gallery__grid-item-2
-      gallery__grid-item-3 gallery__grid-item-4;
+      gellery__grid-item-1 gellery__grid-item-2
+      gellery__grid-item-3 gellery__grid-item-4;
   }
 }
 
-.gallery__grid-item-1 {
-  grid-template-areas: gallery__grid-item-1;
+.gellery__grid-item-1 {
+  grid-template-areas: gellery__grid-item-1;
 }
-.gallery__grid-item-2 {
-  grid-template-areas: gallery__grid-item-2;
+.gellery__grid-item-2 {
+  grid-template-areas: gellery__grid-item-2;
 }
-.gallery__grid-item-3 {
-  grid-template-areas: gallery__grid-item-3;
+.gellery__grid-item-3 {
+  grid-template-areas: gellery__grid-item-3;
 }
-.gallery__grid-item-4 {
-  grid-template-areas: gallery__grid-item-4;
+.gellery__grid-item-4 {
+  grid-template-areas: gellery__grid-item-4;
 }
 
-.gellery__pic {
-  @include desktop {
-    max-width: 555px;
+.gellery__foto {
+  @media screen and (min-width: $mobile) {
+    max-width: 480px;
     height: auto;
   }
+  @media screen and (min-width: $tablet) {
+    max-width: 100%;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 100%;
+  }
 }
-.gallery__title {
+.gellery__title {
   font-family: 'Cera Pro';
   font-weight: 700;
   font-size: 24px;
@@ -64,7 +73,7 @@
   }
 }
 
-.gallery__foto-title {
+.gellery__foto-title {
   font-family: 'Cera Pro';
   font-weight: 300;
   font-size: 16px;
