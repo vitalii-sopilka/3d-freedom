@@ -1,26 +1,64 @@
+/* *,
+*::before,
+*::after {
+  outline: 1px solid rgb(250, 195, 175);
+  background-color: rgba(0, 255, 106, 0.1);
+}
+ */
 .header {
-  height: 144px;
-  background-color: #fff;
+  @media (max-width: 767px) {
+    padding-top: 20px;
+  }
+  @media (min-width: $mobile) {
+    height: 74px;
+  }
+  @media (min-width: $tablet) and (max-width: 1439px) {
+    padding-top: 32px;
+  }
+  @media (min-width: $desktop) {
+    height: 144px;
+  }
+  background-color: $main-bg-color;
   &__box {
-    display: flex;
     position: relative;
+    display: flex;
+    @media (max-width: 1439px) {
+      align-items: center;
+      justify-content: space-between;
+    }
   }
   &__logo {
-    margin-top: 40px;
-    margin-right: 258px;
+    z-index: 5;
+    @media (max-width: 767px) {
+      width: 101px;
+      height: 25px;
+    }
+    @media (min-width: $tablet) {
+      width: 125px;
+      height: 31px;
+    }
+    @media (min-width: $desktop) {
+      margin-top: 40px;
+      margin-right: 258px;
+      width: 192px;
+      height: 48px;
+    }
   }
-  &__element-left {
-    position: absolute;
-    width: 144px;
-    height: 144px;
-    left: 291px;
-    top: 0;
-    background-color: #fff;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 72px 72px 0px;
-    /*  transform: rotate(180deg); */
+  &__mob-menu-open-button {
+    display: flex;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    @media (min-width: $desktop) {
+      display: none;
+    }
   }
+
   &__nav {
+    @media (max-width: 1439px) {
+      display: none;
+    }
     margin-right: auto;
   }
   &__nav-list {
@@ -34,12 +72,8 @@
     display: block;
     padding-top: 56px;
     padding-bottom: 67px;
-    font-family: 'Caviar Dreams';
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: 1.16;
-    letter-spacing: 0.01em;
     color: $second-font-color;
   }
   &__drop-menu {
@@ -48,17 +82,18 @@
     margin-bottom: 67px;
   }
   &__nav-btn {
+    width: 80px;
+    height: 21px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index: 1;
-    width: 80px;
-    height: 21px;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    background-color: rgba(255, 255, 255, 0);
+    font-size: 18px;
+    line-height: 1.16;
+    color: $second-font-color;
+
+    background-color: transparent;
   }
   &__drop-container {
     display: flex;
@@ -73,8 +108,8 @@
     height: 114px;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 72px 72px;
-    background-color: #fff;
-    transform: translatey(-100%);
+    background-color: $main-bg-color;
+    transform: translatey(-10%);
     @include trans();
     opacity: 0;
     visibility: hidden;
@@ -96,12 +131,8 @@
   &__drop-link {
     text-align: center;
     display: block;
-    font-family: 'Caviar Dreams';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
-    letter-spacing: 0.01em;
     color: $second-font-color;
   }
   &__drop-icon {
@@ -112,40 +143,34 @@
   &__nav-btn:focus .header__drop-icon {
     transform: rotate(180deg);
   }
-  &__element-right {
-    position: absolute;
-    width: 144px;
-    height: 144px;
-    right: 267px;
-    top: 0;
 
-    background: #fff;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 72px 0px 0px 72px;
-
-    &-link {
-      display: block;
-      font-family: 'Caviar Dreams';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.28;
-      letter-spacing: 0.01em;
-      padding: 57px 54px 69px 59px;
-      color: #bdbdbd;
-      border-radius: 72px 0px 0px 72px;
+  &__contact-list {
+    @media (max-width: 767px) {
+      display: none;
+    }
+    @media (min-width: $tablet) and (max-width: 1439px) {
+      position: absolute;
+      top: -12px;
+      right: 32px;
     }
   }
-
   &__contact-link {
     display: flex;
     align-items: center;
+    @media (min-width: $tablet) and (max-width: 1439px) {
+      gap: 4px;
+    }
     gap: 8px;
-
     &-top {
+      @media (min-width: $tablet) and (max-width: 1439px) {
+        padding: 0 0 5px;
+      }
       padding: 40px 0 5px;
     }
     &-bottom {
+      @media (min-width: $tablet) and (max-width: 1439px) {
+        padding: 5px 0 0;
+      }
       padding: 5px 0 54px;
     }
   }
@@ -154,12 +179,307 @@
     height: 14px;
   }
   &__contact-text {
-    font-family: 'Caviar Dreams';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
-    letter-spacing: 0.01em;
     color: $second-font-color;
   }
+  &__mob-link-container {
+    position: relative;
+    z-index: 5;
+    width: 125px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-left: 25px;
+    width: 101px;
+    height: 25px;
+    @media (min-width: $tablet) {
+      width: 125px;
+      height: 31px;
+    }
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+  &__mob-contact-open-button {
+    @media (min-width: $tablet) {
+      display: none;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+  }
+  &__mob-contact-open-button:focus + .header__speech {
+    transform: translateY(15%);
+    opacity: 100%;
+    visibility: visible;
+    pointer-events: all;
+  }
+  &__speech {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: -44px;
+    width: 162px;
+    height: 82px;
+    padding: 0 6px 0 8px;
+    text-align: center;
+    background-color: $main-bg-color;
+    border-radius: 2px;
+    font-family: 'Cera Pro';
+    font-size: 16px;
+    line-height: 1.25;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    transform: translatey(-50%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    @include trans();
+
+    &:after {
+      content: ' ';
+      position: absolute;
+      left: 50%;
+      top: 9px;
+      width: 0;
+      height: 0;
+      transform: translate(-50%, -100%);
+      border-left: 22px solid transparent;
+      border-right: 22px solid transparent;
+      border-bottom: 20px solid $main-bg-color;
+      border-radius: 2px;
+    }
+    &-first-tel {
+      color: $second-font-color;
+      display: block;
+      padding: 16px 0 5px;
+    }
+    &-second-tel {
+      color: $second-font-color;
+      display: block;
+      padding: 5px 0 16px;
+    }
+    &:hover,
+    &:focus {
+      transform: translateY(15%);
+      opacity: 100%;
+      visibility: visible;
+      pointer-events: all;
+    }
+  }
+  &__lang-link {
+    display: block;
+    font-family: 'Caviar Dreams';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    color: $lang-color;
+    @media (min-width: $tablet) {
+      position: absolute;
+      top: -6px;
+      right: 203px;
+    }
+  }
+
+  &__element-first {
+    position: absolute;
+    z-index: 4;
+    background-color: $main-bg-color;
+    @media (max-width: 767px) {
+      display: none;
+    }
+    @media (min-width: $tablet) {
+      height: 74px;
+      width: 74px;
+      top: -32px;
+      left: 0px;
+      border-radius: 35px 0px 0px 0px;
+    }
+    @media (min-width: $desktop) {
+      height: 144px;
+      width: 144px;
+      left: 0px;
+      top: 0;
+      border-radius: 72px 0px 0px 0px;
+    }
+  }
+  &__element-left {
+    position: absolute;
+    z-index: 4;
+    @media (max-width: 767px) {
+      height: 74px;
+      width: 74px;
+      left: 0;
+    }
+    @media (min-width: $tablet) {
+      height: 74px;
+      width: 74px;
+      top: -32px;
+      left: 201px;
+    }
+    @media (min-width: $desktop) {
+      height: 144px;
+      width: 144px;
+      left: 291px;
+      top: 0;
+    }
+
+    background-color: $main-bg-color;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 72px 72px 0px;
+  }
+
+  &__element-right {
+    position: absolute;
+    z-index: 4;
+    @media (max-width: 767px) {
+      height: 74px;
+      width: 74px;
+      right: 0;
+      top: -20px;
+    }
+    @media (min-width: $tablet) {
+      height: 74px;
+      width: 74px;
+      top: -32px;
+      right: 215px;
+    }
+    @media (min-width: $desktop) {
+      height: 144px;
+      width: 144px;
+      right: 267px;
+      top: 0;
+      right: 267px;
+    }
+    background: $main-bg-color;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px 0px 0px 72px;
+  }
+  &__desktop-lang-link {
+    display: none;
+    font-family: 'Caviar Dreams';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    color: $lang-color;
+    @media (min-width: $desktop) {
+      display: block;
+      position: absolute;
+      top: 57px;
+      left: 59px;
+    }
+  }
 }
+/* ------MOB Menu------ */
+/* .current {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #487996;
+}
+
+.menu {
+  position: fixed;
+  top: 112px;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  opacity: 100%;
+  visibility: visible;
+  pointer-events: all;
+  @include trans();
+  background-color: white;
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  &__close-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: -92px;
+    @media (min-width: $tablet) {
+      top: -80px;
+    }
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+  }
+  &__container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    overflow: auto;
+
+    @media screen and (min-width: $mobile) {
+      max-width: $mobile;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  &__link {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #487996;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #487996;
+  }
+
+  &__subitem {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__subitem::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 3px 0px;
+    background-color: #487996;
+    align-items: center;
+    margin-right: 18px;
+  }
+
+  &__sublink {
+    font-family: 'Cera Pro';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #487996;
+  }
+
+  &__sublink:hover,
+  &__sublink:focus {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #487996;
+  }
+} */

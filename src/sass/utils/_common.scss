@@ -1,7 +1,13 @@
 // @import '~node_modules/modern-normalize/modern-normalize.css';
 
 /* Сброс марджинов для абзацев и заголовков */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -23,14 +29,18 @@ ul {
   margin: 0;
 }
 
-a, button, input, textarea {
+a,
+button,
+input,
+textarea {
   outline: none;
   text-decoration: none;
 }
 
-// body {
-
-// }
+body {
+  font-style: normal;
+  background-color: #dce1f0;
+}
 
 img {
   display: block;
@@ -40,6 +50,10 @@ img {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.scroll {
+  overflow: scroll;
 }
 
 .container {
@@ -58,6 +72,7 @@ img {
   }
 }
 
+// этот миксин нужно удалить из всех мест где он применяется---
 @mixin titleFonts($fs) {
   font-weight: 700;
   font-size: $fs;
@@ -65,6 +80,7 @@ img {
   color: $main-font-color;
   text-transform: uppercase;
 }
+// -----------------------------------
 
 .title {
   @include titleFonts(24px);
@@ -90,3 +106,18 @@ a {
   text-decoration: none;
 }
 
+/* Шрифт по умолчанию */
+.page {
+  font-family: 'Caviar Dreams';
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: $second-font-color;
+}
+
+/* Сброс стилей кнопок */
+button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
