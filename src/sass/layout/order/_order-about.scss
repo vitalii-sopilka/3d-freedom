@@ -16,9 +16,11 @@
 
   &__container {
     margin-bottom: 40px;
+    min-width: 280px;
     @media screen and (min-width: 768px) {
       max-width: $tablet;
       margin-bottom: 40px;
+      min-width: 280px;
     }
 
     @media screen and (min-width: 1440px) {
@@ -26,8 +28,7 @@
       flex-direction: column;
 
       max-width: 1142px;
-      // margin-left: auto;
-      // margin-right: auto;
+
       margin-bottom: 100px;
     }
   }
@@ -100,9 +101,11 @@
     flex-direction: column;
     align-items: center;
     gap: 32px;
+    min-width: 280px;
     @media screen and (min-width: 768px) {
       display: flex;
       flex-direction: row;
+      min-width: 280px;
     }
     @media screen and (min-width: 1440px) {
       display: flex;
@@ -123,12 +126,10 @@
       min-height: 400px;
     }
   }
-  &__box {
-    align-items: flex-end;
-  }
 
   &__text {
     color: $second-font-color;
+
     @include font($fontCeraPro, 400, 16, 1.25);
     @media screen and (min-width: 768px) {
     }
