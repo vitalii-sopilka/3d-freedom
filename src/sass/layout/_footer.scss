@@ -92,6 +92,7 @@
   line-height: 1.25;
   letter-spacing: 0.01em;
   margin-bottom: 24px;
+  color: $second-font-color;
   @media screen and (min-width:768px) {
     align-items: flex-start;
     margin-right: 52px;
@@ -100,13 +101,6 @@
   @media screen and (min-width: 1440px) {
     margin-right: 103px;
     margin-bottom: 0;
-    font-family: 'Cera Pro';
-    font-style: normal;
-    // @include font (400, 16, 1.25 0.01)
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.01em;
   }
 }
 
