@@ -1,4 +1,4 @@
-.cont-order {
+.content-order {
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
@@ -48,30 +48,10 @@
   &__title {
     margin-bottom: 44px;
   }
-  &__field {
-    width: 100%;
-    &:not(:last-child) {
-      margin-bottom: 44px;
-    }
-    &:nth-child(7) {
-      position: relative;
-      margin-bottom: 24px;
-    }
-  }
-  &__label {
-    display: block;
-    margin-bottom: 4px;
-    @include font($fontCeraPro, 400, 16, 1.25);
-    color: $second-font-color;
-    text-transform: capitalize;
-  }
 
-  &__input {
+  &__field {
     position: relative;
-    display: block;
     width: 100%;
-    height: 40px;
-    border: none;
     border-bottom: 1px solid #487996;
     @include font($fontCeraPro, 400, 16, 1.25);
     color: $second-font-color;
@@ -81,16 +61,59 @@
     @media screen and (min-width: 1440px) {
       @include font($fontCeraPro, 400, 18, 1.25);
     }
+    &:hover,
+    &:focus {
+      color: $svg-color;
+      border-color: $svg-color;
+    }
+    &:not(:last-child) {
+      margin-bottom: 44px;
+    }
+    &:nth-child(7) {
+      position: relative;
+      margin-bottom: 24px;
+    }
   }
-  &:hover,
-  &:focus {
+
+  &__input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 24px;
+    border: none;
+    padding-bottom: 4px;
+    cursor: pointer;
     outline: transparent;
-    border-color: $svg-color;
+
+    &::placeholder {
+      color: $second-font-color;
+      @include font($fontCeraPro, 400, 16, 1.25);
+      @media screen and (min-width: 768px) {
+        @include font($fontCeraPro, 400, 16, 1.25);
+      }
+      @media screen and (min-width: 1440px) {
+        @include font($fontCeraPro, 400, 18, 1.25);
+      }
+      &:hover,
+      &:focus {
+        color: $svg-color;
+      }
+    }
   }
-  .feedback__field:hover + &,
-  .feedback__field:focus + & {
-    border-color: $svg-color;
+
+  &__label {
+    display: block;
+    margin-bottom: 4px;
+    @include font($fontCeraPro, 400, 16, 1.25);
+    color: $second-font-color;
+    @media screen and (min-width: 768px) {
+      @include font($fontCeraPro, 400, 16, 1.25);
+    }
+    @media screen and (min-width: 1440px) {
+      @include font($fontCeraPro, 400, 18, 1.25);
+    }
   }
+
   &__text {
     width: 100%;
     height: 199px;
@@ -109,18 +132,16 @@
       @include font($fontCeraPro, 400, 18, 1.25);
       height: 199px;
     }
-    &:focus,
-    &:hover {
+    &:hover,
+    &:focus {
       border-color: $svg-color;
     }
     &::placeholder {
       color: rgba(117, 117, 117, 0.5);
-    }
-    .modal__label:focus & {
-      border: 1px solid var(--accent-color);
-      outline: transparent;
-      font-family: inherit;
-      opacity: 1;
+      &:focus,
+      &:hover {
+        color: $svg-color;
+      }
     }
   }
   &__upload {
@@ -128,8 +149,8 @@
     cursor: pointer;
   }
   &__upload-text {
-    @include font($fontCeraPro, 400, 16, 1.25);
     color: #cdcdcd;
+    @include font($fontCeraPro, 400, 16, 1.25);
     @media screen and (min-width: 768px) {
       @include font($fontCeraPro, 400, 16, 1.25);
     }
@@ -147,6 +168,7 @@
     margin-right: 0;
   }
 }
+
 input [type='file'] {
   display: none;
   position: relative;
@@ -163,8 +185,65 @@ input [type='file'] {
   }
 }
 
-// select {
-//   -webkit-appearance: none;
-//   -moz-appearance: none;
-//   appearance: none;
-// }
+// -------------------КАСТОМНЫЙ СПИСОК
+// -------------------------------------------------------------------------
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  display: none;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: '';
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid;
+  border-radius: 0;
+  border-color: $second-font-color transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent $second-font-color transparent;
+  top: 7px;
+}
+
+.select-items div,
+.select-selected {
+  color: inherit;
+  padding-bottom: 4px;
+  border-color: transparent transparent $second-font-color transparent;
+  cursor: pointer;
+}
+.select-items div {
+  margin-bottom: 3px;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #ffffff;
+
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  color: white;
+  background: rgba(72, 121, 150, 0.5);
+}
+
+.option {
+}
