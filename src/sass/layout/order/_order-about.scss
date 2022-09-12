@@ -3,42 +3,33 @@
   margin-left: auto;
   margin-right: auto;
   padding: 40px 20px 0 20px;
-
   @media screen and (min-width: 768px) {
     max-width: $tablet;
     padding: 40px 32px 0 32px;
   }
-
   @media screen and (min-width: 1440px) {
     max-width: 1142px;
     padding: 40px 0 0 0;
   }
-
   &__container {
     margin-bottom: 40px;
     min-width: 280px;
     @media screen and (min-width: 768px) {
-      max-width: $tablet;
       margin-bottom: 40px;
       min-width: 280px;
     }
-
+  
     @media screen and (min-width: 1440px) {
       display: flex;
       flex-direction: column;
-
       max-width: 1142px;
-
       margin-bottom: 100px;
     }
   }
-
   &__figure-one {
     display: none;
-
     @media screen and (min-width: 768px) {
     }
-
     @media screen and (min-width: 1440px) {
       display: block;
       position: absolute;
@@ -47,7 +38,6 @@
       border-radius: 0px 0px 72px 0px;
     }
   }
-
   &__figure-two {
     display: none;
     @media screen and (min-width: 768px) {
@@ -57,7 +47,6 @@
       @include bd-figure(72, 64, 736, -42);
       border-radius: 0px 0px 0px 72px;
     }
-
     @media screen and (min-width: 1440px) {
       display: block;
       position: absolute;
@@ -66,7 +55,6 @@
       border-radius: 0px 0px 0px 72px;
     }
   }
-
   &__figure-three {
     display: none;
     @media screen and (min-width: 768px) {
@@ -76,7 +64,6 @@
       @include bd-figure(72, 64, 736, -42);
       border-radius: 0px 0px 0px 72px;
     }
-
     @media screen and (min-width: 1440px) {
       display: block;
       position: absolute;
@@ -85,7 +72,6 @@
       border-radius: 72px 72px 72px 72px;
     }
   }
-
   &__title {
     text-align: center;
     margin-bottom: 16px;
@@ -95,7 +81,6 @@
       text-align: start;
     }
   }
-
   &__content {
     display: flex;
     flex-direction: column;
@@ -117,6 +102,9 @@
     max-width: 280px;
     max-height: 171px;
     border-radius: 15px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      min-width: 100%;
+    }
     @media screen and (min-width: 768px) {
       min-width: 336px;
       min-height: 158px;
@@ -129,29 +117,24 @@
 
   &__text {
     color: $second-font-color;
-
+    max-width: 280px;
     @include font($fontCeraPro, 400, 16, 1.25);
     @media screen and (min-width: 768px) {
+      max-width: 100%;
     }
     @media screen and (min-width: 1440px) {
       @include font($fontCeraPro, 400, 18, 1.28);
+      max-width: 100%;
     }
 
     & :first-child {
+  
       margin-bottom: 16px;
       @media screen and (min-width: 768px) {
         margin-bottom: 0;
       }
       @media screen and (min-width: 1440px) {
         margin-bottom: 16px;
-      }
-    }
-    & :nth-child(2) {
-      @media screen and (min-width: 768px) {
-        margin-bottom: 0;
-      }
-      @media screen and (min-width: 1440px) {
-        margin-bottom: 0;
       }
     }
   }
@@ -166,14 +149,15 @@
       top: 247px;
       width: 672px;
       height: 203px;
-      &-first {
+      &-one {
         border-radius: 0px 72px 72px 0px;
         filter: $img-drop-shadow-color;
       }
-      &-second {
+      &-two {
         border-radius: 72px 0px;
         filter: $img-drop-shadow-color;
       }
+
       &-three {
         border-radius: 0px 0px 72px 0px;
         filter: $img-drop-shadow-color;

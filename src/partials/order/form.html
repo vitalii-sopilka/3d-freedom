@@ -30,7 +30,6 @@
       <div class="feedback__field">
         <select class="feedback__input" id="plastic-types" name="type">
           <option value="0">Види пластика</option>
-
           <option value="PLA">PLA (ПЛА)</option>
           <option value="ABS">ABS (АБС)</option>
           <option value="PVA">PVA (ПВА)</option>
@@ -40,6 +39,8 @@
       </div>
       <div class="feedback__field">
         <select class="feedback__input" id="plastic-size" name="size">
+          <h2 class="feedback__title sub-title">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
+
           <option value="0">Якість друку</option>
           <option value="300">300 мікрон</option>
           <option value="200">200 мікрон</option>
@@ -49,6 +50,7 @@
       </div>
       <div class="feedback__field">
         <select class="feedback__input" id="plastic-color" name="color">
+          <h2 class="feedback__title sub-title">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
           <option value="red">Колір</option>
           <option value="red">Червоний</option>
           <option value="blue">Блакитний</option>
@@ -65,10 +67,9 @@
           id="comment-text"
           placeholder="Залишіть своє повідомлення"
         ></textarea>
-
         <label class="feedback__upload">
           <input type="file" />
-          <svg class="icon-paper-clip" width="23.71px" height="20">
+          <svg class="icon-paper-clip" width="24px" height="20">
             <use
               href="./images/pic/order/order-sprint.svg#icon-paper-clip"
             ></use>
@@ -81,7 +82,6 @@
       <button class="button feedback__button" type="submit">Відправити</button>
     </form>
   </section>
-
   <section class="contacts">
     <div class="contacts__container">
       <ul class="contacts__list">
@@ -89,12 +89,12 @@
           <h2 class="sub-title">ТЕЛЕФОНИ</h2>
           <ul class="contacts__item-list">
             <li class="list">
-              <a class="connects__phone link" href="tel:+380657384551">
+              <a class="contacts__phone link" href="tel:+380657384551">
                 +38 (095) -73-84-551</a
               >
             </li>
             <li class="list">
-              <a class="connects__phone link" href="tel:+380980025235">
+              <a class="contacts__phone link" href="tel:+380980025235">
                 +38 (098) -00-25-235</a
               >
             </li>
@@ -103,7 +103,7 @@
         <li class="contacts__item list">
           <h2 class="sub-title">Email</h2>
 
-          <a class="connects__mail link" href="mailto:3dfreedom.info@gmail.com"
+          <a class="contacts__mail link" href="mailto:3dfreedom.info@gmail.com"
             >3dfreedom.info@gmail.com
           </a>
         </li>
@@ -117,22 +117,13 @@
           <li class="time-item list">з 10:00 до 17:00</li>
         </ul>
       </div>
-
       <div class="mosaics">
-        <picture>
-          <source
-            srcset="
-              ./images/pic/order/3-order-mosaics-img-desktop-1x.jpg 1x,
-              ./images/pic/order/3-order-mosaics-img-desktop-2x.jpg 2x
-            "
-            media="(min-width: 1440px)"
-          />
-          <img
-            src="./images/pic/order/3-order-mosaics-img-desktop-1x.jpg"
-            alt=""
-            class="img"
-          />
-        </picture>
+        <div class="mosaics__img mosaics__img-one"></div>
+        <div class="mosaics__img mosaics__img-two"></div>
+        <div class="mosaics__img mosaics__img-three"></div>
+        <div class="mosaics__img mosaics__img-four"></div>
+        <div class="mosaics__img mosaics__img-five"></div>
+        <div class="mosaics__img mosaics__img-six"></div>
       </div>
     </div>
   </section>
