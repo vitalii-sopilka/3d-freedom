@@ -52,7 +52,10 @@ left: 35px;
 top: 45px;
 background-color: #fff;
 box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-border-radius: 0px 0px 72px 0px;}
+border-radius: 0px 0px 72px 0px;
+transform: none;
+}
+
 }
 .modeling__title {
 margin-bottom: 16px;
@@ -112,8 +115,8 @@ width: 515px;
 position: absolute;
 width: 71px;
 height: 64px;
-left: 668px;
-top: 10px;
+left: 634px;
+top: -22px;
 background-color: #fff;
 box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
 border-radius: 0px 35px 0px 0px;
@@ -123,11 +126,15 @@ transform: rotate(180deg);}
 position: absolute;
 width: 144px;
 height: 137px;
-left: 1272px;
-top: 10px;
+left: 1124px;
+top: -30px;
 background-color: #fff;
 box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
 border-radius: 0px 0px 72px 0px;
 transform: rotate(90deg);} 
 }
 
+.modeling__box-main {
+    position: relative;
+    z-index: 2;
+}
