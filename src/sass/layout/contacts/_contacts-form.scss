@@ -1,0 +1,140 @@
+.contacts-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 704px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1142px;
+    display: flex;
+    flex-direction: row;
+    gap: 149px;
+    padding-bottom: 80px;
+  }
+}
+
+.contacts-section {
+  width: 280px;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    width: 648px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 555px;
+  }
+}
+
+.contacts-form {
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1440px) {
+  }
+}
+
+.contacts-form__title {
+  margin-bottom: 44px;
+}
+
+.contacts-form__field {
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 44px;
+  }
+  &:last-child {
+    margin-bottom: 24px;
+  }
+}
+
+.contacts-form__label {
+  display: block;
+  margin-bottom: 4px;
+  @include font($fontCeraPro, 400, 16, 1.25);
+  color: $second-font-color;
+  text-transform: capitalize;
+}
+
+.contacts-form__input {
+  display: block;
+  width: 555px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #487996;
+  @include font($fontCeraPro, 400, 16, 1.25);
+  color: $second-font-color;
+  &:hover,
+  &:focus {
+    outline: transparent;
+    border-color: $second-font-color;
+  }
+  .contacts-form__field:hover + &,
+  .contacts-form__field:focus + & {
+    border-color: $second-font-color;
+  }
+}
+
+.contacts-form__comment-text {
+  width: 555px;
+  height: 199px;
+  padding: 12px 16px;
+  resize: none;
+  border: 1px solid #487996;
+  border-radius: 50px 0px;
+  outline: transparent;
+  padding: 22px 20px;
+  color: rgba(117, 117, 117);
+  height: 120px;
+
+  @media screen and (min-width: 768px) {
+    @include font($fontCeraPro, 400, 16, 1.25);
+  }
+  @media screen and (min-width: 1440px) {
+    @include font($fontCeraPro, 400, 18, 1.25);
+  }
+  &:focus,
+  &:hover {
+    border-color: $svg-color;
+  }
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+  .contacts-form__comment-label:focus & {
+    border: 1px solid var(--accent-color);
+    outline: transparent;
+    font-family: inherit;
+    opacity: 1;
+  }
+}
+
+.contacts-form__comment-label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.contacts-form__comment-text {
+  @include font($fontCeraPro, 400, 16, 1.25);
+  color: #cdcdcd;
+  @media screen and (min-width: 768px) {
+    @include font($fontCeraPro, 400, 16, 1.25);
+  }
+  @media screen and (min-width: 1440px) {
+    @include font($fontCeraPro, 400, 18, 1.25);
+  }
+}
+
+.contacts-form__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+input[type='file'] {
+  display: none;
+}
+.contacts-form__attach {
+  fill: #cdcdcd;
+}
