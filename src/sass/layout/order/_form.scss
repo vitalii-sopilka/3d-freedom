@@ -47,27 +47,30 @@
   }
   &__title {
     margin-bottom: 44px;
+    font-family: $fontCeraPro;
   }
 
   &__field {
     position: relative;
     width: 100%;
-    border-bottom: 1px solid #487996;
-    @include font($fontCeraPro, 400, 16, 1.25);
     color: $second-font-color;
+    @include font($fontCeraPro, 400, 16, 1.25);
+    border-bottom: 1px solid #487996;
     @media screen and (min-width: 768px) {
       @include font($fontCeraPro, 400, 16, 1.25);
     }
     @media screen and (min-width: 1440px) {
       @include font($fontCeraPro, 400, 18, 1.25);
     }
-    &:hover,
-    &:focus {
-      color: $svg-color;
-      border-color: $svg-color;
-    }
+    // &:hover,
+    // &:focus {
+    //   border-color: $svg-color;
+    // }
     &:not(:last-child) {
       margin-bottom: 44px;
+    }
+    &:nth-child(6) {
+      border: none;
     }
     &:nth-child(7) {
       position: relative;
@@ -94,10 +97,10 @@
       @media screen and (min-width: 1440px) {
         @include font($fontCeraPro, 400, 18, 1.25);
       }
-      &:hover,
-      &:focus {
-        color: $svg-color;
-      }
+      // &:hover,
+      // &:focus {
+      //   color: $svg-color;
+      // }
     }
   }
 
@@ -132,16 +135,16 @@
       @include font($fontCeraPro, 400, 18, 1.25);
       height: 199px;
     }
-    &:hover,
-    &:focus {
-      border-color: $svg-color;
-    }
+    // &:hover,
+    // &:focus {
+    //   border-color: $svg-color;
+    // }
     &::placeholder {
-      color: rgba(117, 117, 117, 0.5);
-      &:focus,
-      &:hover {
-        color: $svg-color;
-      }
+      color: $placeholder-color;
+      // &:focus,
+      // &:hover {
+      //   color: $svg-color;
+      // }
     }
   }
   &__upload {
@@ -149,7 +152,7 @@
     cursor: pointer;
   }
   &__upload-text {
-    color: #cdcdcd;
+    color: $placeholder-color;
     @include font($fontCeraPro, 400, 16, 1.25);
     @media screen and (min-width: 768px) {
       @include font($fontCeraPro, 400, 16, 1.25);
@@ -157,10 +160,10 @@
     @media screen and (min-width: 1440px) {
       @include font($fontCeraPro, 400, 18, 1.25);
     }
-    &:hover,
-    &:focus {
-      color: $svg-color;
-    }
+    // &:hover,
+    // &:focus {
+    //   color: $svg-color;
+    // }
   }
   &__button {
     display: block;
@@ -179,6 +182,7 @@ input [type='file'] {
   top: 185px;
   right: 23px;
   fill: #cdcdcd;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     fill: $svg-color;
@@ -198,18 +202,18 @@ input [type='file'] {
 .select-selected:after {
   position: absolute;
   content: '';
-  top: 14px;
+  top: 11px;
   right: 10px;
   width: 0;
   height: 0;
-  border: 6px solid;
+  border: 6px solid transparent;
   border-radius: 0;
   border-color: $second-font-color transparent transparent transparent;
 }
 
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent $second-font-color transparent;
-  top: 7px;
+  top: 3px;
 }
 
 .select-items div,
@@ -220,30 +224,24 @@ input [type='file'] {
   cursor: pointer;
 }
 .select-items div {
-  margin-bottom: 3px;
+  padding: 6px 8px;
 }
 
-/* Style items (options): */
 .select-items {
   position: absolute;
-  background-color: #ffffff;
-
-  top: 100%;
+  background-color: $main-bg-color;
+  top: 104%;
   left: 0;
   right: 0;
   z-index: 99;
 }
 
-/* Hide the items when the select box is closed: */
 .select-hide {
   display: none;
 }
 
 .select-items div:hover,
 .same-as-selected {
-  color: white;
-  background: rgba(72, 121, 150, 0.5);
-}
-
-.option {
+  color: $main-bg-color;
+  background-color: rgba(72, 121, 150, 0.5);
 }
