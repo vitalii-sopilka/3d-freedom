@@ -1,7 +1,20 @@
 .print {
-    // position: relative;
     margin-top: 32px;
     margin-bottom: 35px;
+    position: relative;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 40px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            margin-top: 100px;
+           margin-bottom: 100px;
+        }
+}
+
+.print-box {
+    position: relative;
 }
 
 .print__list {
@@ -9,6 +22,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (max-width: 767px) {
         width: 280px;
@@ -186,3 +201,31 @@ background-color: #FFFFFF;
 //  @media screen and (min-width: $desktop) {
 //      width: $desktop;
 //  }
+.print-box__feature {
+    position: absolute;
+//  background: #FFFFFF;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 35px 0px;
+// color: $effects-bg-color;
+    width: 73.65px;
+    height: 73.65px;
+    left: -29px;
+    top: 205px;
+
+     @media screen and (min-width: $tablet) {
+            width: 74px;
+                height: 71px;
+                left: 38px;
+                top: 122px;
+                background: #FFFFFF;
+         }
+    
+         @media screen and (min-width: $desktop) {
+            width: 82px;
+                height: 78px;
+                left: 35px;
+                top: 0;
+                            
+                border-radius: 0px 0px 72px 0px;
+         }
+}
