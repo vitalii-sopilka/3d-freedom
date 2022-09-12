@@ -11,7 +11,7 @@
       font-size: 16px;
       line-height: 1.25;
       font-weight: 700;
-      max-width: 280px;
+      max-width: 260px;
       text-align: left;
       margin-bottom: 16px;
       }
@@ -21,27 +21,15 @@
       font-size: 24px;
       line-height: 1.25;
       font-weight: 700;
-      max-width: 648px;
+      max-width: 590px;
       text-align: left;
       margin-bottom: 24px;
       }
 
   @media screen and (min-width: $desktop) {
       margin-bottom: 40px;
-      }
-  }
-
-.modeling__create-list {
-  @media screen and (max-width: 767px) {
-      margin-bottom: 40px;
-      }
-
-  @media screen and (min-width: $tablet) and (max-width: 1439px) {
-      margin-bottom: 60px;
-      }
-
-  @media screen and (min-width: $desktop) {
-      margin-bottom: 80px;
+      max-width: 842px;
+      padding-left: 117px;
       }
   }
   
@@ -71,12 +59,29 @@
       grid-template-columns: repeat(4, 152px);
       }
 
-      @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
           display: grid;
           gap: 32px;
           grid-template-columns: repeat(4, 320px);
       }
   } 
+
+.modeling__create-conteiner {
+  @media screen and (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+      }
+
+  @media screen and (min-width: $tablet) and (max-width: 1439px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+      }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+      }
+  }
       
 .modeling__create-btn {
   display: block;
@@ -103,7 +108,7 @@
   border-bottom-left-radius: 25px;
   border-top-right-radius: 25px;
   position: absolute;
-  right: -4%;
+  right: -5%;
   background-color: $effects-bg-color;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
 
@@ -118,7 +123,7 @@
   border-bottom-left-radius: 25px;
   position: absolute;
   right: 83%;
-  bottom: 72%;
+  bottom: 76%;
   z-index: -3;
   background-color: $effects-bg-color;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
@@ -134,8 +139,8 @@
   border-top-left-radius: 25px;
   border-bottom-right-radius: 25px;
   position: absolute;
-  bottom: 5%;
-  right: 1%;
+  bottom: 14%;
+  right: -4%;
   z-index: -3;
   background-color: $effects-bg-color;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
@@ -143,6 +148,22 @@
   @media screen and (min-width: $tablet) {
       display: none;
       }
+}
+
+.modeling__create-dekor--desktop {
+  width: 137px;
+  height: 144px;
+  border-radius: 72px;
+  position: absolute;
+  top: -7%;
+  left: -1%;
+  z-index: 2;
+  background-color: $effects-bg-color;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+
+  @media screen and (max-width: 1439px) {
+    display: none;
+    }
 }
 
 .conteiner__relative {
