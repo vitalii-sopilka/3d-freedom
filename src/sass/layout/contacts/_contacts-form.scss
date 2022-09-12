@@ -16,7 +16,7 @@
   }
 }
 
-.contacts-section {
+.contacts-form-section {
   width: 280px;
   align-items: center;
 
@@ -37,7 +37,9 @@
 }
 
 .contacts-form__title {
-  margin-bottom: 44px;
+  @include font($fontCeraPro, 700, 18, 1.28);
+  margin-bottom: 8px;
+  color: #487996;
 }
 
 .contacts-form__field {
@@ -60,7 +62,7 @@
 
 .contacts-form__input {
   display: block;
-  width: 555px;
+  width: 280px;
   height: 40px;
   border: none;
   border-bottom: 1px solid #487996;
@@ -78,7 +80,9 @@
 }
 
 .contacts-form__comment-text {
-  width: 555px;
+  position: relative;
+  margin-top: 4px;
+  width: 280px;
   height: 199px;
   padding: 12px 16px;
   resize: none;
@@ -110,14 +114,26 @@
   }
 }
 
+.contacts-form__icon-attach {
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  fill: #cdcdcd;
+}
+
 .contacts-form__comment-label {
   display: inline-block;
   cursor: pointer;
 }
 
+.contact-form__text {
+  @include font($fontCeraPro, 400, 16, 1.25);
+}
+
 .contacts-form__comment-text {
   @include font($fontCeraPro, 400, 16, 1.25);
   color: #cdcdcd;
+  height: 199px;
   @media screen and (min-width: 768px) {
     @include font($fontCeraPro, 400, 16, 1.25);
   }
@@ -130,6 +146,7 @@
   display: block;
   margin-left: auto;
   margin-right: 0;
+  margin-bottom: 60px;
 }
 
 input[type='file'] {
@@ -137,4 +154,26 @@ input[type='file'] {
 }
 .contacts-form__attach {
   fill: #cdcdcd;
+}
+
+.sub-title {
+  @include font($fontCeraPro, 400, 18, 1.25);
+  color: #487996;
+  margin-bottom: 8px;
+}
+
+.connects__phone {
+  @include font($fontCeraPro, 400, 16, 1.25);
+  color: #2b2b2b;
+  margin-bottom: 8px;
+  width: 150px;
+}
+
+.connects__mail {
+  @include font($fontCeraPro, 400, 16, 1.25);
+  color: #2b2b2b;
+}
+
+.contact__item-list {
+  margin: 0;
 }
