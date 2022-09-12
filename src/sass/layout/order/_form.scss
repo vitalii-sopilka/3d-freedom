@@ -1,9 +1,8 @@
-.cont-order {
+.content-order {
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 60px;
-
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -11,10 +10,7 @@
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 60px;
-    // margin-left: auto;
-    // margin-right: auto;
   }
-
   @media screen and (min-width: 1440px) {
     max-width: 1142px;
     display: flex;
@@ -45,24 +41,66 @@
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     display: block;
-    // align-items: center;
   }
   @media screen and (min-width: 1440px) {
     width: 555px;
   }
   &__title {
     margin-bottom: 44px;
+    font-family: $fontCeraPro;
   }
 
   &__field {
+    position: relative;
     width: 100%;
-
+    color: $second-font-color;
+    @include font($fontCeraPro, 400, 16, 1.25);
+    border-bottom: 1px solid #487996;
+    @media screen and (min-width: 768px) {
+      @include font($fontCeraPro, 400, 16, 1.25);
+    }
+    @media screen and (min-width: 1440px) {
+      @include font($fontCeraPro, 400, 18, 1.25);
+    }
+    // &:hover,
+    // &:focus {
+    //   border-color: $svg-color;
+    // }
     &:not(:last-child) {
       margin-bottom: 44px;
+    }
+    &:nth-child(6) {
+      border: none;
     }
     &:nth-child(7) {
       position: relative;
       margin-bottom: 24px;
+    }
+  }
+
+  &__input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 24px;
+    border: none;
+    padding-bottom: 4px;
+    cursor: pointer;
+    outline: transparent;
+
+    &::placeholder {
+      color: $second-font-color;
+      @include font($fontCeraPro, 400, 16, 1.25);
+      @media screen and (min-width: 768px) {
+        @include font($fontCeraPro, 400, 16, 1.25);
+      }
+      @media screen and (min-width: 1440px) {
+        @include font($fontCeraPro, 400, 18, 1.25);
+      }
+      // &:hover,
+      // &:focus {
+      //   color: $svg-color;
+      // }
     }
   }
 
@@ -71,32 +109,11 @@
     margin-bottom: 4px;
     @include font($fontCeraPro, 400, 16, 1.25);
     color: $second-font-color;
-    text-transform: capitalize;
-  }
-
-  &__input {
-    display: block;
-    width: 100%;
-    height: 40px;
-    border: none;
-    border-bottom: 1px solid #487996;
-    @include font($fontCeraPro, 400, 16, 1.25);
-    color: $second-font-color;
-    // @include font(400, 18, 1.12, null);
-    // color: var(--modal-input-color-);
-    // transition: var(--transition-border-color);
     @media screen and (min-width: 768px) {
+      @include font($fontCeraPro, 400, 16, 1.25);
     }
     @media screen and (min-width: 1440px) {
-    }
-    &:hover,
-    &:focus {
-      outline: transparent;
-      border-color: $second-font-color;
-    }
-    .feedback__field:hover + &,
-    .feedback__field:focus + & {
-      border-color: $second-font-color;
+      @include font($fontCeraPro, 400, 18, 1.25);
     }
   }
 
@@ -110,7 +127,6 @@
     outline: transparent;
     padding: 22px 20px;
     color: rgba(117, 117, 117);
-
     @media screen and (min-width: 768px) {
       @include font($fontCeraPro, 400, 16, 1.25);
       height: 199px;
@@ -119,36 +135,36 @@
       @include font($fontCeraPro, 400, 18, 1.25);
       height: 199px;
     }
-    &:focus,
-    &:hover {
-      border-color: $svg-color;
-    }
+    // &:hover,
+    // &:focus {
+    //   border-color: $svg-color;
+    // }
     &::placeholder {
-      color: rgba(117, 117, 117, 0.5);
-    }
-    .modal__label:focus & {
-      border: 1px solid var(--accent-color);
-      outline: transparent;
-      font-family: inherit;
-      opacity: 1;
+      color: $placeholder-color;
+      // &:focus,
+      // &:hover {
+      //   color: $svg-color;
+      // }
     }
   }
   &__upload {
     display: inline-block;
     cursor: pointer;
   }
-
   &__upload-text {
+    color: $placeholder-color;
     @include font($fontCeraPro, 400, 16, 1.25);
-    color: #cdcdcd;
     @media screen and (min-width: 768px) {
       @include font($fontCeraPro, 400, 16, 1.25);
     }
     @media screen and (min-width: 1440px) {
       @include font($fontCeraPro, 400, 18, 1.25);
     }
+    // &:hover,
+    // &:focus {
+    //   color: $svg-color;
+    // }
   }
-
   &__button {
     display: block;
     margin-left: auto;
@@ -156,13 +172,76 @@
   }
 }
 
-input[type='file'] {
+input [type='file'] {
   display: none;
   position: relative;
 }
+
 .icon-paper-clip {
   position: absolute;
   top: 185px;
   right: 23px;
   fill: #cdcdcd;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $svg-color;
+  }
+}
+
+// -------------------КАСТОМНЫЙ СПИСОК
+// -------------------------------------------------------------------------
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  display: none;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: '';
+  top: 11px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-radius: 0;
+  border-color: $second-font-color transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent $second-font-color transparent;
+  top: 3px;
+}
+
+.select-items div,
+.select-selected {
+  color: inherit;
+  padding-bottom: 4px;
+  border-color: transparent transparent $second-font-color transparent;
+  cursor: pointer;
+}
+.select-items div {
+  padding: 6px 8px;
+}
+
+.select-items {
+  position: absolute;
+  background-color: $main-bg-color;
+  top: 104%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  color: $main-bg-color;
+  background-color: rgba(72, 121, 150, 0.5);
 }
