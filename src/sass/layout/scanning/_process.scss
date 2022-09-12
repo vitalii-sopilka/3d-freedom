@@ -1,25 +1,6 @@
 .scanning-process {
   padding: 40px 0;
   background-color: $effects-bg-color;
-  // background: rgb(255, 255, 255);
-  // background: -moz-linear-gradient(
-  //   top,
-  //   rgb(255, 255, 255) 0%,
-  //   rgb(229, 229, 229) 30%,
-  //   rgb(255, 255, 255) 100%
-  // );
-  // background: -webkit-linear-gradient(
-  //   top,
-  //   rgb(255, 255, 255) 0%,
-  //   rgb(229, 229, 229) 30%,
-  //   rgb(255, 255, 255) 100%
-  // );
-  // background: linear-gradient(
-  //   to bottom,
-  //   rgb(255, 255, 255) 0%,
-  //   rgb(229, 229, 229) 30%,
-  //   rgb(255, 255, 255) 100%
-  // );
   @media screen and (min-width: 768px) {
     background: $effects-bg-color;
     padding-top: 60px;
@@ -105,10 +86,6 @@
     border-radius: 50px 0px;
     box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
       inset -1px -1px 16px #ffffff;
-    // &:nth-child(1) {
-    //   position: relative;
-    //   z-index: 2;
-    // }
     &::before {
       content: '';
       width: 93px;
@@ -117,42 +94,42 @@
       margin-bottom: 13px;
     }
     &:nth-child(1)::before {
-      background-image: url(/src/images/pic/scanning/process/scan_process1-mobile-1x-min.jpg);
+      background-image: url(/src/images/pic/scanning/process/scan_process1-mobile-1x-min.png);
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         & {
-          background-image: url(/src/images/pic/scanning/process/scan_process1-mobile-2x-min.jpg);
+          background-image: url(/src/images/pic/scanning/process/scan_process1-mobile-2x-min.png);
         }
       }
     }
     &:nth-child(2)::before {
-      background-image: url(/src/images/pic/scanning/process/scan_process2-mobile-1x-min.jpg);
+      background-image: url(/src/images/pic/scanning/process/scan_process2-mobile-1x-min.png);
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         & {
-          background-image: url(/src/images/pic/scanning/process/scan_process2-mobile-2x-min.jpg);
+          background-image: url(/src/images/pic/scanning/process/scan_process2-mobile-2x-min.png);
         }
       }
     }
     &:nth-child(3)::before {
-      background-image: url(/src/images/pic/scanning/process/scan_process3-mobile-1x-min.jpg);
+      background-image: url(/src/images/pic/scanning/process/scan_process3-mobile-1x-min.png);
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         & {
-          background-image: url(/src/images/pic/scanning/process/scan_process3-mobile-2x-min.jpg);
+          background-image: url(/src/images/pic/scanning/process/scan_process3-mobile-2x-min.png);
         }
       }
     }
     &:nth-child(4)::before {
-      background-image: url(/src/images/pic/scanning/process/scan_process4-mobile-1x-min.jpg);
+      background-image: url(/src/images/pic/scanning/process/scan_process4-mobile-1x-min.png);
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         & {
-          background-image: url(/src/images/pic/scanning/process/scan_process4-mobile-2x-min.jpg);
+          background-image: url(/src/images/pic/scanning/process/scan_process4-mobile-2x-min.png);
         }
       }
     }
@@ -168,42 +145,42 @@
         margin-bottom: 14px;
       }
       &:nth-child(1)::before {
-        background-image: url(/src/images/pic/scanning/process/scan_process1-tablet-1x-min.jpg);
+        background-image: url(/src/images/pic/scanning/process/scan_process1-tablet-1x-min.png);
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
           & {
-            background-image: url(/src/images/pic/scanning/process/scan_process1-tablet-2x-min.jpg);
+            background-image: url(/src/images/pic/scanning/process/scan_process1-tablet-2x-min.png);
           }
         }
       }
       &:nth-child(2)::before {
-        background-image: url(/src/images/pic/scanning/process/scan_process2-tablet-1x-min.jpg);
+        background-image: url(/src/images/pic/scanning/process/scan_process2-tablet-1x-min.png);
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
           & {
-            background-image: url(/src/images/pic/scanning/process/scan_process2-tablet-2x-min.jpg);
+            background-image: url(/src/images/pic/scanning/process/scan_process2-tablet-2x-min.png);
           }
         }
       }
       &:nth-child(3)::before {
-        background-image: url(/src/images/pic/scanning/process/scan_process3-tablet-1x-min.jpg);
+        background-image: url(/src/images/pic/scanning/process/scan_process3-tablet-1x-min.png);
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
           & {
-            background-image: url(/src/images/pic/scanning/process/scan_process3-tablet-2x-min.jpg);
+            background-image: url(/src/images/pic/scanning/process/scan_process3-tablet-2x-min.png);
           }
         }
       }
       &:nth-child(4)::before {
-        background-image: url(/src/images/pic/scanning/process/scan_process4-tablet-1x-min.jpg);
+        background-image: url(/src/images/pic/scanning/process/scan_process4-tablet-1x-min.png);
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
           & {
-            background-image: url(/src/images/pic/scanning/process/scan_process4-tablet-2x-min.jpg);
+            background-image: url(/src/images/pic/scanning/process/scan_process4-tablet-2x-min.png);
           }
         }
       }
@@ -221,42 +198,42 @@
         margin-bottom: 4px;
       }
       &:nth-child(1)::before {
-        background-image: url(/src/images/pic/scanning/process/scan_process1-desktop-1x-min.jpg);
+        background-image: url(/src/images/pic/scanning/process/scan_process1-desktop-1x-min.png);
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
           & {
-            background-image: url(/src/images/pic/scanning/process/scan_process1-desktop-2x-min.jpg);
+            background-image: url(/src/images/pic/scanning/process/scan_process1-desktop-2x-min.png);
           }
         }
       }
       &:nth-child(2)::before {
-        background-image: url(/src/images/pic/scanning/process/scan_process2-desktop-1x-min.jpg);
+        background-image: url(/src/images/pic/scanning/process/scan_process2-desktop-1x-min.png);
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
           & {
-            background-image: url(/src/images/pic/scanning/process/scan_process2-desktop-2x-min.jpg);
+            background-image: url(/src/images/pic/scanning/process/scan_process2-desktop-2x-min.png);
           }
         }
       }
       &:nth-child(3)::before {
-        background-image: url(/src/images/pic/scanning/process/scan_process3-desktop-1x-min.jpg);
+        background-image: url(/src/images/pic/scanning/process/scan_process3-desktop-1x-min.png);
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
           & {
-            background-image: url(/src/images/pic/scanning/process/scan_process3-desktop-2x-min.jpg);
+            background-image: url(/src/images/pic/scanning/process/scan_process3-desktop-2x-min.png);
           }
         }
       }
       &:nth-child(4)::before {
-        background-image: url(/src/images/pic/scanning/process/scan_process4-desktop-1x-min.jpg);
+        background-image: url(/src/images/pic/scanning/process/scan_process4-desktop-1x-min.png);
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
           & {
-            background-image: url(/src/images/pic/scanning/process/scan_process4-desktop-2x-min.jpg);
+            background-image: url(/src/images/pic/scanning/process/scan_process4-desktop-2x-min.png);
           }
         }
       }
