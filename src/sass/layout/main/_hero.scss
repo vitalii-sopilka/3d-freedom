@@ -9,13 +9,14 @@
         padding-bottom: 120px
     }
 
-&__container{
-    position: relative;
+    &__container {
+        position: relative;
 
-}
+    }
 
     &__title {
         margin: 0 auto 32px auto;
+        padding-top: 18px;
         max-width: 280px;
         text-align: center;
         @include font($fontCaviarDreams, 400, 18, 1.17);
@@ -23,12 +24,14 @@
 
         @media screen and (min-width: 768px) {
             margin-bottom: 60px;
+            padding-top: 30px;
             max-width: 336px;
             font-size: 24px;
         }
 
         @media screen and (min-width: 1440px) {
             max-width: 630px;
+            padding-top: 43px;
             font-size: 48px;
         }
     }
