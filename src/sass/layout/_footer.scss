@@ -1,14 +1,13 @@
 .footer {
     margin-left: auto;
     margin-right: auto;
-    // align-items: center;
     background-color: $footer-bg-color;
     text-align: center;
     padding: 32px 0;
     display: flex;
-  @media screen and (min-width:768px) {
-  padding: 32px 0;
-}
+//   @media screen and (min-width:768px) {
+//   padding: 32px 0;
+// }
  @media screen and (min-width: 1440px) {
   padding: 40px 0;
  }
@@ -17,11 +16,10 @@
 .footer__container { 
         align-items: center;
         display: flex;
-          flex-direction: column;
-          // justify-content: space-between;
-          margin: 0 auto;
-          padding-left: 20px;
-          padding-right: 20px;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
           width: 100%;
             @media screen and (min-width:768px) {
                 width: 100%;
@@ -30,12 +28,11 @@
                      @media screen and (min-width: 1440px) {
                           display: flex;
                           flex-direction: row;
+                          align-items: flex-start;
                      }
  }
 
- .footer__basic {
-    //  display: flex;
-    //  flex-direction: column;
+.footer__basic {
     @media screen and (min-width:768px) {
         display: flex;
         flex-direction: row;
@@ -93,12 +90,15 @@
       font-size: 16px;
       line-height: 1.25;
       letter-spacing: 0.01em;
+      margin-bottom: 24px;
     @media screen and (min-width:768px) {
     align-items: flex-start;
     margin-right: 52px;
+    margin-bottom: 0;
     }
          @media screen and (min-width: 1440px) {
     margin-right: 103px;
+    margin-bottom: 0;
     font-family: 'Cera Pro';
     font-style: normal;
     // @include font (400, 16, 1.25 0.01)
@@ -126,6 +126,7 @@
      align-items: flex-start;
      justify-content: flex-start;
         margin-right: 199px;
+        margin-bottom: 0;
     }
     @media screen and (min-width: 1440px) {
     margin-right: 163px;
@@ -191,7 +192,6 @@
           }
         
           @media screen and (min-width: 1440px) {
-            margin-right: 277px;
-            text-align: left;
+                     text-align: left;
           }
   }
