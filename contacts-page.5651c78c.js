@@ -1,0 +1,2 @@
+("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequired7c6.register("h8p7q",(function(e,o){(()=>{const e={closeVideoBtn:document.querySelector(".play-button"),imgThumb:document.querySelector(".contact-hero__img-thumb")};e.closeVideoBtn.addEventListener("click",(function(){e.imgThumb.classList.toggle("is-hidden")}))})()}));
+//# sourceMappingURL=contacts-page.5651c78c.js.map
