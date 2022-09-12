@@ -15,19 +15,21 @@
 }
 
     &__title {
-        margin: 0 auto 32px auto;
+        margin: 18 auto 32px auto;
         max-width: 280px;
         text-align: center;
         @include font($fontCaviarDreams, 400, 18, 1.17);
         color: $second-font-color;
 
         @media screen and (min-width: 768px) {
+            margin-top: 30px;
             margin-bottom: 60px;
             max-width: 336px;
             font-size: 24px;
         }
 
         @media screen and (min-width: 1440px) {
+            margin-top: 43px;
             max-width: 630px;
             font-size: 48px;
         }
