@@ -16,21 +16,18 @@
 
     &__title {
         margin: 0 auto 32px auto;
-        padding-top: 18px;
         max-width: 280px;
         text-align: center;
         @include font($fontCaviarDreams, 400, 18, 1.17);
         color: $second-font-color;
 
         @media screen and (min-width: 768px) {
-            padding-top: 30px;
             margin-bottom: 60px;
             max-width: 336px;
             font-size: 24px;
         }
 
         @media screen and (min-width: 1440px) {
-            padding-top: 43px;
             max-width: 630px;
             font-size: 48px;
         }
@@ -70,16 +67,19 @@
 
     &__slogan {
         display: block;
+        padding-bottom: 40px;
         @include font($fontCaviarDreams, 400, 16, 1.19);
         text-align: center;
         color: $second-font-color;
 
         @media screen and (min-width: 768px) {
+            padding-bottom: 60px;
             font-size: 18px;
             line-height: 1.17;
         }
 
         @media screen and (min-width: 1440px) {
+            padding-bottom: 120px;
             font-size: 36px;
         }
     }

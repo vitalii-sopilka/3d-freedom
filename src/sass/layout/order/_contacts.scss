@@ -41,24 +41,14 @@
     }
   }
 
-  &__phone,
-  &__mail {
+  &__phone {
     color: $second-font-color;
     transform: color 250ms $cubic-bezier;
-    @include font($fontCeraPro, 400, 16, 1.25);
-    @media screen and (min-width: 768px) {
-      @include font($fontCeraPro, 400, 16, 1.25);
-    }
-
-    @media screen and (min-width: 1440px) {
-      @include font($fontCeraPro, 400, 18, 1.25);
-    }
     &:hover,
     &:focus {
       color: $svg-color;
     }
   }
-
   &__time {
     @media screen and (min-width: 768px) {
       margin-left: auto;
@@ -128,93 +118,20 @@
 
 .mosaics {
   display: none;
+  @media screen and (min-width: 768px) {
+  }
+
   @media screen and (min-width: 1440px) {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 437px;
-    height: 293px;
-    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+    display: block;
   }
+}
 
-  &__img {
-    width: 139px;
-    height: 139px;
-  }
+.mosaics__list {
+}
 
-  &__img-one {
-    border-radius: 0px 72px 0px 0px;
-    background-image: url(/src/images/pic/order/3-order-mosaics-img-desktop-1x.jpg);
-    background-repeat: no-repeat;
-    background-size: 438px 294px;
-    background-position: left top;
-  }
+.mosaics__item {
+}
 
-  &__img-two {
-    position: absolute;
-    top: 11px;
-    left: 151px;
-    border-radius: 0px 0px 0px 72px;
-    background-repeat: no-repeat;
-    background-image: url(/src/images/pic/order/3-order-mosaics-img-desktop-1x.jpg);
-    background-position: 50% 0;
-    background-size: 438px 294px;
-  }
-
-  &__img-three {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 72px 0px;
-    background-image: url(/src/images/pic/order/3-order-mosaics-img-desktop-1x.jpg);
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-size: 438px 294px;
-  }
-
-  &__img-four {
-    position: absolute;
-    left: 2px;
-    bottom: 6px;
-    border-radius: 0px 72px;
-    background-image: url(/src/images/pic/order/3-order-mosaics-img-desktop-1x.jpg);
-    background-position: 2% 97%;
-    background-repeat: no-repeat;
-    background-size: 438px 294px;
-  }
-
-  &__img-five {
-    position: absolute;
-    bottom: 0;
-    left: 144px;
-    border-radius: 72px;
-    background-image: url(/src/images/pic/order/3-order-mosaics-img-desktop-1x.jpg);
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
-    background-size: 438px 294px;
-  }
-
-  &__img-six {
-    position: absolute;
-    bottom: 4px;
-    right: 8px;
-    border-radius: 0px 0px 72px 0px;
-    background-image: url(/src/images/pic/order/3-order-mosaics-img-desktop-1x.jpg);
-    background-position: 96% 96%;
-    background-repeat: no-repeat;
-    background-size: 438px 294px;
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .mosaics__img-one,
-    .mosaics__img-two,
-    .mosaics__img-three,
-    .mosaics__img-four,
-    .mosaics__img-five,
-    .mosaics__img-six {
-      background-image: url(/src/images/pic/order/3-order-mosaics-img-desktop-2x.jpg);
-    }
-  }
+.mosaics__img {
+  opacity: 1;
 }
