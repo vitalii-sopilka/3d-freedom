@@ -126,7 +126,20 @@ background-color: #FFFFFF;
         
                 @media screen and (min-width: $desktop) {
                     width: 100%;
+                    margin-bottom: 21px;
                 }
+}
+
+.img-desktop {
+    @media screen and (min-width: $desktop) {
+            margin-bottom: 43px;
+        }
+}
+
+.img-maket {
+    @media screen and (min-width: $desktop) {
+            margin-bottom: 65px;
+        }
 }
 
 .img-3D {
