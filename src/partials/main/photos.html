@@ -1,693 +1,315 @@
-<section class="more-photo__section">
-  <div class="container container__more-photo">
-    <!-- Белые блоки позиционированные -->
-    <div class="more-block1"></div>
-    <div class="more-blick2"></div>
-    <div class="more-blick3"></div>
-    <div class="more-block4"></div>
-    <div class="more-block5"></div>
-    <div class="more-block6"></div>
-
-    <h2 class="sub-title more-title">БІЛЬШЕ ФОТО</h2>
-
-    <ul class="more-photo-list list">
-      <li class="more-photo-list__item">
-        <picture onclick="openModal();currentSlide(1)">
+<section class="more-photos">
+  <div class="container">
+    <h2 class="title__more-photos">більше фото</h2>
+    <div class="grid-cards">
+      <div class="grid-item item1">
+        <picture>
           <source
-            type="image / jpeg"
+            srcset="
+              ./././images/pic/main/more/desk1-3d-models.jpg    1x,
+              ./././images/pic/main/more/desk1-3d-models-x2.jpg 2x
+            "
             media="(min-width: 1440px)"
-            sizes="(min-width: 270px) 270px, 25vw"
-            srcset="
-              ./././images/pic/main/more-photos-desk/more-photos-1.jpg    1x,
-              ./././images/pic/main/more-photos-desk/more-photos-1@2x.jpg 2x
-            "
           />
-
           <source
-            type="image / jpeg"
-            media="(min-width: 768px) and (max-width: 1439px)"
-            sizes="(min-width: 354px) 354px, 50vw"
             srcset="
-              ./././images/pic/main/more-photos-tab/more-photos-1.jpg    1x,
-              ./././images/pic/main/more-photos-tab/more-photos-1@2x.jpg 2x
+              ./././images/pic/main/more/tab1-3d-models.jpg    1x,
+              ./././images/pic/main/more/tab1-3d-models-x2.jpg 2x
             "
+            media="(min-width: 768px)"
           />
-
           <source
-            type="image / jpeg"
+            srcset="
+              ./././images/pic/main/more/mob1-3d-models.jpg    1x,
+              ./././images/pic/main/more/mob1-3d-models-x2.jpg 2x
+            "
             media="(max-width: 767px)"
-            sizes="(min-width: 320px) 320px,90vw"
-            srcset="
-              ./././images/pic/main/more-photos-mob/more-photos-1.jpg    1x,
-              ./././images/pic/main/more-photos-mob/more-photos-1@2x.jpg 2x
-            "
           />
-
           <img
-            class="more-photo-list__img"
-            src="./././images/pic/main/more-photos-desk/more-photos-1@2x.jpg"
-            alt="3-d модельки"
+            class="card"
+            src="./././images/pic/main/more/desk1-3d-models.jpg"
+            alt="Приклад№1"
+            width="438"
           />
         </picture>
-      </li>
-
-      <li class="more-photo-list__item">
-        <picture onclick="openModal();currentSlide(2)">
+      </div>
+      <div class="grid-item item2">
+        <picture>
           <source
-            type="image / jpeg"
+            srcset="
+              ./././images/pic/main/more/desk2-3d-printed-arch.jpg    1x,
+              ./././images/pic/main/more/desk2-3d-printed-arch-x2.jpg 2x
+            "
             media="(min-width: 1440px)"
-            sizes="(min-width: 270px) 270px, 25vw"
-            srcset="
-              ./././images/pic/main/more-photos-desk/more-photos-2.jpg    1x,
-              ./././images/pic/main/more-photos-desk/more-photos-2@2x.jpg 2x
-            "
           />
-
           <source
-            type="image / jpeg"
-            media="(min-width: 768px) and (max-width: 1439px)"
-            sizes="(min-width: 354px) 354px, 50vw"
             srcset="
-              ./././images/pic/main/more-photos-tab/more-photos-2.jpg    1x,
-              ./././images/pic/main/more-photos-tab/more-photos-2@2x.jpg 2x
+              ./././images/pic/main/more/tab2-3d-printed-arch.jpg    1x,
+              ./././images/pic/main/more/tab2-3d-printed-arch-x2.jpg 2x
             "
+            media="(min-width: 768px)"
           />
-
           <source
-            type="image / jpeg"
+            srcset="
+              ./././images/pic/main/more/mob2-3d-printed-arch.jpg    1x,
+              ./././images/pic/main/more/mob2-3d-printed-arch-x2.jpg 2x
+            "
             media="(max-width: 767px)"
-            sizes="(min-width: 320px) 320px,90vw"
-            srcset="
-              ./././images/pic/main/more-photos-mob/more-photos-2.jpg    1x,
-              ./././images/pic/main/more-photos-mob/more-photos-2@2x.jpg 2x
-            "
           />
-
           <img
-            class="more-photo-list__img"
-            src="./././images/pic/main/more-photos-desk/more-photos-2@2x.jpg"
-            alt="3-модель арки"
+            class="card"
+            src="./././images/pic/main/more/desk2-3d-printed-arch.jpg"
+            alt="Приклад№2"
+            width="438"
           />
         </picture>
-      </li>
-
-      <li class="more-photo-list__item">
-        <picture onclick="openModal();currentSlide(3)">
+      </div>
+      <div class="grid-item item3">
+        <picture>
           <source
-            type="image / jpeg"
+            srcset="
+              ./././images/pic/main/more/desk3-3d-walle.jpg    1x,
+              ./././images/pic/main/more/desk3-3d-walle-x2.jpg 2x
+            "
             media="(min-width: 1440px)"
-            sizes="(min-width: 270px) 270px, 25vw"
-            srcset="
-              ./././images/pic/main/more-photos-desk/more-photos-3.jpg    1x,
-              ./././images/pic/main/more-photos-desk/more-photos-3@2x.jpg 2x
-            "
           />
-
           <source
-            type="image / jpeg"
-            media="(min-width: 768px) and (max-width: 1439px)"
-            sizes="(min-width: 354px) 354px, 50vw"
             srcset="
-              ./././images/pic/main/more-photos-tab/more-photos-3.jpg    1x,
-              ./././images/pic/main/more-photos-tab/more-photos-3@2x.jpg 2x
+              ./././images/pic/main/more/tab3-3d-walle.jpg    1x,
+              ./././images/pic/main/more/tab3-3d-walle-x2.jpg 2x
             "
+            media="(min-width: 768px)"
           />
-
           <source
-            type="image / jpeg"
+            srcset="
+              ./././images/pic/main/more/mob3-3d-walle.jpg    1x,
+              ./././images/pic/main/more/mob3-3d-walle-x2.jpg 2x
+            "
             media="(max-width: 767px)"
-            sizes="(min-width: 320px) 320px,90vw"
-            srcset="
-              ./././images/pic/main/more-photos-mob/more-photos-3.jpg    1x,
-              ./././images/pic/main/more-photos-mob/more-photos-3@2x.jpg 2x
-            "
           />
-
           <img
-            class="more-photo-list__img"
-            src="./././images/pic/main/more-photos-desk/more-photos-3@2x.jpg"
-            alt="3-d модель Волли"
+            class="card"
+            src="./././images/pic/main/more/desk3-3d-walle.jpg"
+            alt="Приклад№3"
+            width="438"
           />
         </picture>
-      </li>
-
-      <li class="more-photo-list__item">
-        <picture onclick="openModal();currentSlide(4)">
+      </div>
+      <div class="grid-item item4">
+        <picture>
           <source
-            type="image / jpeg"
+            srcset="
+              ./././images/pic/main/more/desk4-3d-skull.jpg    1x,
+              ./././images/pic/main/more/desk4-3d-skull-x2.jpg 2x
+            "
             media="(min-width: 1440px)"
-            sizes="(min-width: 270px) 270px, 25vw"
-            srcset="
-              ./././images/pic/main/more-photos-desk/more-photos-4.jpg    1x,
-              ./././images/pic/main/more-photos-desk/more-photos-4@2x.jpg 2x
-            "
           />
-
           <source
-            type="image / jpeg"
-            media="(min-width: 768px) and (max-width: 1439px)"
-            sizes="(min-width: 354px) 354px, 50vw"
             srcset="
-              ./././images/pic/main/more-photos-tab/more-photos-4.jpg    1x,
-              ./././images/pic/main/more-photos-tab/more-photos-4@2x.jpg 2x
+              ./././images/pic/main/more/tab4-3d-skull.jpg    1x,
+              ./././images/pic/main/more/tab4-3d-skull-x2.jpg 2x
             "
+            media="(min-width: 768px)"
           />
-
-          <source
-            type="image / jpeg"
-            media="(max-width: 767px)"
-            sizes="(min-width: 320px) 320px,90vw"
-            srcset="
-              ./././images/pic/main/more-photos-mob/more-photos-4.jpg    1x,
-              ./././images/pic/main/more-photos-mob/more-photos-4@2x.jpg 2x
-            "
-          />
-
           <img
-            class="more-photo-list__img"
-            src="./././images/pic/main/more-photos-desk/more-photos-4@2x.jpg"
-            alt="3-d модель черепа"
+            class="card"
+            src="./././images/pic/main/more/desk4-3d-skull.jpg"
+            alt="Приклад№4"
+            width="438"
           />
         </picture>
-      </li>
-
-      <li class="more-photo-list__item">
-        <picture onclick="openModal();currentSlide(5)">
+      </div>
+      <div class="grid-item item5">
+        <picture>
           <source
-            type="image / jpeg"
+            srcset="
+              ./././images/pic/main/more/desk5-3d-tank.jpg    1x,
+              ./././images/pic/main/more/desk5-3d-tank-x2.jpg 2x
+            "
             media="(min-width: 1440px)"
-            sizes="(min-width: 270px) 270px, 25vw"
-            srcset="
-              ./././images/pic/main/more-photos-desk/more-photos-5.jpg    1x,
-              ./././images/pic/main/more-photos-desk/more-photos-5@2x.jpg 2x
-            "
           />
-
           <source
-            type="image / jpeg"
-            media="(min-width: 768px) and (max-width: 1439px)"
-            sizes="(min-width: 354px) 354px, 50vw"
             srcset="
-              ./././images/pic/main/more-photos-tab/more-photos-5.jpg    1x,
-              ./././images/pic/main/more-photos-tab/more-photos-5@2x.jpg 2x
+              ./././images/pic/main/more/tab5-3d-tank.jpg    1x,
+              ./././images/pic/main/more/tab5-3d-tank-x2.jpg 2x
             "
+            media="(min-width: 768px)"
           />
-
-          <source
-            type="image / jpeg"
-            media="(max-width: 767px)"
-            sizes="(min-width: 320px) 320px,90vw"
-            srcset="
-              ./././images/pic/main/more-photos-mob/more-photos-5.jpg    1x,
-              ./././images/pic/main/more-photos-mob/more-photos-5@2x.jpg 2x
-            "
-          />
-
           <img
-            class="more-photo-list__img"
-            src="./././images/pic/main/more-photos-desk/more-photos-5@2x.jpg"
-            alt="3-d модель танка"
+            class="card"
+            src="./././images/pic/main/more/desk5-3d-tank.jpg"
+            alt="Приклад№5"
+            width="438"
           />
         </picture>
-      </li>
-
-      <li class="more-photo-list__item">
-        <picture onclick="openModal();currentSlide(6)">
+      </div>
+      <div class="grid-item item6">
+        <picture>
           <source
-            type="image / jpeg"
+            srcset="
+              ./././images/pic/main/more/desk6-3d-lamp.jpg    1x,
+              ./././images/pic/main/more/desk6-3d-lamp-x2.jpg 2x
+            "
             media="(min-width: 1440px)"
-            sizes="(min-width: 270px) 270px, 25vw"
-            srcset="
-              ./././images/pic/main/more-photos-desk/more-photos-6.jpg    1x,
-              ./././images/pic/main/more-photos-desk/more-photos-6@2x.jpg 2x
-            "
           />
-
           <source
-            type="image / jpeg"
-            media="(min-width: 768px) and (max-width: 1439px)"
-            sizes="(min-width: 354px) 354px, 50vw"
             srcset="
-              ./././images/pic/main/more-photos-tab/more-photos-6.jpg    1x,
-              ./././images/pic/main/more-photos-tab/more-photos-6@2x.jpg 2x
+              ./././images/pic/main/more/tab6-3d-lamp.jpg    1x,
+              ./././images/pic/main/more/tab6-3d-lamp-x2.jpg 2x
             "
+            media="(min-width: 768px)"
           />
-
-          <source
-            type="image / jpeg"
-            media="(max-width: 767px)"
-            sizes="(min-width: 320px) 320px,90vw"
-            srcset="
-              ./././images/pic/main/more-photos-mob/more-photos-6.jpg    1x,
-              ./././images/pic/main/more-photos-mob/more-photos-6@2x.jpg 2x
-            "
-          />
-
           <img
-            class="more-photo-list__img"
-            src="./././images/pic/main/more-photos-desk/more-photos-6@2x.jpg"
-            alt="3-d модель настольных ламп"
+            class="card"
+            src="./././images/pic/main/more/desk6-3d-lamp.jpg"
+            alt="Приклад№6"
+            width="438"
           />
         </picture>
-      </li>
-
-      <li class="more-photo-list__item">
-        <picture onclick="openModal();currentSlide(7)">
+      </div>
+      <div class="grid-item item7">
+        <picture>
           <source
-            type="image / jpeg"
+            srcset="
+              ./././images/pic/main/more/desk7-3d-car.jpg    1x,
+              ./././images/pic/main/more/desk7-3d-car-x2.jpg 2x
+            "
             media="(min-width: 1440px)"
-            sizes="(min-width: 270px) 270px, 25vw"
-            srcset="
-              ./././images/pic/main/more-photos-desk/more-photos-7.jpg    1x,
-              ./././images/pic/main/more-photos-desk/more-photos-7@2x.jpg 2x
-            "
           />
-
           <source
-            type="image / jpeg"
-            media="(min-width: 768px) and (max-width: 1439px)"
-            sizes="(min-width: 354px) 354px, 50vw"
             srcset="
-              ./././images/pic/main/more-photos-tab/more-photos-7.jpg    1x,
-              ./././images/pic/main/more-photos-tab/more-photos-7@2x.jpg 2x
+              ./././images/pic/main/more/tab7-3d-car.jpg    1x,
+              ./././images/pic/main/more/tab7-3d-car-x2.jpg 2x
             "
+            media="(min-width: 768px)"
           />
-
-          <source
-            type="image / jpeg"
-            media="(max-width: 767px)"
-            sizes="(min-width: 320px) 320px,90vw"
-            srcset="
-              ./././images/pic/main/more-photos-mob/more-photos-7.jpg    1x,
-              ./././images/pic/main/more-photos-mob/more-photos-7@2x.jpg 2x
-            "
-          />
-
           <img
-            class="more-photo-list__img"
-            src="./././images/pic/main/more-photos-desk/more-photos-7@2x.jpg"
-            alt="3-d модель корпуса автомобиля"
+            class="card"
+            src="./././images/pic/main/more/desk7-3d-car.jpg"
+            alt="Приклад№7"
+            width="438"
           />
         </picture>
-      </li>
-
-      <li class="more-photo-list__item">
-        <picture onclick="openModal();currentSlide(8)">
+      </div>
+      <div class="grid-item item8">
+        <picture>
           <source
-            type="image / jpeg"
+            srcset="
+              ./././images/pic/main/more/desk8-3d-roof.jpg    1x,
+              ./././images/pic/main/more/desk8-3d-roof-x2.jpg 2x
+            "
             media="(min-width: 1440px)"
-            sizes="(min-width: 270px) 270px, 25vw"
-            srcset="
-              ./././images/pic/main/more-photos-desk/more-photos-8.jpg    1x,
-              ./././images/pic/main/more-photos-desk/more-photos-8@2x.jpg 2x
-            "
           />
-
           <source
-            type="image / jpeg"
-            media="(min-width: 768px) and (max-width: 1439px)"
-            sizes="(min-width: 354px) 354px, 50vw"
             srcset="
-              ./././images/pic/main/more-photos-tab/more-photos-8.jpg    1x,
-              ./././images/pic/main/more-photos-tab/more-photos-8@2x.jpg 2x
+              ./././images/pic/main/more/tab8-3d-roof.jpg    1x,
+              ./././images/pic/main/more/tab8-3d-roof-x2.jpg 2x
             "
+            media="(min-width: 768px)"
           />
-
-          <source
-            type="image / jpeg"
-            media="(max-width: 767px)"
-            sizes="(min-width: 320px) 320px,90vw"
-            srcset="
-              ./././images/pic/main/more-photos-mob/more-photos-8.jpg    1x,
-              ./././images/pic/main/more-photos-mob/more-photos-8@2x.jpg 2x
-            "
-          />
-
           <img
-            class="more-photo-list__img"
-            src="./././images/pic/main/more-photos-desk/more-photos-8@2x.jpg"
-            alt="3-dмодель мечети"
+            class="card"
+            src="./././images/pic/main/more/desk8-3d-roof.jpg"
+            alt="Приклад№8"
+            width="438"
           />
         </picture>
-      </li>
-
-      <li class="more-photo-list__item">
-        <picture onclick="openModal();currentSlide(9)">
+      </div>
+      <div class="grid-item item9">
+        <picture>
           <source
-            type="image / jpeg"
+            srcset="
+              ./././images/pic/main/more/desk9-3d-mushroom.jpg    1x,
+              ./././images/pic/main/more/desk9-3d-mushroom-x2.jpg 2x
+            "
             media="(min-width: 1440px)"
-            sizes="(min-width: 270px) 270px, 25vw"
-            srcset="
-              ./././images/pic/main/more-photos-desk/more-photos-9.jpg    1x,
-              ./././images/pic/main/more-photos-desk/more-photos-9@2x.jpg 2x
-            "
           />
-
           <source
-            type="image / jpeg"
-            media="(min-width: 768px) and (max-width: 1439px)"
-            sizes="(min-width: 354px) 354px, 50vw"
             srcset="
-              ./././images/pic/main/more-photos-tab/more-photos-9.jpg    1x,
-              ./././images/pic/main/more-photos-tab/more-photos-9@2x.jpg 2x
+              ./././images/pic/main/more/tab9-3d-mushroom.jpg    1x,
+              ./././images/pic/main/more/tab9-3d-mushroom-x2.jpg 2x
             "
+            media="(min-width: 768px)"
           />
-
-          <source
-            type="image / jpeg"
-            media="(max-width: 767px)"
-            sizes="(min-width: 320px) 320px,90vw"
-            srcset="
-              ./././images/pic/main/more-photos-mob/more-photos-9.jpg    1x,
-              ./././images/pic/main/more-photos-mob/more-photos-9@2x.jpg 2x
-            "
-          />
-
           <img
-            class="more-photo-list__img"
-            src="./././images/pic/main/more-photos-desk/more-photos-9@2x.jpg"
-            alt="3-d модель лампы-грибочка"
+            class="card"
+            src="./././images/pic/main/more/desk9-3d-mushroom.jpg"
+            alt="Приклад№9"
+            width="438"
           />
         </picture>
-      </li>
-
-      <li class="more-photo-list__item">
-        <picture onclick="openModal();currentSlide(10)">
+      </div>
+      <div class="grid-item item10">
+        <picture>
           <source
-            type="image / jpeg"
+            srcset="
+              ./././images/pic/main/more/desk10-3d-fresh.jpg    1x,
+              ./././images/pic/main/more/desk10-3d-fresh-x2.jpg 2x
+            "
             media="(min-width: 1440px)"
-            sizes="(min-width: 270px) 270px, 25vw"
-            srcset="
-              ./././images/pic/main/more-photos-desk/more-photos-10.jpg    1x,
-              ./././images/pic/main/more-photos-desk/more-photos-10@2x.jpg 2x
-            "
           />
-
           <source
-            type="image / jpeg"
-            media="(min-width: 768px) and (max-width: 1439px)"
-            sizes="(min-width: 354px) 354px, 50vw"
             srcset="
-              ./././images/pic/main/more-photos-tab/more-photos-10.jpg    1x,
-              ./././images/pic/main/more-photos-tab/more-photos-10@2x.jpg 2x
+              ./././images/pic/main/more/tab10-3d-fresh.jpg    1x,
+              ./././images/pic/main/more/tab10-3d-fresh-x2.jpg 2x
             "
+            media="(min-width: 768px)"
           />
-
-          <source
-            type="image / jpeg"
-            media="(max-width: 767px)"
-            sizes="(min-width: 320px) 320px,90vw"
-            srcset="
-              ./././images/pic/main/more-photos-mob/more-photos-10.jpg    1x,
-              ./././images/pic/main/more-photos-mob/more-photos-10@2x.jpg 2x
-            "
-          />
-
           <img
-            class="more-photo-list__img"
-            src="./././images/pic/main/more-photos-desk/more-photos-10@2x.jpg"
-            alt="3-д модель какой-то штуки"
+            class="card"
+            src="./././images/pic/main/more/desk10-3d-fresh.jpg"
+            alt="Приклад№10"
+            width="438"
           />
         </picture>
-      </li>
-
-      <li class="more-photo-list__item">
-        <picture onclick="openModal();currentSlide(11)">
+      </div>
+      <div class="grid-item item11">
+        <picture>
           <source
-            type="image / jpeg"
+            srcset="
+              ./././images/pic/main/more/desk11-3d-truck.jpg    1x,
+              ./././images/pic/main/more/desk11-3d-truck-x2.jpg 2x
+            "
             media="(min-width: 1440px)"
-            sizes="(min-width: 270px) 270px, 25vw"
-            srcset="
-              ./././images/pic/main/more-photos-desk/more-photos-11.jpg    1x,
-              ./././images/pic/main/more-photos-desk/more-photos-11@2x.jpg 2x
-            "
           />
-
           <source
-            type="image / jpeg"
-            media="(min-width: 768px) and (max-width: 1439px)"
-            sizes="(min-width: 354px) 354px, 50vw"
             srcset="
-              ./././images/pic/main/more-photos-tab/more-photos-11.jpg    1x,
-              ./././images/pic/main/more-photos-tab/more-photos-11@2x.jpg 2x
+              ./././images/pic/main/more/tab11-3d-truck.jpg    1x,
+              ./././images/pic/main/more/tab11-3d-truck-x2.jpg 2x
             "
+            media="(min-width: 768px)"
           />
-
-          <source
-            type="image / jpeg"
-            media="(max-width: 767px)"
-            sizes="(min-width: 320px) 320px,90vw"
-            srcset="
-              ./././images/pic/main/more-photos-mob/more-photos-11.jpg    1x,
-              ./././images/pic/main/more-photos-mob/more-photos-11@2x.jpg 2x
-            "
-          />
-
           <img
-            class="more-photo-list__img"
-            src="./././images/pic/main/more-photos-desk/more-photos-11@2x.jpg"
-            alt="3-d модель тесла-кибер-трака"
+            class="card"
+            src="./././images/pic/main/more/desk11-3d-truck.jpg"
+            alt="Приклад№11"
+            width="438"
           />
         </picture>
-      </li>
-
-      <li class="more-photo-list__item">
-        <picture onclick="openModal();currentSlide(12)">
+      </div>
+      <div class="grid-item item12">
+        <picture>
           <source
-            type="image / jpeg"
+            srcset="
+              ./././images/pic/main/more/desk12-3d-green-zone.jpg    1x,
+              ./././images/pic/main/more/desk12-3d-green-zone-x2.jpg 2x
+            "
             media="(min-width: 1440px)"
-            sizes="(min-width: 270px) 270px, 25vw"
-            srcset="
-              ./././images/pic/main/more-photos-desk/more-photos-12.jpg    1x,
-              ./././images/pic/main/more-photos-desk/more-photos-12@2x.jpg 2x
-            "
           />
-
           <source
-            type="image / jpeg"
-            media="(min-width: 768px) and (max-width: 1439px)"
-            sizes="(min-width: 354px) 354px, 50vw"
             srcset="
-              ./././images/pic/main/more-photos-tab/more-photos-12.jpg    1x,
-              ./././images/pic/main/more-photos-tab/more-photos-12@2x.jpg 2x
+              ./././images/pic/main/more/tab12-3d-green-zone.jpg    1x,
+              ./././images/pic/main/more/tab12-3d-green-zone-x2.jpg 2x
             "
+            media="(min-width: 768px)"
           />
-
-          <source
-            type="image / jpeg"
-            media="(max-width: 767px)"
-            sizes="(min-width: 320px) 320px,90vw"
-            srcset="
-              ./././images/pic/main/more-photos-mob/more-photos-12.jpg    1x,
-              ./././images/pic/main/more-photos-mob/more-photos-12@2x.jpg 2x
-            "
-          />
-
           <img
-            class="more-photo-list__img"
-            src="./././images/pic/main/more-photos-desk/more-photos-12@2x.jpg"
-            alt="3-d модель горшочка для сукулентов"
+            class="card"
+            src="./././images/pic/main/more/desk12-3d-green-zone.jpg"
+            alt="Приклад№12"
+            width="438"
           />
         </picture>
-      </li>
-    </ul>
-
-    <svg class="more-svg" widht="45" height="45">
-      <use href="/src/images/svg/sprite.svg#icon-loading"></use>
-    </svg>
-
-    <!-- Слайдер в модальном окне -->
-    <div id="myModal" class="modal">
-      <span class="close cursor" onclick="closeModal()">
-        <svg class="close__icon">
-          <use href="/src/images/svg/sprite.svg#icon-cross"></use>
-        </svg>
-      </span>
-      <div class="modal-content">
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <img
-              class="slider-modal__img"
-              srcset="
-                ./././images/pic/main/more-photos-desk/more-photos-1@2x.jpg  320w,
-                ./././images/pic/main/more-photos-tab/more-photos-1@2x.jpg   768w,
-                ./././images/pic/main/more-photos-mob/more-photos-1@2x.jpg  1200w
-              "
-              sizes="(min-width: 1200vw) 50vw, (min-width: 768vw) 50vw, (min-width: 320px) 70w, 50vw"
-              src="./././images/pic/main/more-photos-desk/more-photos-1@2x.jpg"
-              alt="Грут, череп, миньон и компания"
-            />
-          </div>
-
-          <div class="mySlides fade">
-            <img
-              class="slider-modal__img"
-              srcset="
-                ./././images/pic/main/more-photos-desk/more-photos-2@2x.jpg  320w,
-                ./././images/pic/main/more-photos-tab/more-photos-2@2x.jpg   768w,
-                ./././images/pic/main/more-photos-mob/more-photos-2@2x.jpg  1200w
-              "
-              sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70w, 100vw"
-              src="./././images/pic/main/more-photos-desk/more-photos-2@2x.jpg"
-              alt="Арка из платика"
-            />
-          </div>
-
-          <div class="mySlides fade">
-            <img
-              class="slider-modal__img-big"
-              srcset="
-                ./././images/pic/main/more-photos-desk/more-photos-3@2x.jpg  320w,
-                ./././images/pic/main/more-photos-tab/more-photos-3@2x.jpg   768w,
-                ./././images/pic/main/more-photos-mob/more-photos-3@2x.jpg  1200w
-              "
-              sizes="(min-width: 1200px) 400px, (min-width: 768px) 300px, (min-width: 320px) 70w, 100vw"
-              src="./././images/pic/main/more-photos-desk/more-photos-3@2x.jpg"
-              alt="Пластиковый Волли"
-            />
-          </div>
-
-          <div class="mySlides fade">
-            <img
-              class="slider-modal__img-big"
-              srcset="
-                ./././images/pic/main/more-photos-desk/more-photos-4@2x.jpg  320w,
-                ./././images/pic/main/more-photos-tab/more-photos-4@2x.jpg   768w,
-                ./././images/pic/main/more-photos-mob/more-photos-4@2x.jpg  1200w
-              "
-              sizes="(min-width: 1200px) 400px, (min-width: 768px) 300px, (min-width: 320px) 70w, 100vw"
-              src="./././images/pic/main/more-photos-desk/more-photos-4@2x.jpg"
-              alt="Моделька черепа в сеточку"
-            />
-          </div>
-
-          <div class="mySlides fade">
-            <img
-              class="slider-modal__img"
-              srcset="
-                ./././images/pic/main/more-photos-desk/more-photos-5@2x.jpg  320w,
-                ./././images/pic/main/more-photos-tab/more-photos-5@2x.jpg   768w,
-                ./././images/pic/main/more-photos-mob/more-photos-5@2x.jpg  1200w
-              "
-              sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70w, 100vw"
-              src="./././images/pic/main/more-photos-desk/more-photos-5@2x.jpg"
-              alt="Моделька танка из World of Tanks"
-            />
-          </div>
-
-          <div class="mySlides fade">
-            <img
-              class="slider-modal__img"
-              srcset="
-                ./././images/pic/main/more-photos-desk/more-photos-6@2x.jpg  320w,
-                ./././images/pic/main/more-photos-tab/more-photos-6@2x.jpg   768w,
-                ./././images/pic/main/more-photos-mob/more-photos-6@2x.jpg  1200w
-              "
-              sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70w, 100vw"
-              src="./././images/pic/main/more-photos-desk/more-photos-6@2x.jpg"
-              alt="Лампы из Pixar"
-            />
-          </div>
-
-          <div class="mySlides fade">
-            <img
-              class="slider-modal__img"
-              srcset="
-                ./././images/pic/main/more-photos-desk/more-photos-7@2x.jpg  320w,
-                ./././images/pic/main/more-photos-tab/more-photos-7@2x.jpg   768w,
-                ./././images/pic/main/more-photos-mob/more-photos-7@2x.jpg  1200w
-              "
-              sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70w, 100vw"
-              src="./././images/pic/main/more-photos-desk/more-photos-7@2x.jpg"
-              alt="Корпус бэт-мобиля"
-            />
-          </div>
-
-          <div class="mySlides fade">
-            <img
-              class="slider-modal__img"
-              srcset="
-                ./././images/pic/main/more-photos-desk/more-photos-8@2x.jpg  320w,
-                ./././images/pic/main/more-photos-tab/more-photos-8@2x.jpg   768w,
-                ./././images/pic/main/more-photos-mob/more-photos-8@2x.jpg  1200w
-              "
-              sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70w, 100vw"
-              src="./././images/pic/main/more-photos-desk/more-photos-8@2x.jpg"
-              alt="Мечеть из Алладина =)"
-            />
-          </div>
-
-          <div class="mySlides fade">
-            <img
-              class="slider-modal__img-big"
-              srcset="
-                ./././images/pic/main/more-photos-desk/more-photos-9@2x.jpg  320w,
-                ./././images/pic/main/more-photos-tab/more-photos-9@2x.jpg   768w,
-                ./././images/pic/main/more-photos-mob/more-photos-9@2x.jpg  1200w
-              "
-              sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70w, 100vw"
-              src="./././images/pic/main/more-photos-desk/more-photos-9@2x.jpg"
-              alt="Лампа-грибочек"
-            />
-          </div>
-
-          <div class="mySlides fade">
-            <img
-              class="slider-modal__img-big"
-              srcset="
-                ./././images/pic/main/more-photos-desk/more-photos-10@2x.jpg  320w,
-                ./././images/pic/main/more-photos-tab/more-photos-10@2x.jpg   768w,
-                ./././images/pic/main/more-photos-mob/more-photos-10@2x.jpg  1200w
-              "
-              sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70w, 100vw"
-              src="./././images/pic/main/more-photos-desk/more-photos-10@2x.jpg"
-              alt="Толи колонки, толи освежители воздуха..."
-            />
-          </div>
-
-          <div class="mySlides fade">
-            <img
-              class="slider-modal__img"
-              srcset="
-                ./././images/pic/main/more-photos-desk/more-photos-11@2x.jpg  320w,
-                ./././images/pic/main/more-photos-tab/more-photos-11@2x.jpg   768w,
-                ./././images/pic/main/more-photos-mob/more-photos-11@2x.jpg  1200w
-              "
-              sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70w, 100vw"
-              src="./././images/pic/main/more-photos-desk/more-photos-11@2x.jpg"
-              alt="Трак Иллона Маска"
-            />
-          </div>
-
-          <div class="mySlides fade">
-            <img
-              class="slider-modal__img"
-              srcset="
-                ./././images/pic/main/more-photos-desk/more-photos-12@2x.jpg  320w,
-                ./././images/pic/main/more-photos-tab/more-photos-12@2x.jpg   768w,
-                ./././images/pic/main/more-photos-mob/more-photos-12@2x.jpg  1200w
-              "
-              sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70w, 100vw"
-              src="./././images/pic/main/more-photos-desk/more-photos-12@2x.jpg"
-              alt="Горшочек для суккулентов"
-            />
-          </div>
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">
-            <svg class="prev__icon">
-              <use
-                href="/src/images/svg/sprite.svg#icon-gallery-arrow-left"
-              ></use>
-            </svg>
-          </a>
-          <a class="next" onclick="plusSlides(1)">
-            <svg class="next__icon">
-              <use
-                href="/src/images/svg/sprite.svg#icon-gallery-arrow-right"
-              ></use>
-            </svg>
-          </a>
-        </div>
       </div>
     </div>
   </div>
