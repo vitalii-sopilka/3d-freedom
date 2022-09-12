@@ -40,7 +40,7 @@
 .gallery__foto {
   max-width: 100%;
   height: auto;
-
+  z-index: 2;
   @media screen and (min-width: $mobile) {
     max-width: 100%;
   }
@@ -84,16 +84,25 @@
   }
 }
 
+.gallery__content {
+  position: relative;
+  z-index: 1;
+}
 .gallery {
   &__figure-one {
-    display: none;
+    display: block;
+    position: absolute;
+    @include bd-figure(74, 74, -10, 400);
+    box-shadow: $box-shadow-color;
+    border-radius: 25px 0px;
+    z-index: 1;
     @media screen and (min-width: $mobile) {
       display: block;
       position: absolute;
       @include bd-figure(74, 74, -10, 400);
       box-shadow: $box-shadow-color;
-      z-index: 0;
       border-radius: 25px 0px;
+      z-index: 1;
     }
     @media screen and (min-width: 768px) {
       display: block;
@@ -113,7 +122,12 @@
     }
   }
   &__figure-two {
-    display: none;
+    display: block;
+    position: absolute;
+    @include bd-figure(74, 74, 422, 300);
+    box-shadow: $box-shadow-color;
+    z-index: 1;
+    border-radius: 72px;
     @media screen and (min-width: $mobile) {
       display: block;
       position: absolute;
@@ -133,14 +147,19 @@
     @media screen and (min-width: $desktop) {
       display: block;
       position: absolute;
-      @include bd-figure(143, 144, 1270, 182);
+      @include bd-figure(143, 144, 1270, 178);
       box-shadow: $box-shadow-color;
       z-index: 1;
       border-radius: 72px 0px 0px 0px;
     }
   }
   &__figure-three {
-    display: none;
+    display: block;
+    position: absolute;
+    @include bd-figure(74, 74, 410, 910);
+    box-shadow: $box-shadow-color;
+    z-index: 1;
+    border-radius: 0px 25px 0px 25px;
     @media screen and (min-width: $mobile) {
       display: block;
       position: absolute;
@@ -160,7 +179,7 @@
     @media screen and (min-width: $desktop) {
       display: block;
       position: absolute;
-      @include bd-figure(143, 144, 1384, 326);
+      @include bd-figure(143, 144, 1384, 312);
       box-shadow: $box-shadow-color;
       z-index: 1;
       border-radius: 72px;
