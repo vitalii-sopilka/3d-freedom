@@ -98,7 +98,6 @@
         justify-content: flex-end;
         align-items: stretch;
         margin-left: auto;
-
         @include font($fontCeraPro, 400, 18, 1.25);
       }
     }
@@ -109,12 +108,9 @@
     color: $second-font-color;
     flex-direction: column;
     align-items: flex-start;
-
     @media screen and (min-width: 768px) {
-      flex-direction: column;
     }
     @media screen and (min-width: 1440px) {
-      flex-direction: column;
       align-items: flex-end;
     }
   }
