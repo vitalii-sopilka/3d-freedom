@@ -1,15 +1,15 @@
 .print {
-    margin-top: 32px;
-    margin-bottom: 35px;
+    padding-top: 32px;
+    padding-bottom: 35px;
     position: relative;
 
     @media screen and (min-width: $tablet) {
-        margin-bottom: 40px;
+             padding-bottom: 40px;
         }
     
         @media screen and (min-width: $desktop) {
-            margin-top: 100px;
-           margin-bottom: 100px;
+            padding-top: 100px;
+             padding-bottom: 100px;
         }
 }
 
