@@ -1,3 +1,18 @@
+.content-order.new {
+  @media screen and (min-width: 1440px) {
+    flex-direction: row-reverse;
+  }
+}
+
+// .tool {
+//   text-decoration: ;
+// }
+.contacts__container.al-it {
+  @media screen and (min-width: 1440px) {
+    align-items: flex-start;
+  }
+}
+
 .content-order {
   display: flex;
   flex-direction: column;
@@ -214,6 +229,10 @@
     margin-left: auto;
     margin-right: 0;
   }
+}
+
+.feedback__upload-text.bord {
+  border: none;
 }
 
 input [type='file'] {
