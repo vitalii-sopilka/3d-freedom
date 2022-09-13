@@ -1,57 +1,62 @@
 .more-photos .container {
-  padding-top: 40px;
-  padding-bottom: 60px;
+  // padding-top: 40px;
+  // padding-bottom: 120px;
   @media screen and (min-width: $tablet) {
-    padding-top: 60px;
-    padding-bottom: 80px;
+    // padding-top: 60px;
+    // padding-bottom: 80px;
+    margin-bottom: 80px;
   }
   @media screen and (min-width: $desktop) {
     max-width: 1206px;
+    margin-bottom: 0;
     // max-height: 1200px;
-    padding-top: 120px;
-    padding-bottom: 100px;
+    // padding-top: 120px;
+    // padding-bottom: 156px;
     overflow: auto;
   }
 }
 
+.more-photos {
+  position: relative;
+}
+
 .grid-cards {
   display: grid;
-  padding-bottom: 20px;
+  // padding-bottom: 20px;
   width: 100%;
-
   grid-gap: 32px;
-  @media screen and (max-width: 479px) {
-    grid-template-columns: 100%;
-    grid-template-areas:
-      'item1'
-      'item2'
-      'item3'
-      'item4'
-      'item5'
-      'item6'
-      'item7'
-      'item8'
-      'item9'
-      'item10'
-      'item11'
-      'item12';
-  }
-  @media screen and (min-width: $mobile) {
-    grid-template-columns: 100%;
-    grid-template-areas:
-      'item1'
-      'item2'
-      'item3'
-      'item4'
-      'item5'
-      'item6'
-      'item7'
-      'item8'
-      'item9'
-      'item10'
-      'item11'
-      'item12';
-  }
+  // @media screen and (max-width: 479px) {
+  //   grid-template-columns: 100%;
+  //   grid-template-areas:
+  //     'item1'
+  //     'item2'
+  //     'item3'
+  //     'item4'
+  //     'item5'
+  //     'item6'
+  //     'item7'
+  //     'item8'
+  //     'item9'
+  //     'item10'
+  //     'item11'
+  //     'item12';
+  // }
+  // @media screen and (min-width: $mobile) {
+  //   grid-template-columns: 100%;
+  //   grid-template-areas:
+  //     'item1'
+  //     'item2'
+  //     'item3'
+  //     'item4'
+  //     'item5'
+  //     'item6'
+  //     'item7'
+  //     'item8'
+  //     'item9'
+  //     'item10'
+  //     'item11'
+  //     'item12';
+  // }
   @media screen and (min-width: $tablet) {
     max-height: 788px;
     justify-content: center;
@@ -105,11 +110,11 @@
       grid-column: 4/6;
       grid-row: 4/5;
     }
-    & .card {
-      object-fit: none;
-      width: auto;
-      height: auto;
-    }
+    // & .card {
+    //   object-fit: none;
+    //   width: auto;
+    //   height: auto;
+    // }
   }
   @media screen and (min-width: $desktop) {
     max-height: 1133px;
@@ -164,18 +169,18 @@
       grid-column: 4/6;
       grid-row: 4/5;
     }
-    & .card {
-      object-fit: none;
-      width: auto;
-      height: auto;
-    }
+    // & .card {
+    //   object-fit: none;
+    //   width: auto;
+    //   height: auto;
+    // }
   }
 }
 
 .title__more-photos {
   @include titleFonts(24px);
   @media screen and (max-width: 767px) {
-    padding-bottom: 10px;
+    margin-bottom: 16px;
     position: sticky;
     top: 0;
     background-color: #fbfbfb;
@@ -203,12 +208,69 @@
   animation-iteration-count: infinite;
   animation-duration: 2000ms;
   animation-timing-function: $cubic-bezier;
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
   @media screen and (min-width: 1440px) {
+    margin-bottom: 100px;
+    margin-top: 12px;
     display: block;
     width: 44px;
     height: 44px;
   }
+}
+
+.grid-cards {
+  position: relative;
+}
+
+.grid-relative {
+  &__figure-one {
+    display: block;
+    position: absolute;
+    @include bd-figure(74, 74, -21, 420);
+    box-shadow: $box-shadow-color;
+    z-index: 1;
+    border-radius: 72px;
+    @media screen and (min-width: $mobile) {
+      display: block;
+      position: absolute;
+      @include bd-figure(74, 74, -21, 420);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 35px 0px 35px 0px;
+    }
+    @media screen and (min-width: 768px) {
+      display: block;
+      position: absolute;
+      @include bd-figure(74, 74, -13, 201);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 35px 0px 35px 0px;
+    }
+    @media screen and (min-width: $desktop) {
+      display: block;
+      position: absolute;
+      @include bd-figure(143, 144, -28, 287);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 72px 0px 72px 0px;
+    }
+  }
+}
+
+.more-photos__figure-two {
+  
+}
+
+.more-photos__figure-three {
+  
+}
+
+.more-photos__figure-four {
+  
 }
