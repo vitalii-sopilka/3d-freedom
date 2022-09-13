@@ -12,19 +12,19 @@
 // }
 
 @mixin mobile {
-  @media screen and (min-width:480) {
+  @media screen and (min-width: 480) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media screen and (min-width:768) {
+  @media screen and (min-width: 768) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media screen and (min-width:1440) {
+  @media screen and (min-width: 1440) {
     @content;
   }
 }
@@ -41,4 +41,11 @@
   font-weight: $fw;
   font-size: $fs + px;
   line-height: $lh;
+}
+
+*,
+*::before,
+*::after {
+  outline: 1px solid rgb(250, 195, 175);
+  background-color: rgba(0, 255, 106, 0.1);
 }
