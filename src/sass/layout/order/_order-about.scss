@@ -69,18 +69,19 @@
   }
   //  ------------------------------------------------
   &__figure-four {
-    display: block;
-    position: absolute;
-    box-shadow: $box-shadow-color;
-    @include bd-figure(74, 74, null, 113);
-    right: -41px;
-    border-radius: 0px 25px 0px 25px;
+    display: none;
+    // display: block;
+    // position: absolute;
+    // box-shadow: $box-shadow-color;
+    // @include bd-figure(74, 74, null, 113);
+    // right: -41px;
+    // border-radius: 0px 25px 0px 25px;
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
       box-shadow: $box-shadow-color;
-      @include bd-figure(72, 74, 664, 8);
-      border-radius: 0px 0px 0px 72px;
+      @include bd-figure(72, 74, 632, 956);
+      border-radius: 0px 25px 0px 25px;
     }
     @media screen and (min-width: 1440px) {
       display: none;
@@ -88,17 +89,13 @@
   }
   // ------------------------------------------------
   &__figure-five {
-    display: block;
-    position: absolute;
-    box-shadow: $box-shadow-color;
-    @include bd-figure(74, 74, -37, 150);
-    border-radius: 0px 0px 0px 35px;
+    display: none;
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
       box-shadow: $box-shadow-color;
-      @include bd-figure(72, 74, 664, 8);
-      border-radius: 0px 0px 0px 72px;
+      @include bd-figure(72, 74, 632, 391);
+      border-radius: 25px 0px 25px 0px;
     }
     @media screen and (min-width: 1440px) {
       display: none;
@@ -118,19 +115,40 @@
       border-radius: 72px 72px 72px 72px;
     }
   }
+
+  &__figure-seven {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      position: absolute;
+      box-shadow: $box-shadow-color;
+      @include bd-figure(72, 74, -17, 1255);
+      border-radius: 72px 72px 72px 72px;
+      z-index: 1;
+    }
+    @media screen and (min-width: 1440px) {
+      display: none;
+    }
+  }
   // ------------------------------------------------
 
   &__title {
-    text-align: center;
     margin-bottom: 16px;
+    text-align: center;
+    @include font($fontCeraPro, 700, 24, 1.25);
+    color: $main-font-color;
     @media screen and (min-width: 768px) {
       text-align: left;
+      @include font($fontCeraPro, 700, 36, 1.25);
     }
     @media screen and (min-width: 1440px) {
+      margin-bottom: 24px;
       text-align: start;
+      @include font($fontCeraPro, 700, 48, 1.25);
     }
   }
   &__content {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
