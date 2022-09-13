@@ -1,12 +1,12 @@
 .hero {
-  padding-bottom: 40px;
+  padding: 18px 0 0 40px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 60px;
+    padding: 30px 0 0 60px;
   }
 
   @media screen and (min-width: 1440px) {
-    padding-bottom: 120px;
+    padding: 43px 0 0 120px;
   }
 
   &__container {
@@ -15,7 +15,6 @@
 
   &__title {
     margin: 0 auto 32px auto;
-    padding-top: 18px;
     max-width: 280px;
     text-align: center;
     @include font($fontCaviarDreams, 400, 18, 1.17);
@@ -23,14 +22,12 @@
 
     @media screen and (min-width: 768px) {
       margin-bottom: 60px;
-      padding-top: 30px;
       max-width: 336px;
       font-size: 24px;
     }
 
     @media screen and (min-width: 1440px) {
       max-width: 630px;
-      padding-top: 43px;
       font-size: 48px;
     }
   }
@@ -69,19 +66,19 @@
 
   &__slogan {
     display: block;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     @include font($fontCaviarDreams, 400, 16, 1.19);
     text-align: center;
     color: $second-font-color;
 
     @media screen and (min-width: 768px) {
-      padding-bottom: 60px;
+      margin-bottom: 60px;
       font-size: 18px;
       line-height: 1.17;
     }
 
     @media screen and (min-width: 1440px) {
-      padding-bottom: 120px;
+      margin-bottom: 120px;
       font-size: 36px;
     }
   }
@@ -94,13 +91,13 @@
       position: absolute;
       z-index: 3;
 
-      @include bd-figure(74, 74, 32, 0);
+      @include bd-figure(74, 74, 32, -30);
       box-shadow: $box-shadow-color;
       border-radius: 0 0 35px 0;
     }
 
     @media screen and (min-width: 1440px) {
-      @include bd-figure(144, 144, 32, 0);
+      @include bd-figure(144, 144, 32, -43);
       border-radius: 0 0 72px 0;
     }
   }
@@ -113,12 +110,12 @@
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
-      @include bd-figure(74, 74, 107, 0);
+      @include bd-figure(74, 74, 107, -30);
       z-index: 99;
     }
 
     @media screen and (min-width: 1440px) {
-      @include bd-figure(144, 144, 177, 0);
+      @include bd-figure(144, 144, 177, -43);
     }
   }
 
@@ -128,13 +125,13 @@
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
-      @include bd-figure(74, 74, 589, 4);
+      @include bd-figure(74, 74, 589, -26);
       box-shadow: $box-shadow-color;
       z-index: 99;
     }
 
     @media screen and (min-width: 1440px) {
-      @include bd-figure(144, 144, 1120, 1);
+      @include bd-figure(144, 144, 1120, -42);
     }
   }
 
@@ -145,13 +142,13 @@
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
-      @include bd-figure(74, 74, 662, 4);
+      @include bd-figure(74, 74, 662, -26);
       border-radius: 0 0 35px 0;
       z-index: 99;
     }
 
     @media screen and (min-width: 1440px) {
-      @include bd-figure(144, 144, 1264, 1);
+      @include bd-figure(144, 144, 1264, -42);
       border-radius: 0 0 72 0;
     }
   }
@@ -162,13 +159,13 @@
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
-      @include bd-figure(74, 74, 107, 75);
+      @include bd-figure(74, 74, 107, 45);
       box-shadow: $box-shadow-color;
       border-radius: 0 35px 0 0;
       z-index: 99;
 
       @media screen and (min-width: 1440px) {
-        @include bd-figure(144, 144, 177, 146);
+        @include bd-figure(144, 144, 177, 103);
         border-radius: 0 72px 0 0;
       }
     }
@@ -180,13 +177,13 @@
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
-      @include bd-figure(74, 74, 589, 78);
+      @include bd-figure(74, 74, 589, 48);
       box-shadow: $box-shadow-color;
       border-radius: 72px;
       z-index: 99;
 
       @media screen and (min-width: 1440px) {
-        @include bd-figure(144, 144, 1120, 146);
+        @include bd-figure(144, 144, 1120, 103);
       }
     }
   }
@@ -197,13 +194,13 @@
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
-      @include bd-figure(74, 74, 32, 150);
+      @include bd-figure(74, 74, 32, 120);
       box-shadow: $box-shadow-color;
       border-radius: 0 0 0 35px;
       z-index: 99;
 
       @media screen and (min-width: 1440px) {
-        @include bd-figure(144, 144, 32, 291);
+        @include bd-figure(144, 144, 32, 248);
         border-radius: 0 0 0 72px;
       }
     }
@@ -215,13 +212,13 @@
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
-      @include bd-figure(74, 74, 662, 148);
+      @include bd-figure(74, 74, 662, 118);
       box-shadow: $box-shadow-color;
       border-radius: 25px 0;
       z-index: 99;
 
       @media screen and (min-width: 1440px) {
-        @include bd-figure(144, 144, 1264, 290);
+        @include bd-figure(144, 144, 1264, 247);
         border-radius: 72px 0;
       }
     }
@@ -233,13 +230,13 @@
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
-      @include bd-figure(74, 74, 107, 225);
+      @include bd-figure(74, 74, 107, 195);
       box-shadow: $box-shadow-color;
       border-radius: 0 0 35px 0;
       z-index: 99;
 
       @media screen and (min-width: 1440px) {
-        @include bd-figure(144, 144, 177, 436);
+        @include bd-figure(144, 144, 177, 393);
         border-radius: 0 0 72px 0;
       }
     }
@@ -290,13 +287,13 @@
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
-      @include bd-figure(74, 74, 589, 222);
+      @include bd-figure(74, 74, 589, 192);
       box-shadow: $box-shadow-color;
       border-radius: 0 0 0 35px;
       z-index: 99;
 
       @media screen and (min-width: 1440px) {
-        @include bd-figure(144, 144, 1120, 434);
+        @include bd-figure(144, 144, 1120, 391);
         border-radius: 0 0 72px 0;
       }
     }
@@ -310,12 +307,12 @@
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
-      @include bd-figure(74, 74, 662, 222);
+      @include bd-figure(74, 74, 662, 192);
       z-index: 99;
     }
 
     @media screen and (min-width: 1440px) {
-      @include bd-figure(144, 144, 1264, 434);
+      @include bd-figure(144, 144, 1264, 391);
     }
   }
 
@@ -327,12 +324,12 @@
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
-      @include bd-figure(74, 74, 32, 284);
+      @include bd-figure(74, 74, 32, 254);
       z-index: 99;
     }
 
     @media screen and (min-width: 1440px) {
-      @include bd-figure(144, 144, 32, 555);
+      @include bd-figure(144, 144, 32, 512);
     }
   }
 
@@ -342,14 +339,14 @@
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
-      @include bd-figure(74, 64, 663, 294);
+      @include bd-figure(74, 64, 663, 264);
       transform: rotate(180deg);
       box-shadow: $box-shadow-color;
       border-radius: 0 35px 0 0;
       z-index: 99;
 
       @media screen and (min-width: 1440px) {
-        @include bd-figure(144, 124, 1264, 578);
+        @include bd-figure(144, 124, 1264, 535);
         border-radius: 0 72px 0 0;
       }
     }
@@ -357,17 +354,17 @@
 
   &__figure-fourteen {
     position: absolute;
-    @include bd-figure(74, 74, -29, 221);
+    @include bd-figure(74, 74, -29, 203);
     box-shadow: $box-shadow-color;
     border-radius: 0 0 35px 0;
     z-index: 99;
 
     @media screen and (min-width: 768px) {
-      @include bd-figure(74, 74, 32, 359);
+      @include bd-figure(74, 74, 32, 329);
     }
 
     @media screen and (min-width: 1440px) {
-      @include bd-figure(110, 144, 32, 700);
+      @include bd-figure(110, 144, 32, 657);
       border-radius: 0 0 72px 0;
     }
   }
