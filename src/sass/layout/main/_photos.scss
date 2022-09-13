@@ -1,6 +1,15 @@
 .more-photos .container {
-  @media screen and (max-width: 767px) {
-    max-height: 1200px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 1206px;
+    // max-height: 1200px;
+    padding-top: 120px;
+    padding-bottom: 100px;
     overflow: auto;
   }
 }
@@ -9,6 +18,7 @@
   display: grid;
   padding-bottom: 20px;
   width: 100%;
+
   grid-gap: 32px;
   @media screen and (max-width: 479px) {
     grid-template-columns: 100%;
@@ -43,6 +53,7 @@
       'item12';
   }
   @media screen and (min-width: $tablet) {
+    max-height: 788px;
     justify-content: center;
     grid-template-columns: 152px 60px 152px 60px 152px;
     grid-template-rows: 180px 180px 152px 152px;
@@ -92,7 +103,7 @@
     }
     & .item12 {
       grid-column: 4/6;
-      grid-row: 4/5
+      grid-row: 4/5;
     }
     & .card {
       object-fit: none;
@@ -101,6 +112,7 @@
     }
   }
   @media screen and (min-width: $desktop) {
+    max-height: 1133px;
     justify-content: center;
     grid-template-columns: 203px 203px 202px 203px 203px;
     grid-template-rows: 278px 278px 203px 278px;
@@ -150,7 +162,7 @@
     }
     & .item12 {
       grid-column: 4/6;
-      grid-row: 4/5
+      grid-row: 4/5;
     }
     & .card {
       object-fit: none;
@@ -170,13 +182,33 @@
   }
   @media screen and (min-width: $tablet) {
     font-size: 36px;
-    margin-top: 60px;
     margin-bottom: 32px;
   }
   @media screen and (min-width: $desktop) {
     font-size: 48px;
-    margin-top: 120px;
     margin-bottom: 60px;
-    margin-left: 124px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.icon-loader {
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  fill: $svg-color;
+  background-color: inherit;
+  animation-name: loadSvg;
+  animation-iteration-count: infinite;
+  animation-duration: 2000ms;
+  animation-timing-function: $cubic-bezier;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1440px) {
+    display: block;
+    width: 44px;
+    height: 44px;
   }
 }

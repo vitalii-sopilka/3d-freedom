@@ -62,8 +62,9 @@
     line-height: 45px;
   }
   @media screen and (min-width: $desktop) {
-    margin-left: 114px;
-    margin-top: 20px;
+    max-width: 1142px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 60px;
     font-size: 48px;
     line-height: 60px;
@@ -200,5 +201,3 @@
 .gallery__tank-mini {
   border-radius: 72px;
 }
-
-
