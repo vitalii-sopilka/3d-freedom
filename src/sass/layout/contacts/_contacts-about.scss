@@ -18,8 +18,22 @@
 .hero-contacts.section {
   @media screen and (min-width: 768px) {
     font-size: 36px;
-    padding: 40px 0;
+    // padding: 40px 0;
   }
+}
+
+.contact-hero__wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.contacts-hero-title {
+  margin: 0;
+}
+
+.contact-hero__iframe {
+  margin-bottom: 16px;
 }
 
 .contact-hero__wrap {
@@ -27,6 +41,10 @@
   gap: 32px;
   padding-left: 149px;
   padding-right: 189px;
+}
+
+.contact-hero__picture {
+  border-radius: 15px;
 }
 
 .contacts-hero {
@@ -50,7 +68,53 @@
 
 .contacts-hero__img {
   position: relative;
-  padding-bottom: 16px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  visibility: 1;
+  opacity: 1;
+  // padding-bottom: 16px;
+  &.is-hidden {
+    visibility: 0;
+    opacity: 0;
+  }
+}
+
+.play-button {
+  width: 67px;
+  height: 67px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media screen and (min-width: 768px) {
+    // width: calc((100% - 30px) / 2);
+  }
+}
+
+.contact-hero__picture {
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
+}
+
+.icon-spot {
+  transform: translate3D(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  box-shadow: 0 0 3px 3px #fff;
 }
 
 .contacts-hero__icon {
@@ -135,15 +199,24 @@
 
   @include font($fontCeraPro, 400, 16, 1.25);
   @media screen and (min-width: 768px) {
+    margin-left: 32px;
+
+    width: 335px;
   }
   @media screen and (min-width: 1440px) {
     @include font($fontCeraPro, 400, 18, 1.28);
   }
 
+  // .contact-hero__text {
+  //   @media screen and (min-width: 768px) {
+  //     margin-bottom: 16px;
+  //   }
+  // }
+
   & :first-child {
     margin-bottom: 16px;
     @media screen and (min-width: 768px) {
-      margin-bottom: 0;
+      margin-bottom: 16px;
     }
     @media screen and (min-width: 1440px) {
       margin-bottom: 16px;
