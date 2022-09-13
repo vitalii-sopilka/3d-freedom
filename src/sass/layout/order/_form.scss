@@ -30,7 +30,7 @@
   position: absolute;
   box-shadow: $box-shadow-color;
   @include bd-figure(74, 74, null, 60);
-  right: -27px;
+  right: 0px;
   border-radius: 72px 72px 72px 72px;
 
   @media screen and (min-width: 768px) {
@@ -102,7 +102,13 @@
     //   border-color: $svg-color;
     // }
     &:not(:last-child) {
-      margin-bottom: 44px;
+      margin-bottom: 40px;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+      }
+      @media screen and (min-width: 1440px) {
+        margin-bottom: 44px;
+      }
     }
     &:nth-child(6) {
       border: none;
@@ -122,6 +128,7 @@
     padding-bottom: 4px;
     cursor: pointer;
     outline: transparent;
+    background-color: transparent;
 
     &::placeholder {
       color: $second-font-color;
@@ -237,18 +244,27 @@ input [type='file'] {
 .select-selected:after {
   position: absolute;
   content: '';
-  top: 11px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-radius: 0;
-  border-color: $second-font-color transparent transparent transparent;
+  top: 3px;
+  right: 5px;
+  width: 21px;
+  height: 13px;
+  background-image: url(/src/images/pic/order/polygon-svg-down.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent $second-font-color transparent;
+  content: '';
   top: 3px;
+  right: 5px;
+  width: 21px;
+  height: 13px;
+  background-image: url(/src/images/pic/order/polygon-svg-up.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .select-items div,

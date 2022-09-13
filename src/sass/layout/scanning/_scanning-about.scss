@@ -1,6 +1,10 @@
 .scan-section {
   justify-content: center;
   // background-color: $main-bg-color;
+  // padding-top: 40px;
+  // @media screen and (min-width: $desktop) {
+  //   padding-top: 100px;
+  // }
 }
 
 .scan-container {
@@ -8,6 +12,7 @@
   // background-color: $main-bg-color;
   position: relative;
   flex-direction: column;
+  padding-top: 40px;
   @media screen and (max-width: 768px) {
     max-width: $mobile;
   }
@@ -19,6 +24,14 @@
     max-width: $desktop;
     padding-right: 269px;
     padding-left: 149px;
+    padding-top: 100px;
+  }
+}
+
+.scan-title {
+  margin-bottom: 16px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 24px;
   }
 }
 
@@ -87,7 +100,7 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url(/src/images/pic/scanning/about/scanning-tablet@2x.jpg);
+      background-image: url(/src/images/pic/scanning/about/scanning-tablet@2x.jpg);
     }
   }
   @media screen and (min-width: $desktop) {

@@ -90,8 +90,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   font-family: 'Cera Pro';
-  font-style: normal;
-  // @include font (400, 16, 1.25 0.01)
+  text-decoration: none;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -115,7 +114,6 @@ footer {
   justify-content: center;
   flex-direction: column;
   margin-bottom: 24px;
-  color: $second-font-color;
   font-family: 'Cera Pro';
   font-style: normal;
   // @include font (400, 16, 1.25 0.01)
@@ -138,6 +136,10 @@ footer {
     font-size: 16px;
     line-height: 1.25;
   }
+}
+
+.footer__link {
+  color: $main-font-color;
 }
 
 .footer__address {
