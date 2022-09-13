@@ -1,10 +1,13 @@
 .scan-section {
   justify-content: center;
   // background-color: $main-bg-color;
-  // padding-top: 40px;
-  // @media screen and (min-width: $desktop) {
-  //   padding-top: 100px;
-  // }
+  padding: 40px 0;
+  @media screen and (min-width: 768px) and (min-width: 1440px) {
+    // padding-top: 100px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 100px 0;
+  }
 }
 
 .scan-container {
@@ -12,7 +15,6 @@
   // background-color: $main-bg-color;
   position: relative;
   flex-direction: column;
-  padding-top: 40px;
   @media screen and (max-width: 768px) {
     max-width: $mobile;
   }
@@ -24,7 +26,7 @@
     max-width: $desktop;
     padding-right: 269px;
     padding-left: 149px;
-    padding-top: 100px;
+    // padding-top: 100px;
   }
 }
 
@@ -143,7 +145,7 @@
   width: 71px;
   height: 63px;
   right: 32px;
-  top: 0;
+  top: -40px;
   background-color: $main-bg-color;
   box-shadow: -17px -20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 0px 35px 0px 0px;
@@ -154,6 +156,7 @@
   @media screen and (min-width: $desktop) {
     width: 136px;
     height: 144px;
+    top: -100px;
   }
 }
 

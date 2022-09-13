@@ -1,13 +1,14 @@
 .scanning-process {
-  padding: 40px 0;
+  // padding-top: 40px;
+  padding-bottom: 60px;
   background-color: $effects-bg-color;
   @media screen and (min-width: 768px) {
     background: $effects-bg-color;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    // padding-top: 60px;
+    // padding-bottom: 60px;
   }
   @media screen and (min-width: 768px) and (min-width: 1440px) {
-    padding-top: 100px;
+    // padding-top: 100px;
     padding-bottom: 80px;
   }
   &__container {
@@ -259,6 +260,7 @@
   }
   &__button {
     height: 56px;
+    z-index: 2;
   }
 }
 
@@ -282,6 +284,23 @@
   position: absolute;
   bottom: 64%;
   left: 84%;
+  width: 73.65px;
+  height: 73.65px;
+  background: #ffffff;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 0px 35px;
+  border-radius: 0px 25px;
+  @media screen and (min-width: 768px) {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.petal-bot {
+  position: absolute;
+  bottom: 0%;
+  left: 82%;
   width: 73.65px;
   height: 73.65px;
   background: #ffffff;
