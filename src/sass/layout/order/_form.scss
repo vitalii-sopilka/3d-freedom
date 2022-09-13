@@ -1,4 +1,6 @@
 .content-order {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
@@ -12,8 +14,8 @@
     padding-bottom: 60px;
   }
   @media screen and (min-width: 1440px) {
-    max-width: 1142px;
     display: flex;
+    max-width: 1142px;
     flex-direction: row;
     align-items: flex-start;
     gap: 149px;
@@ -24,11 +26,11 @@
 }
 
 .contact {
-  width: 280px;
+  min-width: 280px;
   margin-left: auto;
   margin-right: auto;
   @media screen and (min-width: 768px) {
-    width: 400px;
+    max-width: 555px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -40,14 +42,21 @@
 .feedback {
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
-    display: block;
+    max-width: 400px;
   }
   @media screen and (min-width: 1440px) {
-    width: 555px;
+    max-width: 555px;
   }
   &__title {
     margin-bottom: 44px;
     font-family: $fontCeraPro;
+    text-align: left;
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 1440px) {
+      text-align: left;
+    }
   }
 
   &__field {
