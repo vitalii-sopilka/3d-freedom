@@ -1,5 +1,6 @@
 .order {
   position: relative;
+  z-index: 4;
   margin-left: auto;
   margin-right: auto;
   padding: 19px 20px 0 20px;
@@ -116,12 +117,20 @@
     }
   }
 
-  &__figure-seven {
-    display: none;
+  .container__figure-seven {
+    display: block;
+    position: absolute;
+    box-shadow: $box-shadow-color;
+    @include bd-figure(74, 74, null, 60);
+    right: -50px;
+    border-radius: 72px 72px 72px 72px;
+    z-index: 1;
+
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
       box-shadow: $box-shadow-color;
+
       @include bd-figure(72, 74, -17, 1255);
       border-radius: 72px 72px 72px 72px;
       z-index: 1;
