@@ -16,6 +16,22 @@
       align-items: flex-end;
     }
   }
+
+  &__title {
+    @include font($fontCeraPro, 700, 18, 1.25);
+    color: $main-font-color;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 8px;
+      text-align: end;
+      @include font($fontCeraPro, 700, 24, 1.25);
+    }
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 18px;
+      @include font($fontCeraPro, 700, 36, 1.25);
+    }
+  }
   &__list {
     display: flex;
     flex-direction: column;
@@ -26,6 +42,7 @@
       flex-direction: row;
       justify-content: flex-start;
       gap: 24px;
+      margin: 0;
     }
     @media screen and (min-width: 1440px) {
       flex-direction: column;
@@ -47,10 +64,10 @@
     @media screen and (min-width: 1440px) {
       @include font($fontCeraPro, 400, 18, 1.25);
     }
-    &:hover,
-    &:focus {
-      color: $svg-color;
-    }
+    // &:hover,
+    // &:focus {
+    //   color: $svg-color;
+    // }
   }
 
   &__time {
@@ -59,24 +76,32 @@
     }
     @media screen and (min-width: 1440px) {
       max-width: 270px;
+      margin-bottom: 68px;
     }
     &-list {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+
+      @include font($fontCeraPro, 400, 16, 1.25);
+      color: $second-font-color;
       @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        width: 225px;
       }
       @media screen and (min-width: 1440px) {
-        flex-direction: column;
-        margin-bottom: 68px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: stretch;
+        margin-left: auto;
+
+        @include font($fontCeraPro, 400, 18, 1.25);
       }
     }
-  }
-  .time-item:nth-child(2) {
-    margin-bottom: 8px;
   }
   &__item {
     display: flex;
@@ -84,6 +109,7 @@
     color: $second-font-color;
     flex-direction: column;
     align-items: flex-start;
+
     @media screen and (min-width: 768px) {
       flex-direction: column;
     }
@@ -96,17 +122,34 @@
     @include font($fontCeraPro, 400, 16, 1.25);
     color: $second-font-color;
     text-decoration: none;
-    text-align: end;
     list-style: none;
+    text-align: start;
     padding: 0;
     margin: 0;
     @media screen and (min-width: 768px) {
     }
     @media screen and (min-width: 1440px) {
+      text-align: end;
       @include font($fontCeraPro, 400, 18, 1.25);
     }
   }
   &__item-list > li:not(:last-child) {
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 8px;
+    }
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.time-item:nth-child(2) {
+  margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 8px;
+  }
+  @media screen and (min-width: 1440px) {
     margin-bottom: 18px;
   }
 }

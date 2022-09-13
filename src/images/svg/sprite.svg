@@ -2,7 +2,6 @@
 <!--? Иконка стрелки ↓ = #icon-arrow-to-down -->
 <!--? Иконка закрытия меню = #icon-cross -->
 <!--? Иконка  мобильного меню "Бургер" = #icon-mobile-menu -->
-<!--? Иконка загрузки изображений = #icon-loading -->
 <!--? Иконка скрепка = #icon-input-file -->
 <!--? Иконка стрилки влево < галереи = #icon-gallery-arrow-right -->
 <!--? Иконка стрилки вправо > галереи = #icon-gallery-arrow-left -->
@@ -14,6 +13,19 @@
 
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+
+<!--? Иконка загрузки изображений = #icon-loading -->
+<symbol id="icon-loader" viewBox="0 0 32 32">
+<path d="M16 5.333v3.048"></path>
+<path d="M23.619 8.381l-2.286 2.286"></path>
+<path d="M8.381 8.381l2.286 2.286"></path>
+<path d="M16 26.667v-3.048"></path>
+<path d="M23.619 23.619l-2.286-2.286"></path>
+<path d="M8.381 23.619l2.286-2.286"></path>
+<path d="M5.333 16h3.048"></path>
+<path d="M23.619 16h3.048"></path>
+</symbol>
+
 
 <!--* Иконка стрелки ↓ -->
 <symbol id="icon-arrow-to-down" viewBox="0 0 19 29">

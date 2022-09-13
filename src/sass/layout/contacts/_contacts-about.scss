@@ -1,6 +1,159 @@
+.hero-contacts {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+
+  @media screen and (min-width: 768px) {
+    max-width: $tablet;
+    padding: 40px 32px 0 32px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1142px;
+    padding: 40px 0 0 0;
+  }
+}
+
 .contact-hero__wrap {
   display: flex;
   gap: 32px;
   padding-left: 149px;
   padding-right: 189px;
+}
+
+.contacts-hero {
+  margin-bottom: 40px;
+  min-width: 280px;
+  @media screen and (min-width: 768px) {
+    max-width: $tablet;
+    margin-bottom: 40px;
+    min-width: 280px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1142px;
+
+    margin-bottom: 100px;
+  }
+}
+
+.contacts-hero__img {
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.contacts-hero__icon {
+  position: absolute;
+  fill: #487996;
+  border-radius: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(255, 255, 255, 0.8);
+  // box-shadow: border-box rgba(255, 255, 255, 0.8);
+  // filter: blur(3px);
+}
+
+.contacts-hero__figure-one {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: block;
+    position: absolute;
+    box-shadow: $box-shadow-color;
+    @include bd-figure(82, 78, -114, 0);
+    border-radius: 0px 0px 72px 0px;
+  }
+}
+
+.contacts-hero__figure-two {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    box-shadow: $box-shadow-color;
+    @include bd-figure(72, 64, 736, -42);
+    border-radius: 0px 0px 0px 72px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: block;
+    position: absolute;
+    box-shadow: $box-shadow-color;
+    @include bd-figure(137, 83, 1122, -42);
+    border-radius: 0px 0px 0px 72px;
+  }
+}
+
+.contacts-hero__figure-three {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    box-shadow: $box-shadow-color;
+    @include bd-figure(72, 64, 736, -42);
+    border-radius: 0px 0px 0px 72px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: block;
+    position: absolute;
+    box-shadow: $box-shadow-color;
+    @include bd-figure(137, 144, -22, 818);
+    border-radius: 72px 72px 72px 72px;
+  }
+}
+
+.contacts-hero__title {
+  @include font($fontCeraPro, 700, 18, 1.28);
+  // text-align: center;
+  font-style: normal;
+  margin-bottom: 18px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1440px) {
+    text-align: start;
+  }
+}
+
+.contacts-hero__text-thumb {
+  color: $second-font-color;
+
+  @include font($fontCeraPro, 400, 16, 1.25);
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1440px) {
+    @include font($fontCeraPro, 400, 18, 1.28);
+  }
+
+  & :first-child {
+    margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 16px;
+    }
+  }
+  & :nth-child(2) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.correct {
+  // align-items: center;
+  display: flex;
+  padding-top: 16px;
 }

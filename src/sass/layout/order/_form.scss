@@ -1,4 +1,6 @@
 .content-order {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
@@ -12,8 +14,8 @@
     padding-bottom: 60px;
   }
   @media screen and (min-width: 1440px) {
-    max-width: 1142px;
     display: flex;
+    max-width: 1142px;
     flex-direction: row;
     align-items: flex-start;
     gap: 149px;
@@ -23,12 +25,33 @@
   }
 }
 
+.container__figure-seven {
+  display: block;
+  position: absolute;
+  box-shadow: $box-shadow-color;
+  @include bd-figure(74, 74, null, 60);
+  right: 0px;
+  border-radius: 72px 72px 72px 72px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    box-shadow: $box-shadow-color;
+
+    @include bd-figure(72, 74, -17, 1255);
+    border-radius: 72px 72px 72px 72px;
+    z-index: 1;
+  }
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
 .contact {
-  width: 280px;
+  min-width: 280px;
   margin-left: auto;
   margin-right: auto;
   @media screen and (min-width: 768px) {
-    width: 400px;
+    max-width: 555px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -40,14 +63,26 @@
 .feedback {
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
-    display: block;
+    max-width: 400px;
   }
   @media screen and (min-width: 1440px) {
-    width: 555px;
+    max-width: 555px;
   }
   &__title {
     margin-bottom: 44px;
-    font-family: $fontCeraPro;
+    text-align: left;
+    @include font($fontCeraPro, 700, 18, 1.25);
+    color: $main-font-color;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      @include font($fontCeraPro, 700, 24, 1.25);
+      text-align: center;
+    }
+    @media screen and (min-width: 1440px) {
+      @include font($fontCeraPro, 700, 36, 1.25);
+      text-align: left;
+    }
   }
 
   &__field {
@@ -67,7 +102,13 @@
     //   border-color: $svg-color;
     // }
     &:not(:last-child) {
-      margin-bottom: 44px;
+      margin-bottom: 40px;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+      }
+      @media screen and (min-width: 1440px) {
+        margin-bottom: 44px;
+      }
     }
     &:nth-child(6) {
       border: none;
@@ -87,6 +128,7 @@
     padding-bottom: 4px;
     cursor: pointer;
     outline: transparent;
+    background-color: transparent;
 
     &::placeholder {
       color: $second-font-color;
@@ -127,6 +169,7 @@
     outline: transparent;
     padding: 22px 20px;
     color: rgba(117, 117, 117);
+    margin-bottom: 4px;
     @media screen and (min-width: 768px) {
       @include font($fontCeraPro, 400, 16, 1.25);
       height: 199px;
@@ -148,7 +191,6 @@
     }
   }
   &__upload {
-    display: inline-block;
     cursor: pointer;
   }
   &__upload-text {
@@ -202,18 +244,27 @@ input [type='file'] {
 .select-selected:after {
   position: absolute;
   content: '';
-  top: 11px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-radius: 0;
-  border-color: $second-font-color transparent transparent transparent;
+  top: 3px;
+  right: 5px;
+  width: 21px;
+  height: 13px;
+  background-image: url(/src/images/pic/order/polygon-svg-down.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent $second-font-color transparent;
+  content: '';
   top: 3px;
+  right: 5px;
+  width: 21px;
+  height: 13px;
+  background-image: url(/src/images/pic/order/polygon-svg-up.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .select-items div,

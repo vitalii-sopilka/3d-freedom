@@ -1,15 +1,16 @@
 .order {
   position: relative;
+  z-index: 2;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px 20px 0 20px;
+  padding: 19px 20px 0 20px;
   @media screen and (min-width: 768px) {
     max-width: $tablet;
-    padding: 40px 32px 0 32px;
+    padding: 30px 32px 0 32px;
   }
   @media screen and (min-width: 1440px) {
     max-width: 1142px;
-    padding: 40px 0 0 0;
+    padding: 46px 0 0 0;
   }
   &__container {
     margin-bottom: 40px;
@@ -18,7 +19,7 @@
       margin-bottom: 40px;
       min-width: 280px;
     }
-  
+
     @media screen and (min-width: 1440px) {
       display: flex;
       flex-direction: column;
@@ -26,6 +27,7 @@
       margin-bottom: 100px;
     }
   }
+  //  ------------------------------------------------
   &__figure-one {
     display: none;
     @media screen and (min-width: 768px) {
@@ -38,50 +40,124 @@
       border-radius: 0px 0px 72px 0px;
     }
   }
+  //  ------------------------------------------------
   &__figure-two {
     display: none;
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
       box-shadow: $box-shadow-color;
-      @include bd-figure(72, 64, 736, -42);
+      @include bd-figure(72, 64, 664, 8);
       border-radius: 0px 0px 0px 72px;
     }
     @media screen and (min-width: 1440px) {
       display: block;
       position: absolute;
       box-shadow: $box-shadow-color;
-      @include bd-figure(137, 83, 1122, -42);
+      @include bd-figure(137, 83, 1122, -41);
       border-radius: 0px 0px 0px 72px;
     }
   }
+  //  ------------------------------------------------
   &__figure-three {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    @media screen and (min-width: 1440px) {
+      display: none;
+    }
+  }
+  //  ------------------------------------------------
+  &__figure-four {
+    display: none;
+    // display: block;
+    // position: absolute;
+    // box-shadow: $box-shadow-color;
+    // @include bd-figure(74, 74, null, 113);
+    // right: -41px;
+    // border-radius: 0px 25px 0px 25px;
+    @media screen and (min-width: 768px) {
+      display: block;
+      position: absolute;
+      box-shadow: $box-shadow-color;
+      @include bd-figure(72, 74, 632, 956);
+      border-radius: 0px 25px 0px 25px;
+    }
+    @media screen and (min-width: 1440px) {
+      display: none;
+    }
+  }
+  // ------------------------------------------------
+  &__figure-five {
     display: none;
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
       box-shadow: $box-shadow-color;
-      @include bd-figure(72, 64, 736, -42);
-      border-radius: 0px 0px 0px 72px;
+      @include bd-figure(72, 74, 632, 391);
+      border-radius: 25px 0px 25px 0px;
+    }
+    @media screen and (min-width: 1440px) {
+      display: none;
+    }
+  }
+  // ------------------------------------------------
+  &__figure-six {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: none;
     }
     @media screen and (min-width: 1440px) {
       display: block;
       position: absolute;
       box-shadow: $box-shadow-color;
-      @include bd-figure(137, 144, -22, 818);
+      @include bd-figure(137, 144, -170, 673);
       border-radius: 72px 72px 72px 72px;
     }
   }
-  &__title {
-    text-align: center;
-    margin-bottom: 16px;
+
+  .container__figure-seven {
+    display: block;
+    position: absolute;
+    box-shadow: $box-shadow-color;
+    @include bd-figure(74, 74, null, 60);
+    right: -50px;
+    border-radius: 72px 72px 72px 72px;
+    z-index: 1;
+
     @media screen and (min-width: 768px) {
+      display: block;
+      position: absolute;
+      box-shadow: $box-shadow-color;
+
+      @include bd-figure(72, 74, -17, 1255);
+      border-radius: 72px 72px 72px 72px;
+      z-index: 1;
     }
     @media screen and (min-width: 1440px) {
+      display: none;
+    }
+  }
+  // ------------------------------------------------
+
+  &__title {
+    margin-bottom: 16px;
+    text-align: center;
+    @include font($fontCeraPro, 700, 24, 1.25);
+    color: $main-font-color;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      @include font($fontCeraPro, 700, 36, 1.25);
+    }
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 24px;
       text-align: start;
+      @include font($fontCeraPro, 700, 48, 1.25);
     }
   }
   &__content {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,19 +175,37 @@
     }
   }
   &__picture {
-    max-width: 280px;
-    max-height: 171px;
+    min-width: 280px;
+    min-height: 171px;
     border-radius: 15px;
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-      min-width: 100%;
+    background-image: url(/src/images/pic/order/1-order-img-mobile-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/pic/order/1-order-img-mobile-2x.jpg);
     }
+
     @media screen and (min-width: 768px) {
-      min-width: 336px;
+      min-width: 336;
       min-height: 158px;
+      border-radius: 15px;
+      background-image: url(/src/images/pic/order/1-order-img-tablet-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/src/images/pic/order/1-order-img-tablet-2x.jpg);
+      }
     }
+
     @media screen and (min-width: 1440px) {
       min-width: 555px;
       min-height: 400px;
+      background-image: url(/src/images/pic/order/1-order-img-desktop-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/src/images/pic/order/1-order-img-desktop-2x.jpg);
+      }
     }
   }
 
@@ -128,7 +222,6 @@
     }
 
     & :first-child {
-  
       margin-bottom: 16px;
       @media screen and (min-width: 768px) {
         margin-bottom: 0;
@@ -138,37 +231,66 @@
       }
     }
   }
-  &__img {
+
+  &__box-two {
+    display: none;
     @media screen and (min-width: 768px) {
-      display: none;
     }
     @media screen and (min-width: 1440px) {
       display: block;
       position: absolute;
       left: 587px;
-      top: 247px;
+      top: 200px;
       width: 672px;
       height: 203px;
-      &-one {
-        border-radius: 0px 72px 72px 0px;
-        filter: $img-drop-shadow-color;
-      }
-      &-two {
-        border-radius: 72px 0px;
-        filter: $img-drop-shadow-color;
-      }
-
-      &-three {
-        border-radius: 0px 0px 72px 0px;
-        filter: $img-drop-shadow-color;
-      }
     }
   }
   &__list {
-    display: none;
-    @media screen and (min-width: 1440px) {
-      display: flex;
-      gap: 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 32px * 2) / 3);
+    display: block;
+    height: 203px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__img {
+    &-one {
+      border-radius: 0px 72px 72px 0px;
+      filter: $img-drop-shadow-color;
+      background-image: url(/src/images/pic/order/2-order-car-img-desktop-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/src/images/pic/order/2-order-car-img-desktop-2x.jpg);
+      }
+    }
+    &-two {
+      border-radius: 72px 0px;
+      filter: $img-drop-shadow-color;
+      background-image: url(/src/images/pic/order/2-order-model-img-desktop-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/src/images/pic/order/2-order-model-img-desktop-2x.jpg);
+      }
+    }
+
+    &-three {
+      border-radius: 0px 0px 72px 0px;
+      filter: $img-drop-shadow-color;
+      background-image: url(/src/images/pic/order/2-order-mushroom-lamp-img-desktop-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/src/images/pic/order/2-order-mushroom-lamp-img-desktop-2x.jpg);
+      }
     }
   }
 }

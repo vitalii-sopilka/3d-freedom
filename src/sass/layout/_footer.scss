@@ -1,3 +1,7 @@
+footer {
+  position: relative;
+  z-index: 4;
+}
 .footer {
   display: flex;
   margin-left: auto;
@@ -5,6 +9,7 @@
   background-color: $footer-bg-color;
   text-align: center;
   padding: 32px 0;
+
   // @media screen and (min-width:768px) {
   //   padding: 32px 0;
   // }
@@ -13,7 +18,7 @@
   }
 }
 
-.footer__container { 
+.footer__container {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -21,7 +26,7 @@
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     width: 100%;
   }
@@ -33,7 +38,7 @@
 }
 
 .footer__basic {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
   }
@@ -47,7 +52,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 24px;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     align-items: flex-end;
   }
   @media screen and (min-width: 1440px) {
@@ -57,20 +62,20 @@
 }
 
 .footer__mobile {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     align-items: flex-end;
   }
-  
+
   @media screen and (min-width: 1440px) {
   }
 }
 
-.footer__logo { 
+.footer__logo {
   display: flex;
   align-items: center;
   margin-bottom: 19px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
@@ -85,15 +90,14 @@
   justify-content: center;
   flex-direction: column;
   font-family: 'Cera Pro';
-  font-style: normal;
-  // @include font (400, 16, 1.25 0.01)
+  text-decoration: none;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.01em;
   margin-bottom: 24px;
   color: $second-font-color;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     align-items: flex-start;
     margin-right: 52px;
     margin-bottom: 0;
@@ -110,14 +114,13 @@
   justify-content: center;
   flex-direction: column;
   margin-bottom: 24px;
-  color: $second-font-color;
   font-family: 'Cera Pro';
   font-style: normal;
   // @include font (400, 16, 1.25 0.01)
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     align-items: flex-start;
     justify-content: flex-start;
     margin-right: 199px;
@@ -135,18 +138,22 @@
   }
 }
 
+.footer__link {
+  color: $main-font-color;
+}
+
 .footer__address {
   font-style: normal;
 }
 
 .footer__list-cont {
   align-items: center;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     align-items: flex-end;
     display: flex;
     flex-direction: column;
   }
-  
+
   @media screen and (min-width: 1440px) {
     align-items: flex-start;
   }
@@ -166,10 +173,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     align-items: flex-end;
   }
-  
+
   @media screen and (min-width: 1440px) {
     align-items: flex-start;
   }
@@ -183,8 +190,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  @media screen and (min-width:768px) {
-    text-align: right;;
+  @media screen and (min-width: 768px) {
+    text-align: right;
   }
   @media screen and (min-width: 1440px) {
     text-align: left;
