@@ -64,9 +64,11 @@
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     max-width: 400px;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1440px) {
     max-width: 555px;
+    margin-bottom: 0;
   }
   &__title {
     margin-bottom: 44px;
