@@ -26,6 +26,7 @@
       margin-bottom: 100px;
     }
   }
+  //  ------------------------------------------------
   &__figure-one {
     display: none;
     @media screen and (min-width: 768px) {
@@ -38,6 +39,7 @@
       border-radius: 0px 0px 72px 0px;
     }
   }
+  //  ------------------------------------------------
   &__figure-two {
     display: none;
     @media screen and (min-width: 768px) {
@@ -55,25 +57,17 @@
       border-radius: 0px 0px 0px 72px;
     }
   }
-  // &__figure-three {
-  //   display: none;
-  //   @media screen and (min-width: 768px) {
-  //     display: block;
-  //     position: absolute;
-  //     box-shadow: $box-shadow-color;
-  //     @include bd-figure(72, 64, 736, -42);
-  //     border-radius: 0px 0px 0px 72px;
-  //   }
-  //   @media screen and (min-width: 1440px) {
-  //     display: block;
-  //     position: absolute;
-  //     box-shadow: $box-shadow-color;
-  //     @include bd-figure(137, 144, -22, 818);
-  //     border-radius: 72px 72px 72px 72px;
-  //   }
-  // }
-  // ------------------------------------------------
-
+  //  ------------------------------------------------
+  &__figure-three {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    @media screen and (min-width: 1440px) {
+      display: none;
+    }
+  }
+  //  ------------------------------------------------
   &__figure-four {
     display: block;
     position: absolute;
@@ -93,7 +87,6 @@
     }
   }
   // ------------------------------------------------
-
   &__figure-five {
     display: block;
     position: absolute;
@@ -155,19 +148,37 @@
     }
   }
   &__picture {
-    max-width: 280px;
-    max-height: 171px;
+    min-width: 280px;
+    min-height: 171px;
     border-radius: 15px;
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-      min-width: 100%;
+    background-image: url(/src/images/pic/order/1-order-img-mobile-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/pic/order/1-order-img-mobile-2x.jpg);
     }
+
     @media screen and (min-width: 768px) {
-      min-width: 336px;
+      min-width: 336;
       min-height: 158px;
+      border-radius: 15px;
+      background-image: url(/src/images/pic/order/1-order-img-tablet-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/src/images/pic/order/1-order-img-tablet-2x.jpg);
+      }
     }
+
     @media screen and (min-width: 1440px) {
       min-width: 555px;
       min-height: 400px;
+      background-image: url(/src/images/pic/order/1-order-img-desktop-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/src/images/pic/order/1-order-img-desktop-2x.jpg);
+      }
     }
   }
 
