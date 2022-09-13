@@ -1,10 +1,16 @@
+.services{
+  margin-bottom: 55px;
+  @media screen and (min-width: 768px){
+  margin-bottom: 60px;}
+}
+
 .services__box{
   position: relative;}  
 
 .services__container {
-  margin-bottom: 55px;
+  padding-bottom: 55px;
   @media screen and (min-width: 768px){
-  margin-bottom: 60px;}  
+  padding-bottom: 60px;}  
 }
 
 .services__title{
