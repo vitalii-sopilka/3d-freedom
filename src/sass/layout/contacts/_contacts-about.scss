@@ -15,6 +15,13 @@
   }
 }
 
+.hero-contacts.section {
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    padding: 40px 0;
+  }
+}
+
 .contact-hero__wrap {
   display: flex;
   gap: 32px;

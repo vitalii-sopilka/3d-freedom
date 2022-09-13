@@ -116,8 +116,10 @@
 
 .contacts-form__icon-attach {
   position: absolute;
-  left: 80%;
-  top: 50%;
+  // left: 80%;
+  // top: 44%;
+  top: 400px;
+  right: 45px;
   fill: #cdcdcd;
 }
 
@@ -157,7 +159,7 @@ input[type='file'] {
 }
 
 .sub-title {
-  @include font($fontCeraPro, 400, 18, 1.25);
+  @include font($fontCeraPro, 700, 18, 1.25);
   color: #487996;
   margin-bottom: 8px;
 }
@@ -176,4 +178,18 @@ input[type='file'] {
 
 .contact__item-list {
   margin: 0;
+}
+
+.contacts__item-list > li {
+  @include font($fontCeraPro, 400, 16, 1.25);
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.contacts__item-list > li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.corr {
+  margin-bottom: 8px;
 }
