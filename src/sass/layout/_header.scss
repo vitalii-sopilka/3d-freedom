@@ -395,7 +395,7 @@
   top: 52px;
   z-index: 3;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   opacity: 100%;
   visibility: visible;
   pointer-events: all;
@@ -464,11 +464,7 @@
   }
 
   &__link {
-    font-family: 'Cera Pro';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
+    @include font ('Cera Pro', 700, 24, calc(30px/24px));
     text-align: center;
     color: $main-font-color;
   }
@@ -497,10 +493,7 @@
   }
 
   &__sublink {
-    font-family: 'Cera Pro';
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 30px;
+  @include font ('Cera Pro', 500, 24, calc(30px/24px));
     text-align: center;
 
     color: $main-font-color;
