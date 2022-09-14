@@ -24,12 +24,15 @@
   // position: relative;
   display: flex;
   flex-direction: column;
+  padding-bottom: 38px;
   @media screen and (min-width: $tablet) {
-    padding-top: 29.95px;
+    padding-top: 30px;
+    padding-bottom: 40px;
     position: relative;
   }
   @media screen and (min-width: $desktop) {
-    padding-top: 44.71px;
+    padding-top: 45px;
+    padding-bottom: 100px;
   }
 }
 
