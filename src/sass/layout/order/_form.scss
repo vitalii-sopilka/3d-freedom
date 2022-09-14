@@ -4,9 +4,6 @@
   }
 }
 
-// .tool {
-//   text-decoration: ;
-// }
 .contacts__container.al-it {
   @media screen and (min-width: 1440px) {
     align-items: flex-start;
@@ -79,7 +76,7 @@
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     max-width: 400px;
-    margin-bottom: 0;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: 1440px) {
     max-width: 555px;
@@ -130,6 +127,7 @@
     &:nth-child(6) {
       border: none;
     }
+
     &:nth-child(7) {
       position: relative;
       margin-bottom: 24px;
