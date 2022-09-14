@@ -1,18 +1,14 @@
 .footer {
-  display: flex;
   margin-left: auto;
   margin-right: auto;
   background-color: $footer-bg-color;
   text-align: center;
   padding: 32px 0;
-  // @media screen and (min-width:768px) {
-  //   padding: 32px 0;
-  // }
+  display: flex;
   @media screen and (min-width: 1440px) {
     padding: 40px 0;
   }
 }
-
 .footer__container { 
   align-items: center;
   display: flex;
@@ -22,29 +18,25 @@
   padding-right: 20px;
   width: 100%;
   @media screen and (min-width:768px) {
-    display: flex;
     width: 100%;
+    // display: flex;
   }
   @media screen and (min-width: 1440px) {
-    display: flex;
+    // display: flex;
     flex-direction: row;
     align-items: flex-start;
   }
 }
-
 .footer__basic {
   @media screen and (min-width:768px) {
     display: flex;
     flex-direction: row;
   }
-  // @media screen and (min-width: 1440px) {
-
-  // }
 }
-
 .footer__post {
   display: flex;
   flex-direction: column;
+  gap: 8px;
   align-items: center;
   margin-bottom: 24px;
   @media screen and (min-width:768px) {
@@ -53,23 +45,25 @@
   @media screen and (min-width: 1440px) {
     margin-bottom: 16px;
     align-items: flex-start;
+    gap: 0;
   }
 }
-
 .footer__mobile {
   @media screen and (min-width:768px) {
     align-items: flex-end;
   }
-  
+}
+.footer__phone, 
+.footer__item-numb {
+  margin-bottom: 8px;
   @media screen and (min-width: 1440px) {
+    margin-bottom: 0;
   }
 }
-
 .footer__logo { 
   display: flex;
   align-items: center;
   margin-bottom: 19px;
-
   @media screen and (min-width:768px) {
     display: flex;
     align-items: center;
@@ -78,34 +72,40 @@
     margin-right: 277px;
   }
 }
-
+.footer__list-nav a,
+.footer__social a {
+  color: $second-font-color;
+}
 .footer__list-nav {
   display: flex;
+  gap: 8px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  color: $second-font-color;
   font-family: 'Cera Pro';
   font-style: normal;
-  // @include font (400, 16, 1.25 0.01)
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.01em;
   margin-bottom: 24px;
-  color: $second-font-color;
   @media screen and (min-width:768px) {
     align-items: flex-start;
     margin-right: 52px;
     margin-bottom: 0;
+    color: $second-font-color;
   }
   @media screen and (min-width: 1440px) {
     margin-right: 103px;
     margin-bottom: 0;
+    gap: 0;
+    color: $second-font-color;
   }
 }
-
 .footer__social {
   display: flex;
+  gap: 8px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -113,7 +113,6 @@
   color: $second-font-color;
   font-family: 'Cera Pro';
   font-style: normal;
-  // @include font (400, 16, 1.25 0.01)
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -122,23 +121,17 @@
     justify-content: flex-start;
     margin-right: 199px;
     margin-bottom: 0;
+    color: $second-font-color;
   }
   @media screen and (min-width: 1440px) {
     margin-right: 163px;
     color: $second-font-color;
-    font-family: 'Cera Pro';
-    font-style: normal;
-    // @include font (400, 16, 1.25 0.01)
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+    gap: 0;
   }
 }
-
 .footer__address {
   font-style: normal;
 }
-
 .footer__list-cont {
   align-items: center;
   @media screen and (min-width:768px) {
@@ -146,45 +139,38 @@
     display: flex;
     flex-direction: column;
   }
-  
   @media screen and (min-width: 1440px) {
     align-items: flex-start;
   }
 }
-
 .footer__item-numb {
   @media screen and (min-width: 1440px) {
     text-align: left;
   }
 }
-
 .footer__address a {
   color: $main-font-color;
   font-family: 'Cera Pro';
   font-style: normal;
-  // @include font (400, 16, 1.25 0.01);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   @media screen and (min-width:768px) {
     align-items: flex-end;
   }
-  
   @media screen and (min-width: 1440px) {
     align-items: flex-start;
   }
 }
-
 .footer__address p {
   color: $second-font-color;
   font-family: 'Cera Pro';
   font-style: normal;
-  // @include font (400, 16, 1.25 0.01);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   @media screen and (min-width:768px) {
-    text-align: right;;
+    text-align: right;
   }
   @media screen and (min-width: 1440px) {
     text-align: left;

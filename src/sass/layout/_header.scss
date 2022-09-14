@@ -1,9 +1,9 @@
-//  *,
-// *::before,
-// *::after {
-//   outline: 1px solid rgb(250, 195, 175);
-//   background-color: rgba(0, 255, 106, 0.1);
-// }
+/* *,
+*::before,
+*::after {
+  outline: 1px solid rgb(250, 195, 175);
+  background-color: rgba(0, 255, 106, 0.1);
+} */
 
 .header {
   @media (max-width: 767px) {
@@ -44,7 +44,15 @@
       height: 48px;
     }
   }
+  &__btn-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
   &__mob-menu-open-button {
+    opacity: 100%;
+    visibility: visible;
+    pointer-events: all;
     display: flex;
     align-items: center;
     width: 32px;
@@ -275,7 +283,7 @@
   &__lang-link {
     display: block;
     font-family: 'Caviar Dreams';
-    font-weight: 700;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.28;
     color: $lang-color;
@@ -297,13 +305,13 @@
       height: 74px;
       width: 74px;
       top: -32px;
-      left: 0px;
+      left: 32px;
       border-radius: 35px 0px 0px 0px;
     }
     @media (min-width: $desktop) {
       height: 144px;
       width: 144px;
-      left: 0px;
+      left: 32px;
       top: 0;
       border-radius: 72px 0px 0px 0px;
     }
@@ -363,7 +371,7 @@
   &__desktop-lang-link {
     display: none;
     font-family: 'Caviar Dreams';
-    font-weight: 700;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.28;
     color: $lang-color;
@@ -376,15 +384,11 @@
   }
 }
 
-
-
-
 //* ------MOB Menu------ */
 .current {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px $main-font-color;
 }
-
 
 .menu {
   position: fixed;
@@ -399,7 +403,7 @@
   background-color: $effects-bg-color;
 
   @media screen and (min-width: $tablet) {
-  top: 74px;
+    top: 74px;
   }
 
   @media screen and (min-width: $desktop) {

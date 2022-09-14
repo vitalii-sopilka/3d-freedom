@@ -1,71 +1,276 @@
-/* MY CSS */
-/*  */
+.more-photos .container {
+  // padding-top: 40px;
+  // padding-bottom: 120px;
+  @media screen and (min-width: $tablet) {
+    // padding-top: 60px;
+    // padding-bottom: 80px;
+    margin-bottom: 80px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 1206px;
+    margin-bottom: 0;
+    // max-height: 1200px;
+    // padding-top: 120px;
+    // padding-bottom: 156px;
+    overflow: auto;
+  }
+}
 
-// .more-photos {
-// }
+.more-photos {
+  position: relative;
+}
 
 .grid-cards {
-  width: 100%;
-  height: auto;
   display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(5, 200px);
-  /* grid-template-rows: repeat(4, 200px); */
-  grid-auto-rows: min-content;
-  grid-template-areas:
-    'item1 item1 item2 item2 item3'
-    'item4 item5 item5 item6 item6'
-    'item7 item7 item8 item8 item9'
-    'item10 item11 item11 item12 item12';
-}
-
-.item1 {
-  grid-area: item1;
-}
-.item2 {
-  grid-area: item2;
-}
-.item3 {
-  grid-area: item3;
-}
-.item4 {
-  grid-area: item4;
-}
-.item5 {
-  grid-area: item5;
-}
-.item6 {
-  grid-area: item6;
-}
-.item7 {
-  grid-area: item7;
-}
-.item8 {
-  grid-area: item8;
-}
-.item9 {
-  grid-area: item9;
-}
-.item10 {
-  grid-area: item10;
-}
-.item11 {
-  grid-area: item11;
-}
-.item12 {
-  grid-area: item12;
+  // padding-bottom: 20px;
+  width: 100%;
+  grid-gap: 32px;
+  // @media screen and (max-width: 479px) {
+  //   grid-template-columns: 100%;
+  //   grid-template-areas:
+  //     'item1'
+  //     'item2'
+  //     'item3'
+  //     'item4'
+  //     'item5'
+  //     'item6'
+  //     'item7'
+  //     'item8'
+  //     'item9'
+  //     'item10'
+  //     'item11'
+  //     'item12';
+  // }
+  // @media screen and (min-width: $mobile) {
+  //   grid-template-columns: 100%;
+  //   grid-template-areas:
+  //     'item1'
+  //     'item2'
+  //     'item3'
+  //     'item4'
+  //     'item5'
+  //     'item6'
+  //     'item7'
+  //     'item8'
+  //     'item9'
+  //     'item10'
+  //     'item11'
+  //     'item12';
+  // }
+  @media screen and (min-width: $tablet) {
+    max-height: 788px;
+    justify-content: center;
+    grid-template-columns: 152px 60px 152px 60px 152px;
+    grid-template-rows: 180px 180px 152px 152px;
+    & .item1 {
+      grid-column: 1/3;
+      grid-row: 1/2;
+    }
+    & .item2 {
+      grid-column: 3/5;
+      grid-row: 1/2;
+    }
+    & .item3 {
+      grid-column: 5/6;
+      grid-row: 1/2;
+    }
+    & .item4 {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    & .item5 {
+      grid-column: 2/4;
+      grid-row: 2/3;
+    }
+    & .item6 {
+      grid-column: 4/6;
+      grid-row: 2/3;
+    }
+    & .item7 {
+      grid-column: 1/3;
+      grid-row: 3/4;
+    }
+    & .item8 {
+      grid-column: 3/5;
+      grid-row: 3/4;
+    }
+    & .item9 {
+      grid-column: 5/6;
+      grid-row: 3/4;
+    }
+    & .item10 {
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+    & .item11 {
+      grid-column: 2/4;
+      grid-row: 4/5;
+    }
+    & .item12 {
+      grid-column: 4/6;
+      grid-row: 4/5;
+    }
+    // & .card {
+    //   object-fit: none;
+    //   width: auto;
+    //   height: auto;
+    // }
+  }
+  @media screen and (min-width: $desktop) {
+    max-height: 1133px;
+    justify-content: center;
+    grid-template-columns: 203px 203px 202px 203px 203px;
+    grid-template-rows: 278px 278px 203px 278px;
+    & .item1 {
+      grid-column: 1/3;
+      grid-row: 1/2;
+    }
+    & .item2 {
+      grid-column: 3/5;
+      grid-row: 1/2;
+    }
+    & .item3 {
+      grid-column: 5/6;
+      grid-row: 1/2;
+    }
+    & .item4 {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    & .item5 {
+      grid-column: 2/4;
+      grid-row: 2/3;
+    }
+    & .item6 {
+      grid-column: 4/6;
+      grid-row: 2/3;
+    }
+    & .item7 {
+      grid-column: 1/3;
+      grid-row: 3/4;
+    }
+    & .item8 {
+      grid-column: 3/5;
+      grid-row: 3/4;
+    }
+    & .item9 {
+      grid-column: 5/6;
+      grid-row: 3/4;
+    }
+    & .item10 {
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+    & .item11 {
+      grid-column: 2/4;
+      grid-row: 4/5;
+    }
+    & .item12 {
+      grid-column: 4/6;
+      grid-row: 4/5;
+    }
+    // & .card {
+    //   object-fit: none;
+    //   width: auto;
+    //   height: auto;
+    // }
+  }
 }
 
 .title__more-photos {
   @include titleFonts(24px);
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+    position: sticky;
+    top: 0;
+    background-color: #fbfbfb;
+  }
   @media screen and (min-width: $tablet) {
     font-size: 36px;
-    margin-top: 60px;
     margin-bottom: 32px;
   }
   @media screen and (min-width: $desktop) {
     font-size: 48px;
-    margin-top: 120px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.icon-loader {
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  fill: $svg-color;
+  background-color: inherit;
+  animation-name: loadSvg;
+  animation-iteration-count: infinite;
+  animation-duration: 2000ms;
+  animation-timing-function: $cubic-bezier;
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
     margin-bottom: 60px;
   }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 100px;
+    margin-top: 12px;
+    display: block;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.grid-cards {
+  position: relative;
+}
+
+.grid-relative {
+  &__figure-one {
+    display: block;
+    position: absolute;
+    @include bd-figure(74, 74, -21, 420);
+    box-shadow: $box-shadow-color;
+    z-index: 1;
+    border-radius: 72px;
+    @media screen and (min-width: $mobile) {
+      display: block;
+      position: absolute;
+      @include bd-figure(74, 74, -21, 420);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 35px 0px 35px 0px;
+    }
+    @media screen and (min-width: 768px) {
+      display: block;
+      position: absolute;
+      @include bd-figure(74, 74, -13, 201);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 35px 0px 35px 0px;
+    }
+    @media screen and (min-width: $desktop) {
+      display: block;
+      position: absolute;
+      @include bd-figure(143, 144, -28, 287);
+      box-shadow: $box-shadow-color;
+      z-index: 1;
+      border-radius: 72px 0px 72px 0px;
+    }
+  }
+}
+
+.more-photos__figure-two {
+  
+}
+
+.more-photos__figure-three {
+  
+}
+
+.more-photos__figure-four {
+  
 }

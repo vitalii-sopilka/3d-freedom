@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Cera Pro';
-  src: local('Cera Pro'),
-    url('../fonts/CeraPro-Light.woff2') format('woff2'),
+  src: local('Cera Pro'), url('../fonts/CeraPro-Light.woff2') format('woff2'),
     url('../fonts/CeraPro-Regular.woff2') format('woff2'),
     url('../fonts/CeraPro-Medium.woff2') format('woff2'),
     url('../fonts/CeraPro-Bold.woff2') format('woff2');
@@ -12,4 +11,40 @@
   src: local('Caviar Dreams'),
     url('../fonts/CaviarDreams-Regular.woff2') format('woff2'),
     url('../fonts/CeraPro-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Cera Pro';
+  font-weight: 300;
+  src: local('Cera Pro'), url('../fonts/CeraPro-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Cera Pro';
+  font-weight: 400;
+  src: local('Cera Pro'), url('../fonts/CeraPro-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Cera Pro';
+  font-weight: 500;
+  src: local('Cera Pro'), url('../fonts/CeraPro-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Cera Pro';
+  font-weight: 700;
+  src: local('Cera Pro'), url('../fonts/CeraPro-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Caviar Dreams';
+  font-weight: 700;
+  src: local('Caviar Dreams'),
+    url('../fonts/CeraPro-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Caviar Dreams';
+  font-weight: 400;
+  src: local('Caviar Dreams'),
+    url('../fonts/CaviarDreams-Regular.woff2') format('woff2');
 }

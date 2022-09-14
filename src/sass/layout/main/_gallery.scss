@@ -1,5 +1,13 @@
 .gallery {
-  padding-bottom: 40px;
+  @media screen and (max-width: 479px) {
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: $mobile) {
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 60px;
+  }
 }
 .gallery__box {
   position: relative;
@@ -38,9 +46,10 @@
 }
 
 .gallery__foto {
+  margin-bottom: 8px;
   max-width: 100%;
   height: auto;
-
+  z-index: 2;
   @media screen and (min-width: $mobile) {
     max-width: 100%;
   }
@@ -58,12 +67,14 @@
   line-height: 30px;
   color: #487996;
   @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
     font-size: 36px;
     line-height: 45px;
   }
   @media screen and (min-width: $desktop) {
-    margin-left: 114px;
-    margin-top: 20px;
+    max-width: 1142px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 60px;
     font-size: 48px;
     line-height: 60px;
@@ -84,21 +95,33 @@
   }
 }
 
+.gallery__content {
+  position: relative;
+  z-index: 1;
+}
 .gallery {
   &__figure-one {
-    display: none;
+    display: block;
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    top: 296px;
+    left: 0;
+    box-shadow: $box-shadow-color;
+    border-radius: 25px 0px;
+    z-index: 1;
     @media screen and (min-width: $mobile) {
       display: block;
       position: absolute;
-      @include bd-figure(74, 74, -10, 400);
+      @include bd-figure(74, 74, -16, 414);
       box-shadow: $box-shadow-color;
-      z-index: 0;
       border-radius: 25px 0px;
+      z-index: 1;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       display: block;
       position: absolute;
-      @include bd-figure(74, 74, 36, 126);
+      @include bd-figure(74, 74, 34, 164);
       box-shadow: $box-shadow-color;
       z-index: 1;
       border-radius: 25px 0px;
@@ -113,19 +136,27 @@
     }
   }
   &__figure-two {
-    display: none;
+    display: block;
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    top: 246px;
+    right: 0;
+    box-shadow: $box-shadow-color;
+    z-index: 1;
+    border-radius: 72px;
     @media screen and (min-width: $mobile) {
       display: block;
       position: absolute;
-      @include bd-figure(74, 74, 422, 300);
+      @include bd-figure(74, 74, 422, 345);
       box-shadow: $box-shadow-color;
       z-index: 1;
       border-radius: 72px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       display: block;
       position: absolute;
-      @include bd-figure(74, 74, 665, 448);
+      @include bd-figure(74, 74, 662, 41);
       box-shadow: $box-shadow-color;
       z-index: 1;
       border-radius: 35px 0px 35px 0px;
@@ -133,14 +164,22 @@
     @media screen and (min-width: $desktop) {
       display: block;
       position: absolute;
-      @include bd-figure(143, 144, 1270, 182);
+      @include bd-figure(143, 144, 1270, 178);
       box-shadow: $box-shadow-color;
       z-index: 1;
       border-radius: 72px 0px 0px 0px;
     }
   }
   &__figure-three {
-    display: none;
+    display: block;
+    position: absolute;
+    box-shadow: $box-shadow-color;
+    width: 74px;
+    height: 74px;
+    top: 674px;
+    right: 0;
+    z-index: 1;
+    border-radius: 0px 25px 0px 25px;
     @media screen and (min-width: $mobile) {
       display: block;
       position: absolute;
@@ -149,10 +188,10 @@
       z-index: 1;
       border-radius: 0px 25px 0px 25px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       display: block;
       position: absolute;
-      @include bd-figure(74, 74, 712, 70);
+      @include bd-figure(74, 74, 700, 104);
       box-shadow: $box-shadow-color;
       z-index: 1;
       border-radius: 72px;
@@ -160,13 +199,13 @@
     @media screen and (min-width: $desktop) {
       display: block;
       position: absolute;
-      @include bd-figure(143, 144, 1384, 326);
+      @include bd-figure(143, 144, 1384, 312);
       box-shadow: $box-shadow-color;
       z-index: 1;
       border-radius: 72px;
     }
   }
-  &__figure-for {
+  &__figure-five {
     display: none;
     @media screen and (min-width: $desktop) {
       display: block;
@@ -181,5 +220,3 @@
 .gallery__tank-mini {
   border-radius: 72px;
 }
-
-
