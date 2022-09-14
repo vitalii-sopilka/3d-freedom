@@ -1,103 +1,166 @@
 <section class="section gallery">
-  
   <div class="gallery__box container">
     <h2 id="gallery" class="gallery__title">ГАЛЕРЕЯ</h2>
     <div>
-    <div class="gallery__figure-one"></div>
-    <div class="gallery__figure-two"></div>
-    <div class="gallery__figure-three"></div>
-    <div class="gallery__figure-five">
-          <img 
+      <div class="gallery__figure-one"></div>
+      <div class="gallery__figure-two"></div>
+      <div class="gallery__figure-three"></div>
+      <div class="gallery__figure-five">
+        <img
           srcset="
-                    /src/images/pic/main/gallery-img/tank-1x.jpg 1x, 
-                    /src/images/pic/main/gallery-img/tank-2x.jpg 2x"
-                    media="(min-width:1440px)"
-                    
-                    class="gallery__tank-mini" src="/src/images/pic/main/gallery-img/tank-1x.jpg" alt="Інженерні методи аналізу"
-                        width="194" height="144">
-                        
+            /src/images/pic/main/gallery-img/tank-1x.jpg 1x,
+            /src/images/pic/main/gallery-img/tank-2x.jpg 2x
+          "
+          class="gallery__tank-mini"
+          src="/src/images/pic/main/gallery-img/tank-1x.jpg"
+          alt="Інженерні методи аналізу"
+          width="194"
+          height="144"
+        />
+      </div>
+      <div class="gallery__content">
+        <ul class="gallery__grid list">
+          <li class="gallery__grid-item-1">
+            <picture>
+              <source
+                srcset="
+                  /src/images/pic/main/gallery-img/inzhenernye-metodu-desktop-1x.jpg 1x,
+                  /src/images/pic/main/gallery-img/inzhenernye-metodu-desktop-2x.jpg 2x
+                "
+                media="(min-width:1440px)"
+              />
+              <source
+                srcset="
+                  /src/images/pic/main/gallery-img/inzhenernye-metodu-tab-1x.jpg 1x,
+                  /src/images/pic/main/gallery-img/inzhenernye-metodu-tab-2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  /src/images/pic/main/gallery-img/inzhenernye-metodu-mob.jpg    1x,
+                  /src/images/pic/main/gallery-img/inzhenernye-metodu-mob-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="gallery__foto"
+                src="/src/images/pic/main/gallery-img/inzhenernye-metodu-mob.jpg"
+                alt="Інженерні методи аналізу"
+                width="555"
+                height="202"
+              />
+            </picture>
+            <h3 class="gallery__foto-title">
+              Інженерні методи аналізу та контролю якості
+            </h3>
+          </li>
+          <li class="gallery__grid-item-2">
+            <picture>
+              <source
+                srcset="
+                  /src/images/pic/main/gallery-img/vusokotochnoe-desktop-1x.jpg 1x,
+                  /src/images/pic/main/gallery-img/vusokotochnoe-desktop-2x.jpg 2x
+                "
+                media="(min-width:1440px)"
+              />
+              <source
+                srcset="
+                  /src/images/pic/main/gallery-img/vusokotochnoe-tab-1x.jpg 1x,
+                  /src/images/pic/main/gallery-img/vusokotochnoe-tab-2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  /src/images/pic/main/gallery-img/vusokotochnoe-mob.jpg    1x,
+                  /src/images/pic/main/gallery-img/vusokotochnoe-mob-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="gallery__foto"
+                src="/src/images/pic/main/gallery-img/vusokotochnoe-mob.jpg"
+                alt="Високоточне 3D сканування"
+                width="555"
+                height="202"
+              />
+            </picture>
+            <h3 class="gallery__foto-title">Високоточне 3D сканування</h3>
+          </li>
+          <li class="gallery__grid-item-3">
+            <picture>
+              <source
+                srcset="
+                  /src/images/pic/main/gallery-img/sozdanie-kopii-desktop-1x.jpg 1x,
+                  /src/images/pic/main/gallery-img/sozdanie-kopii-desktop-2x.jpg 2x
+                "
+                media="(min-width:1440px)"
+              />
+              <source
+                srcset="
+                  /src/images/pic/main/gallery-img/sozdanie-kopii-tab-1x.jpg 1x,
+                  /src/images/pic/main/gallery-img/sozdanie-kopii-tab-2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  /src/images/pic/main/gallery-img/sozdanie-kopii-mob.jpg    1x,
+                  /src/images/pic/main/gallery-img/sozdanie-kopii-mob-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="gallery__foto"
+                src="/src/images/pic/main/gallery-img/sozdanie-kopii-mob.jpg"
+                alt="Створення точної копії"
+                width="555"
+                height="202"
+              />
+            </picture>
+            <h3 class="gallery__foto-title">
+              Створення точної копії на базі сканування reverse engineering
+            </h3>
+          </li>
+          <li class="gallery__grid-item-4">
+            <picture>
+              <source
+                srcset="
+                  /src/images/pic/main/gallery-img/vse-cukly-desktop-1x.jpg 1x,
+                  /src/images/pic/main/gallery-img/vse-cukly-desktop-2x.jpg 2x
+                "
+                media="(min-width:1440px)"
+              />
+              <source
+                srcset="
+                  /src/images/pic/main/gallery-img/vse-cukly-tab-1x.jpg 1x,
+                  /src/images/pic/main/gallery-img/vse-cukly-tab-2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  /src/images/pic/main/gallery-img/vse-cukly-mob.jpg    1x,
+                  /src/images/pic/main/gallery-img/vse-cukly-mob-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="gallery__foto"
+                src="/src/images/pic/main/gallery-img/vse-cukly-mob.jpg"
+                alt="Створення точної копії"
+                width="555"
+                height="202"
+              />
+            </picture>
+            <h3 class="gallery__foto-title">
+              Всі цикли 3D проектування, створення фотореалістичних цифрових
+              моделей
+            </h3>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="gallery__content">
-
-      <ul class="gallery__grid list">
-            <li class="gallery__grid-item-1">
-                <picture>
-                    <source srcset="
-                    /src/images/pic/main/gallery-img/inzhenernye-metodu-desktop-1x.jpg 1x, 
-                    /src/images/pic/main/gallery-img/inzhenernye-metodu-desktop-2x.jpg 2x" 
-                    media="(min-width:1440px)">
-                    <source srcset="
-                    /src/images/pic/main/gallery-img/inzhenernye-metodu-tab-1x.jpg 1x, 
-                    /src/images/pic/main/gallery-img/inzhenernye-metodu-tab-2x.jpg 2x"
-                    media="(min-width:768px)">
-                    <source srcset="
-                    /src/images/pic/main/gallery-img/inzhenernye-metodu-mob.jpg 1x, 
-                    /src/images/pic/main/gallery-img/inzhenernye-metodu-mob-2x.jpg 2x" 
-                    media="(max-width: 767px)">
-                    <img class="gallery__foto" src="/src/images/pic/main/gallery-img/inzhenernye-metodu-mob.jpg" alt="Інженерні методи аналізу"
-                        width="555" height="202">
-                </picture>
-                <h3 class="gallery__foto-title">Інженерні методи аналізу та контролю якості</h3>
-            </li>
-            <li class="gallery__grid-item-2"> 
-              <picture>
-                    <source srcset="
-                    /src/images/pic/main/gallery-img/vusokotochnoe-desktop-1x.jpg 1x, 
-                    /src/images/pic/main/gallery-img/vusokotochnoe-desktop-2x.jpg 2x" 
-                    media="(min-width:1440px)">
-                    <source srcset="
-                    /src/images/pic/main/gallery-img/vusokotochnoe-tab-1x.jpg 1x, 
-                    /src/images/pic/main/gallery-img/vusokotochnoe-tab-2x.jpg 2x"
-                    media="(min-width:768px)">
-                    <source srcset="
-                    /src/images/pic/main/gallery-img/vusokotochnoe-mob.jpg 1x, 
-                    /src/images/pic/main/gallery-img/vusokotochnoe-mob-2x.jpg 2x" 
-                    media="(max-width: 767px)">
-                    <img class="gallery__foto" src="/src/images/pic/main/gallery-img/vusokotochnoe-mob.jpg" alt="Високоточне 3D сканування"
-                    width="555" height="202">
-                </picture>
-                <h3 class="gallery__foto-title">Високоточне 3D сканування</h3>
-            </li>
-            <li class="gallery__grid-item-3">
-              <picture>
-                    <source srcset="
-                    /src/images/pic/main/gallery-img/sozdanie-kopii-desktop-1x.jpg 1x, 
-                    /src/images/pic/main/gallery-img/sozdanie-kopii-desktop-2x.jpg 2x" 
-                    media="(min-width:1440px)">
-                    <source srcset="
-                    /src/images/pic/main/gallery-img/sozdanie-kopii-tab-1x.jpg 1x, 
-                    /src/images/pic/main/gallery-img/sozdanie-kopii-tab-2x.jpg 2x"
-                    media="(min-width:768px)">
-                    <source srcset="
-                    /src/images/pic/main/gallery-img/sozdanie-kopii-mob.jpg 1x, 
-                    /src/images/pic/main/gallery-img/sozdanie-kopii-mob-2x.jpg 2x" 
-                    media="(max-width: 767px)">
-                    <img class="gallery__foto" src="/src/images/pic/main/gallery-img/sozdanie-kopii-mob.jpg" alt="Створення точної копії"
-                    width="555" height="202">
-                </picture>
-                <h3 class="gallery__foto-title">Створення точної копії на базі сканування reverse engineering</h3>
-            </li>
-            <li class="gallery__grid-item-4 ">
-              <picture>
-                    <source srcset="
-                    /src/images/pic/main/gallery-img/vse-cukly-desktop-1x.jpg 1x, 
-                    /src/images/pic/main/gallery-img/vse-cukly-desktop-2x.jpg 2x" 
-                    media="(min-width:1440px)">
-                    <source srcset="
-                    /src/images/pic/main/gallery-img/vse-cukly-tab-1x.jpg 1x, 
-                    /src/images/pic/main/gallery-img/vse-cukly-tab-2x.jpg 2x"
-                    media="(min-width:768px)">
-                    <source srcset="
-                    /src/images/pic/main/gallery-img/vse-cukly-mob.jpg 1x, 
-                    /src/images/pic/main/gallery-img/vse-cukly-mob-2x.jpg 2x" 
-                    media="(max-width: 767px)">
-                    <img class="gallery__foto" src="/src/images/pic/main/gallery-img/vse-cukly-mob.jpg" alt="Створення точної копії"
-                    width="555" height="202">
-              </picture>
-                <h3 class="gallery__foto-title">Всі цикли 3D проектування, створення фотореалістичних цифрових моделей
-                </h3>
-                
-            </li>
-            </div>
-            
-    </div>
+  </div>
+</section>
