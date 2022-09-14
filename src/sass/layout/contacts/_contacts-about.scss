@@ -2,22 +2,22 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px 20px 0 20px;
+  padding: 18px 20px 0 20px;
   margin-bottom: 40px;
   @media screen and (min-width: 480px) {
     max-width: 480px;
-    padding: 40px 20px 0 20px;
+    padding: 18px 20px 0 20px;
     margin-bottom: 40px;
   }
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    padding: 40px 32px 0 32px;
+    padding: 30px 32px 0 32px;
     margin-bottom: 40px;
   }
 
   @media screen and (min-width: 1440px) {
     max-width: 1142px;
-    padding: 40px 0px 0 0px;
+    padding: 46px 0px 0 0px;
     margin-bottom: 60px;
   }
 }

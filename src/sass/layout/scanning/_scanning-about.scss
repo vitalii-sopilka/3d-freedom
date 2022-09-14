@@ -1,12 +1,12 @@
 .scan-section {
   justify-content: center;
   // background-color: $main-bg-color;
-  padding: 40px 0;
-  @media screen and (min-width: 768px) and (min-width: 1440px) {
-    // padding-top: 100px;
+  padding: 18px 0;
+  @media screen and (min-width: 768px) {
+    padding-top: 46px;
   }
   @media screen and (min-width: $desktop) {
-    padding: 100px 0;
+    padding: 100px 0 100px 0;
   }
 }
 
