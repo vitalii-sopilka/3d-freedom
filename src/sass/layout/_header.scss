@@ -8,12 +8,14 @@
 .header {
   @media (max-width: 767px) {
     padding-top: 20px;
-  }
-  @media (min-width: $mobile) {
     height: 74px;
   }
+  /*  @media (min-width: $mobile) {
+    height: 74px;
+  } */
   @media (min-width: $tablet) and (max-width: 1439px) {
     padding-top: 32px;
+    height: 74px;
   }
   @media (min-width: $desktop) {
     height: 144px;
@@ -235,7 +237,7 @@
     left: -44px;
     width: 162px;
     height: 82px;
-    padding: 0 6px 0 8px;
+    padding: 0 4px;
     text-align: center;
     background-color: $main-bg-color;
     border-radius: 2px;
@@ -464,7 +466,7 @@
   }
 
   &__link {
-    @include font ('Cera Pro', 700, 24, calc(30px/24px));
+    @include font('Cera Pro', 700, 24, calc(30px / 24px));
     text-align: center;
     color: $main-font-color;
   }
@@ -493,7 +495,7 @@
   }
 
   &__sublink {
-  @include font ('Cera Pro', 500, 24, calc(30px/24px));
+    @include font('Cera Pro', 500, 24, calc(30px / 24px));
     text-align: center;
 
     color: $main-font-color;

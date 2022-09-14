@@ -9,14 +9,14 @@
   //   padding-top: 100px;
   //   padding-bottom: 100px;
   // }
-  @media screen and (max-width: 767px) {
-    padding-top: 40px;
+  @media (max-width: 767px) {
+    padding-top: 18px;
   }
   @media screen and (min-width: 768px) {
-    padding-top: 34px;
+    padding-top: 30px;
   }
   @media screen and (min-width: 1440px) {
-    padding-top: 48px;
+    padding-top: 46px;
   }
 }
 
@@ -45,7 +45,7 @@
     height: 63.79px;
     right: 32px;
     top: 8.42px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 0px 35px;
   }
@@ -64,9 +64,9 @@
     width: 82px;
     height: 78px;
     top: 44;
-    background: #FFFFFF;
+    background: #ffffff;
     left: 35px;
-    box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 72px 0px;
   }
 }
@@ -144,8 +144,9 @@
   flex-direction: column;
   align-items: center;
   display: flex;
-  background: #FFFFFF;
-  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
+  background: #ffffff;
+  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
+    inset -1px -1px 16px #ffffff;
   border-radius: 50px 0px;
   @media screen and (min-width: $tablet) {
     padding-top: 27px;

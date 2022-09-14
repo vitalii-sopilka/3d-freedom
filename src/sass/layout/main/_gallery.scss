@@ -8,6 +8,9 @@
   @media screen and (min-width: $tablet) {
     padding-bottom: 60px;
   }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 120px;
+  }
 }
 .gallery__box {
   position: relative;

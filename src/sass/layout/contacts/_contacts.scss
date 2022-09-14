@@ -1,0 +1,385 @@
+.contacts {
+  @media screen and (min-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media screen and (min-width: 1440px) {
+  }
+  &__container-new {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+    }
+    @media screen and (min-width: 1440px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__title-new {
+    @include font($fontCeraPro, 700, 18, 1.25);
+    color: $main-font-color;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+      text-align: start;
+      margin-bottom: 8px;
+      @include font($fontCeraPro, 700, 24, 1.25);
+    }
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 18px;
+      @include font($fontCeraPro, 700, 36, 1.25);
+    }
+  }
+  &__list-new {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
+    margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 24px;
+      margin: 0;
+    }
+    @media screen and (min-width: 1440px) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 30px;
+      gap: 30px;
+    }
+  }
+
+  &__phone,
+  &__mail {
+    color: $second-font-color;
+    transform: color 250ms $cubic-bezier;
+    @include font($fontCeraPro, 400, 16, 1.25);
+    @media screen and (min-width: 768px) {
+      @include font($fontCeraPro, 400, 16, 1.25);
+    }
+
+    @media screen and (min-width: 1440px) {
+      @include font($fontCeraPro, 400, 18, 1.25);
+    }
+    // &:hover,
+    // &:focus {
+    //   color: $svg-color;
+    // }
+  }
+
+  &__time {
+    @media screen and (min-width: 768px) {
+      margin-left: auto;
+    }
+    @media screen and (min-width: 1440px) {
+      max-width: 270px;
+      margin-bottom: 68px;
+    }
+    &-list-new {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      @include font($fontCeraPro, 400, 16, 1.25);
+      color: $second-font-color;
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 225px;
+      }
+      @media screen and (min-width: 1440px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        margin-right: auto;
+        margin-left: 0;
+        @include font($fontCeraPro, 400, 18, 1.25);
+      }
+    }
+  }
+  &__item-new {
+    display: flex;
+    text-decoration: none;
+    color: $second-font-color;
+    flex-direction: column;
+    align-items: flex-start;
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1440px) {
+      align-items: flex-start;
+    }
+  }
+  &__item-list-new > li {
+    @include font($fontCeraPro, 400, 16, 1.25);
+    color: $second-font-color;
+    text-decoration: none;
+    list-style: none;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1440px) {
+      text-align: start;
+      @include font($fontCeraPro, 400, 18, 1.25);
+    }
+  }
+  &__item-list > li:not(:last-child) {
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 8px;
+    }
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.time-item:nth-child(2) {
+  margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 8px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 18px;
+  }
+}
+.sub-title {
+  margin-bottom: 18px;
+}
+
+.content-order-new {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    max-width: $tablet;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    max-width: 1142px;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 149px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 80px;
+  }
+}
+
+.container__figure-seven {
+  display: block;
+  position: absolute;
+  box-shadow: $box-shadow-color;
+  @include bd-figure(74, 74, null, 60);
+  right: 0px;
+  border-radius: 72px 72px 72px 72px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    box-shadow: $box-shadow-color;
+
+    @include bd-figure(72, 74, -17, 1255);
+    border-radius: 72px 72px 72px 72px;
+    z-index: 1;
+  }
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+.contact-new {
+  min-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    max-width: 555px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 555px;
+    margin: 0;
+  }
+}
+
+.feedback {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    max-width: 400px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 555px;
+    margin-bottom: 0;
+  }
+  &__title {
+    margin-bottom: 44px;
+    text-align: left;
+    @include font($fontCeraPro, 700, 18, 1.25);
+    color: $main-font-color;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      @include font($fontCeraPro, 700, 24, 1.25);
+      text-align: center;
+    }
+    @media screen and (min-width: 1440px) {
+      @include font($fontCeraPro, 700, 36, 1.25);
+      text-align: left;
+    }
+  }
+
+  &__field-new {
+    position: relative;
+    width: 100%;
+    color: $second-font-color;
+    @include font($fontCeraPro, 400, 16, 1.25);
+    border-bottom: 1px solid #487996;
+    @media screen and (min-width: 768px) {
+      @include font($fontCeraPro, 400, 16, 1.25);
+    }
+    @media screen and (min-width: 1440px) {
+      @include font($fontCeraPro, 400, 18, 1.25);
+    }
+    // &:hover,
+    // &:focus {
+    //   border-color: $svg-color;
+    // }
+    &:not(:last-child) {
+      margin-bottom: 40px;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+      }
+      @media screen and (min-width: 1440px) {
+        margin-bottom: 44px;
+      }
+    }
+    &:nth-child(3) {
+      border: none;
+    }
+
+    &:nth-child(7) {
+      position: relative;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 24px;
+    border: none;
+    padding-bottom: 4px;
+    cursor: pointer;
+    outline: transparent;
+    background-color: transparent;
+
+    &::placeholder {
+      color: $second-font-color;
+      @include font($fontCeraPro, 400, 16, 1.25);
+      @media screen and (min-width: 768px) {
+        @include font($fontCeraPro, 400, 16, 1.25);
+      }
+      @media screen and (min-width: 1440px) {
+        @include font($fontCeraPro, 400, 18, 1.25);
+      }
+      // &:hover,
+      // &:focus {
+      //   color: $svg-color;
+      // }
+    }
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 4px;
+    @include font($fontCeraPro, 400, 16, 1.25);
+    color: $second-font-color;
+    @media screen and (min-width: 768px) {
+      @include font($fontCeraPro, 400, 16, 1.25);
+    }
+    @media screen and (min-width: 1440px) {
+      @include font($fontCeraPro, 400, 18, 1.25);
+    }
+  }
+}
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  display: none;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: '';
+  top: 3px;
+  right: 5px;
+  width: 21px;
+  height: 13px;
+  background-image: url(/src/images/pic/order/polygon-svg-down.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent $second-font-color transparent;
+  content: '';
+  top: 3px;
+  right: 5px;
+  width: 21px;
+  height: 13px;
+  background-image: url(/src/images/pic/order/polygon-svg-up.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.select-items div,
+.select-selected {
+  color: inherit;
+  padding-bottom: 4px;
+  border-color: transparent transparent $second-font-color transparent;
+  cursor: pointer;
+}
+.select-items div {
+  padding: 6px 8px;
+}
+
+.select-items {
+  position: absolute;
+  background-color: $main-bg-color;
+  top: 104%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  color: $main-bg-color;
+  background-color: rgba(72, 121, 150, 0.5);
+}
