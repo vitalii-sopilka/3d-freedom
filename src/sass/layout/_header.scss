@@ -85,7 +85,24 @@
     font-size: 18px;
     line-height: 1.16;
     color: $second-font-color;
+
+    &-text {
+      display: block;
+      transform: scale(100%);
+      transition-property: transform color;
+      @include trans();
+    }
+    &:hover .header__nav-link-text,
+    &:focus .header__nav-link-text {
+      display: block;
+      transform: scale(105%);
+    }
+    &:active .header__nav-link-text,
+    &:focus .header__nav-link-text {
+      color: $main-font-color;
+    }
   }
+
   &__drop-menu {
     position: relative;
     margin-top: 56px;
@@ -94,14 +111,25 @@
   &__nav-btn {
     width: 80px;
     height: 21px;
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: 1;
     font-size: 18px;
     line-height: 1.16;
     color: $second-font-color;
+
+    transform: scale(100%);
+    transition-property: transform color;
+    @include trans();
+    &:hover,
+    &:focus {
+      transform: scale(105%);
+    }
+    &:active {
+      color: $main-font-color;
+    }
 
     background-color: transparent;
   }
@@ -144,6 +172,21 @@
     font-size: 16px;
     line-height: 1.18;
     color: $second-font-color;
+    &-text {
+      display: block;
+      transform: scale(100%);
+      transition-property: transform color;
+      @include trans();
+    }
+    &:hover .header__nav-link-text,
+    &:focus .header__nav-link-text {
+      display: block;
+      transform: scale(105%);
+    }
+    &:active .header__nav-link-text,
+    &:focus .header__nav-link-text {
+      color: $main-font-color;
+    }
   }
   &__drop-icon {
     width: 10;
@@ -167,6 +210,16 @@
   &__contact-link {
     display: flex;
     align-items: center;
+    transition-property: transform color;
+    @include trans();
+    &:hover,
+    &:focus {
+      transform: scale(103%);
+    }
+    &:active .header__contact-text,
+    &:focus .header__contact-text {
+      color: $main-font-color;
+    }
     @media (min-width: $tablet) and (max-width: 1439px) {
       gap: 4px;
     }
@@ -268,11 +321,34 @@
       color: $second-font-color;
       display: block;
       padding: 16px 0 5px;
+      transform: scale(100%);
+      transition-property: transform color;
+      @include trans();
+      &:hover {
+        display: block;
+        transform: scale(105%);
+      }
+      &:active,
+      &:focus {
+        color: $main-font-color;
+      }
     }
     &-second-tel {
       color: $second-font-color;
       display: block;
       padding: 5px 0 16px;
+      transform: scale(100%);
+      transition-property: transform color;
+      @include trans();
+      &:hover,
+      &:focus {
+        display: block;
+        transform: scale(105%);
+      }
+      &:active,
+      &:focus {
+        color: $main-font-color;
+      }
     }
     &:hover,
     &:focus {
@@ -289,10 +365,22 @@
     font-size: 14px;
     line-height: 1.28;
     color: $lang-color;
+    transform: scale(100%);
+    transition-property: transform color;
+    @include trans();
     @media (min-width: $tablet) {
       position: absolute;
       top: -6px;
       right: 203px;
+    }
+    &:hover,
+    &:focus {
+      display: block;
+      transform: scale(110%);
+    }
+    &:active,
+    &:focus {
+      color: $main-font-color;
     }
   }
 
@@ -377,11 +465,23 @@
     font-size: 14px;
     line-height: 1.28;
     color: $lang-color;
+    transform: scale(100%);
+    transition-property: transform color;
+    @include trans();
     @media (min-width: $desktop) {
       display: block;
       position: absolute;
       top: 57px;
       left: 59px;
+    }
+    &:hover,
+    &:focus {
+      display: block;
+      transform: scale(110%);
+    }
+    &:active,
+    &:focus {
+      color: $main-font-color;
     }
   }
 }
